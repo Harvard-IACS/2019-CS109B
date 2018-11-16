@@ -1,10 +1,10 @@
 COURSE_NAME = '2019-CS109B'
 
-AUTHOR = ''
+AUTHOR = 'Pavlos Protopapas'
 
-SITEURL = ''
+SITEURL = 'https://harvard-iacs.github.io/2019-CS109B/'
 
-GITHUB = ''
+GITHUB = 'https://github.com/Harvard-IACS/2019-CS109B'
 
 COLOR = '#A51C30'
 
