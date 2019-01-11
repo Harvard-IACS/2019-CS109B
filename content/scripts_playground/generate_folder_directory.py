@@ -166,8 +166,19 @@ if __name__ == "__main__":
             change = input("Do you want to change it ? Please press 'y' if you want or 'n' if you do not change it:")
 
         if change == 'y':
-            default_directory = str(input("Please enter the default directory: "))
+            default_directory = input("Please enter the default directory: ")
             print("Default directory: ", default_directory, '\n')
+
+            default_directory_lectures = default_directory + "lectures/"
+            default_directory_lecture_playground = default_directory + "lecture_playground/"
+
+            default_directory_labs = default_directory + "labs/"
+            default_directory_labs_playground = default_directory + "lab_playground/"
+
+            default_directory_homework = default_directory + "homework/"
+            default_directory_homework_playground = default_directory + "homework_playground/"
+
+            default_directory_advance_sections = default_directory + "a-section/"
 
             number_of_lectures = int(input("Please enter the number of lectures: "))
             print("Number of lectures: ", number_of_lectures, '\n')
