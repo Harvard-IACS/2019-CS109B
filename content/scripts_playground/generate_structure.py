@@ -181,25 +181,25 @@ if __name__ == "__main__":
             number_of_advance_sections = int(input("Please enter the number of advance sections: "))
             print("Number of advance sections: ", number_of_advance_sections, '\n')
 
-            ge = GenerateStructure(number_of_lectures, number_of_labs, number_of_homework, number_of_advance_sections,
-                                   folders, default_directory, default_directory_lectures,
-                                   default_directory_lecture_playground, default_directory_labs,
-                                   default_directory_labs_playground, default_directory_homework,
-                                   default_directory_homework_playground, default_directory_advance_sections)
+        ge = GenerateStructure(number_of_lectures, number_of_labs, number_of_homework, number_of_advance_sections,
+                               folders, default_directory, default_directory_lectures,
+                               default_directory_lecture_playground, default_directory_labs,
+                               default_directory_labs_playground, default_directory_homework,
+                               default_directory_homework_playground, default_directory_advance_sections)
 
-            ge.create_lectures(default_directory_lectures, number_of_lectures, folders)  # Create Lectures folders
-            ge.create_lecture_playground(default_directory_lecture_playground,
-                                         number_of_lectures, folders)  # Create Lectures playground folders
+        ge.create_lectures(default_directory_lectures, number_of_lectures, folders)  # Create Lectures folders
+        ge.create_lecture_playground(default_directory_lecture_playground,
+                                     number_of_lectures, folders)  # Create Lectures playground folders
 
-            ge.create_labs(default_directory_labs, number_of_labs, folders)  # Create Labs folders
-            ge.create_labs(default_directory_labs_playground, number_of_labs, folders)  # Create Labs playground folders
+        ge.create_labs(default_directory_labs, number_of_labs, folders)  # Create Labs folders
+        ge.create_labs(default_directory_labs_playground, number_of_labs, folders)  # Create Labs playground folders
 
-            # ge.create_homework(default_directory_homework, number_of_homework, folders)  # Create Homework folders
-            # ge.create_homework(default_directory_homework_playground,
-            #                    number_of_homework, folders)  # Create Homework playground folders
+        # ge.create_homework(default_directory_homework, number_of_homework, folders)  # Create Homework folders
+        # ge.create_homework(default_directory_homework_playground,
+        #                    number_of_homework, folders)  # Create Homework playground folders
 
-            ge.create_a_section(default_directory_advance_sections, number_of_advance_sections,
-                                folders)  # Create advance sections  folders
+        ge.create_a_section(default_directory_advance_sections, number_of_advance_sections,
+                            folders)  # Create advance sections  folders
 
 
     except:
