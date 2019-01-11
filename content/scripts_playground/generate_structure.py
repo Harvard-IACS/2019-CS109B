@@ -141,8 +141,7 @@ if __name__ == "__main__":
     number_of_advance_sections = 7
     folders = ["data", "fig", "notes", "presentation"]
 
-    default_directory = \
-        "/Users/havy/PycharmProjects/2019-CS109B-private/content/scripts_playground/test_generate_structure/"
+    default_directory = dir_path = os.path.dirname(os.path.realpath(__file__)) + '/'
 
     default_directory_lectures = default_directory + "lectures/"
     default_directory_lecture_playground = default_directory + "lecture_playground/"
@@ -176,8 +175,8 @@ if __name__ == "__main__":
             number_of_labs = int(input("Please enter the number of labs: "))
             print("Number of labs: ", number_of_labs, '\n')
 
-            number_of_homework = int(input("Please enter the number of homework: "))
-            print("Number of homework: ", number_of_homework, '\n')
+            # number_of_homework = int(input("Please enter the number of homework: "))
+            # print("Number of homework: ", number_of_homework, '\n')
 
             number_of_advance_sections = int(input("Please enter the number of advance sections: "))
             print("Number of advance sections: ", number_of_advance_sections, '\n')
@@ -195,14 +194,13 @@ if __name__ == "__main__":
             ge.create_labs(default_directory_labs, number_of_labs, folders)  # Create Labs folders
             ge.create_labs(default_directory_labs_playground, number_of_labs, folders)  # Create Labs playground folders
 
-            ge.create_homework(default_directory_homework, number_of_homework, folders)  # Create Homework folders
-            ge.create_homework(default_directory_homework_playground,
-                               number_of_homework, folders)  # Create Homework playground folders
+            # ge.create_homework(default_directory_homework, number_of_homework, folders)  # Create Homework folders
+            # ge.create_homework(default_directory_homework_playground,
+            #                    number_of_homework, folders)  # Create Homework playground folders
 
             ge.create_a_section(default_directory_advance_sections, number_of_advance_sections,
                                 folders)  # Create advance sections  folders
 
 
     except:
-        e = sys.exc_info()[0]
-        print(e)
+        print(sys.exc_info()[0])
