@@ -8,7 +8,11 @@ GITHUB = 'https://github.com/Harvard-IACS/2019-CS109B'
 
 COLOR = '#A51C30'
 
-MENUITEMS = []
+MENUITEMS = [
+    ('Syllabus', 'pages/syllabus.html'),
+    ('Schedule', 'pages/schedule.html'),
+    ('Materials', 'pages/materials.html')
+]
 
 PATH = 'content'
 
