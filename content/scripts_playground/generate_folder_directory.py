@@ -199,11 +199,11 @@ if __name__ == "__main__":
                                default_directory_homework_playground, default_directory_advance_sections)
 
         ge.create_lectures(default_directory_lectures, number_of_lectures, folders)  # Create Lectures folders
-        ge.create_lecture_playground(default_directory_lecture_playground,
-                                     number_of_lectures, folders)  # Create Lectures playground folders
+        # ge.create_lecture_playground(default_directory_lecture_playground,
+        #                              number_of_lectures, folders)  # Create Lectures playground folders
 
         ge.create_labs(default_directory_labs, number_of_labs, folders)  # Create Labs folders
-        ge.create_labs(default_directory_labs_playground, number_of_labs, folders)  # Create Labs playground folders
+        # ge.create_labs(default_directory_labs_playground, number_of_labs, folders)  # Create Labs playground folders
 
         # ge.create_homework(default_directory_homework, number_of_homework, folders)  # Create Homework folders
         # ge.create_homework(default_directory_homework_playground,
@@ -212,6 +212,10 @@ if __name__ == "__main__":
         ge.create_a_section(default_directory_advance_sections, number_of_advance_sections,
                             folders)  # Create advance sections  folders
 
-
+    except OSError as err:
+        print("OS error: {0}".format(err))
+    except ValueError:
+        print("Could not convert data to an integer.")
     except:
-        print(sys.exc_info()[0])
+        print("Unexpected error:", sys.exc_info()[0])
+        raise
