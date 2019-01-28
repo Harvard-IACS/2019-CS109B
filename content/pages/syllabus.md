@@ -2,20 +2,18 @@ Title: Syllabus
 Slug: syllabus
 Date: 2019-01-26
 
-<h2><strong>COMPSCI 109B, &nbsp;STAT121b, AC209b, and CSCI E-109b</strong></h2>
-<h2><strong> Data Science 2: Advanced Topics in Data Science</strong></h2>
-<h4><strong>Spring 2019</strong></h4>
-<h4><strong>Instructors </strong></h4>
+<h2>COMPSCI 109B, &nbsp;STAT121b, AC209b, and CSCI E-109b</h2>
+<h2>Data Science 2: Advanced Topics in Data Science</h2>
+<h4>Spring 2019</h4>
+<h4>Instructors</h4>
 <p><span style="font-weight: 400;">Pavlos Protopapas (SEAS), Mark Glickman (Statistics)</span></p>
 <p><span style="font-weight: 400;"><a href="mailto:pavlos@seas.harvard.edu">pavlos@seas.harvard.edu</a>&nbsp;-&nbsp;</span><span style="font-weight: 400;"><a href="mailto:glickman@fas.harvard.edu">glickman@fas.harvard.edu</a>&nbsp;</span></p>
-<h4><strong>Tentative Course&nbsp;<a class="" title="Link" href="https://canvas.harvard.edu/courses/48088/pages/calendar" data-preview-alt="" data-api-endpoint="https://canvas.harvard.edu/api/v1/courses/48088/pages/calendar" data-api-returntype="Page">Calendar</a></strong></h4>
-<h4><strong>Meeting Time</strong></h4>
-<p><span style="font-size: 12pt;"><strong>Lectures</strong>: <span style="color: #000000;">Mon&nbsp;and Wed 1:30‐2:45pm in Maxwell-Dworkin G-115</span></span><br /><span style="font-size: 12pt;"><strong>Labs</strong>: Thur 4:30-6:00pm in Pierce 301</span><span style="font-size: 12pt;"></span><span style="font-size: 12pt;"></span><span style="font-size: 12pt;"></span><span style="font-size: 12pt;"></span><span style="font-size: 12pt;"></span></p>
-<p><strong>Prerequisite</strong><strong>s: </strong><span style="font-weight: 400;">CS 109a, A</span><span style="font-weight: 400;">C 209a, Stat 121a, or CSCI E-109a or the equivalent. Students who have not previously taken CS 109, AC 209, Stat 121, or CSCI E-109 should obtain instructor approval.</span></p>
+<h4>Meeting Time</h4>
+<p><span style="font-size: 12pt;">Lectures: <span style="color: #000000;">Mon&nbsp;and Wed 1:30‐2:45pm in Maxwell-Dworkin G-115</span></span><br /><span style="font-size: 12pt;">Labs: Thur 4:30-6:00pm in Pierce 301</span><span style="font-size: 12pt;"></span><span style="font-size: 12pt;"></span><span style="font-size: 12pt;"></span><span style="font-size: 12pt;"></span><span style="font-size: 12pt;"></span></p>
+<p><strong>Prerequisites</strong><strong>s: </strong><span style="font-weight: 400;">CS 109a, A</span><span style="font-weight: 400;">C 209a, Stat 121a, or CSCI E-109a or the equivalent. Students who have not previously taken CS 109, AC 209, Stat 121, or CSCI E-109 should obtain instructor approval.</span></p>
 <h4><strong>Instructional Staff</strong></h4>
-<p><strong>Head TF</strong><span style="font-weight: 400;">: Eleni Kaxiras &lt;eleni@seas.harvard.edu&gt;</span></p>
+<p><strong>Head TF</strong><span style="font-weight: 400;">: Eleni Kaxiras</span></p>
 <p><strong>Head TF for DCE</strong><span style="font-weight: 400;">: Sol Girouard &lt;solgirouard@g.harvard.edu&gt;</span></p>
-<p><span style="font-weight: 400;"><span style="background-color: #ffff99;">Self-Assessment Homework</span>: <a title="HW0" href="https://canvas.harvard.edu/courses/48088/assignments/262670" data-api-endpoint="https://canvas.harvard.edu/api/v1/courses/48088/assignments/262670" data-api-returntype="Assignment">HW0</a></span></p>
 <hr />
 <h2><strong>Syllabus Spring 2019</strong></h2>
 <h3><strong>Course description</strong></h3>
