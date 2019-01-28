@@ -59,9 +59,9 @@ Date: 2019-01-26
 <h4><strong>Exams</strong></h4>
 <p><span style="font-weight: 400;">There are no exams in this course.</span></p>
 <h4><strong>Projects</strong></h4>
-<h4><em><strong>&nbsp;- For distant students</strong></em></h4>
+<h5><em>&nbsp;- For distant students</em></h5>
 <p><span style="font-weight: 400;">The goal of the project is to have a complete end-to-end data science process encompassing both semesters of subject material while working as a 3-4 person team. We will supply a small set of project choices within the thematic categories. Teams may propose a different project with sufficient notice and will be subject to approval by the course staff.</span></p>
-<h4><em><strong>&nbsp;- For campus students</strong></em></h4>
+<h5><em>&nbsp;- For campus students</em></h5>
 <p><span style="font-weight: 400;">During the final four (4) weeks of the course, students will be divided in break-out thematic sections where they will study topics such as medicine, law, astronomy, e-commerce, and government. Each section will include lectures by Harvard faculty, experts on the field, followed by project work also led by that faculty. &nbsp;You will get to present your projects in the SEAS Design Fair at the end of the semester.</span></p>
 <h4><strong>Homework Assignments</strong></h4>
 <p><span style="font-weight: 400;">There will be seven graded homework assignments. Some of them will be due one week after being assigned and some will be due two weeks after being assigned. For five assignments, you have the option to work and submit in pairs, the two remaining are to be completed individually. </span></p>
