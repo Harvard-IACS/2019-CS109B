@@ -8,7 +8,7 @@ Date: 2019-01-26
 <h4>Instructors</h4>
 <p><span style="font-weight: 400;">Pavlos Protopapas (SEAS), Mark Glickman (Statistics)</span></p>
 <p><span style="font-weight: 400;"><a href="mailto:pavlos@seas.harvard.edu">pavlos@seas.harvard.edu</a>&nbsp;-&nbsp;</span><span style="font-weight: 400;"><a href="mailto:glickman@fas.harvard.edu">glickman@fas.harvard.edu</a>&nbsp;</span></p>
-<h4>Meeting Time</h4>
+<h4>Meeting Times</h4>
 <p><span style="font-size: 12pt;">Lectures: <span style="color: #000000;">Mon&nbsp;and Wed 1:30‐2:45pm in Maxwell-Dworkin G-115</span></span><br /><span style="font-size: 12pt;">Labs: Thur 4:30-6:00pm in Pierce 301</span><span style="font-size: 12pt;"></span><span style="font-size: 12pt;"></span><span style="font-size: 12pt;"></span><span style="font-size: 12pt;"></span><span style="font-size: 12pt;"></span></p>
 <p><strong>Prerequisites</strong><strong>s: </strong><span style="font-weight: 400;">CS 109a, A</span><span style="font-weight: 400;">C 209a, Stat 121a, or CSCI E-109a or the equivalent. Students who have not previously taken CS 109, AC 209, Stat 121, or CSCI E-109 should obtain instructor approval.</span></p>
 <h4><strong>Instructional Staff</strong></h4>
