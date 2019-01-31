@@ -2,8 +2,7 @@ Title: Syllabus
 Slug: syllabus
 Date: 2019-01-26
 
-<h2>COMPSCI 109B, &nbsp;STAT121b, AC209b, and CSCI E-109b</h2>
-<h2>Data Science 2: Advanced Topics in Data Science</h2>
+## Syllabus - Spring 2019
 <h4>Spring 2019</h4>
 <h4>Instructors</h4>
 <p><span style="font-weight: 400;">Pavlos Protopapas (SEAS), Mark Glickman (Statistics)</span></p>
