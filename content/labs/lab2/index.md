@@ -1,8 +1,9 @@
-Title: Lab 2
+Title: Lab 1
 Date: 2019-01-11
-Slug: lab2
-Author: 
+Slug: lab1
+Author: Will Claybuagh
 
 
 
-# Lab 2
+# Lab 1
+Setting up the 109b computing environment (conda and JupyterHub)
