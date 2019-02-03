@@ -1,4 +1,4 @@
-COURSE_NAME = '2019-CS109B'
+COURSE_NAME = 'CS109B'
 
 AUTHOR = 'Pavlos Protopapas'
 
