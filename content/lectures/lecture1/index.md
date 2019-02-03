@@ -1,14 +1,21 @@
-Title: Lecture 1: Intro + Review of 109A Preview of 109B
+Title: Lecture 1: Data, Summaries, and Visuals
 Category: lectures
 Slug: lecture1
 Author: Pavlos Protopapas
-Date: 2019-01-28
-Tags: Data Science, introduction, logistics
-
+Date: 2018-09-10
+Tags: Statistcis, Introduction
 
 
 ### Slides
 
-- [PDF]({attach}presentation/cs109b_lecture1_intro.pdf)
-- [PPTX]({attach}presentation/cs109b_lecture1_intro.pptx)
+- [PDF]({attach}presentation/Lecture1_Data.pdf)
 
+### Sections 
+- [Section 1 student]({filename}../../sections/section1/notebook/section_1_student.ipynb) 
+- [Section 1 solutions]({filename}../../sections/section1/notebook/section_1_solutions.ipynb)  
+
+
+
+<!-- ### Notebooks
+
+- [Examples]({filename}notebook/lecture1_notebook.ipynb) -->

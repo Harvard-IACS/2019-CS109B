@@ -14,4 +14,4 @@ Tags: Conda, environments, R
 - [R_setup]({filename}cs109b_lab1_Rsetup.ipynb)
 
 ### Notes 
-- [Installation Instructions]({attach}JupyterHub_User_Documentation.pdf)
+- [Installation Instructions for JupyterHub]({attach}JupyterHub_User_Documentation.pdf)
