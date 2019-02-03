@@ -12,6 +12,7 @@ MENUITEMS = [
     ('Syllabus', 'pages/syllabus.html'),
     ('Schedule', 'pages/schedule.html'),
     ('Materials', 'pages/materials.html'),
+    ('Modules', 'pages/modules.html')
     ('GitHub', 'pages/github.html')
 ]
 
