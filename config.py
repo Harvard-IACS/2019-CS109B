@@ -11,7 +11,8 @@ COLOR = '#A51C30'
 MENUITEMS = [
     ('Syllabus', 'pages/syllabus.html'),
     ('Schedule', 'pages/schedule.html'),
-    ('Materials', 'pages/materials.html')
+    ('Materials', 'pages/materials.html'),
+    ('GitHub', 'pages/github.html')
 ]
 
 PATH = 'content'
