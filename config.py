@@ -56,7 +56,7 @@ INDEX_SAVE_AS = 'pages/materials.html'
 
 THEME_STATIC_DIR = 'style'
 
-DELETE_OUTPUT_DIRECTORY = True
+DELETE_OUTPUT_DIRECTORY = False
 
 MARKUP = ['md', 'ipynb']
 
