@@ -64,7 +64,7 @@ PLUGIN_PATHS = ['plugins']
 
 PLUGINS = ['ipynb.markup', 'tipue_search']
 
-IGNORE_FILES = ['.ipynb_checkpoints']
+IGNORE_FILES = ['.ipynb_checkpoints', 'README.md']
 
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
@@ -81,4 +81,4 @@ JINJA_FILTERS = {
 
 USE_FOLDER_AS_CATEGORY = False
 
-IGNORE_FILES = ['README.md']
+LOAD_CONTENT_CACHE = True
