@@ -56,7 +56,7 @@ INDEX_SAVE_AS = 'pages/materials.html'
 
 THEME_STATIC_DIR = 'style'
 
-DELETE_OUTPUT_DIRECTORY = False
+DELETE_OUTPUT_DIRECTORY = True
 
 MARKUP = ['md', 'ipynb']
 
@@ -64,7 +64,7 @@ PLUGIN_PATHS = ['plugins']
 
 PLUGINS = ['ipynb.markup', 'tipue_search']
 
-IGNORE_FILES = ['.ipynb_checkpoints', 'README.md']
+IGNORE_FILES = ['.ipynb_checkpoints', 'README.md', "*.html"]
 
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
@@ -81,4 +81,11 @@ JINJA_FILTERS = {
 
 USE_FOLDER_AS_CATEGORY = False
 
-LOAD_CONTENT_CACHE = True
+CACHE_CONTENT = True
+
+import logging
+
+LOG_FILTER = [
+    (logging.WARN, "Empty alt attribute for image %s in %s"),
+    (logging.WARN, "Meta tag in file %s does not have a 'name' attribute, skipping. Attributes: content=%s")
+]
