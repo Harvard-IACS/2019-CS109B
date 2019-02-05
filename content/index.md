@@ -16,30 +16,36 @@ Spring 2019 <br><br>
 
 <hr> 
 
-
-Data Science 2 is the second half of a one-year introduction to data science. Building upon the material in Data Science 1, the course introduces advanced methods for data wrangling, data visualization, and deep neural networks, statistical modeling, and prediction. Topics include big data and database management, multiple deep learning subjects such as CNNs, RNNs, autoencoders, and generative models as well as basic Bayesian methods, nonlinear statistical models and unsupervised learning. 
-
-
-<pre>All course content (except Lectures 2,3,4) are in GitHub: <a href="https://github.com/Harvard-IACS/2019-CS109B/tree/master/content">https://github.com/Harvard-IACS/2019-CS109B/tree/master/content.</a> We suggest that you clone this repository.</pre>
-<pre><strong><span><span style="color: #993300;">HELPLINE</span>: <a style="font-weight: 400;" href="mailto:cs109b2019@gmail.com">cs109b2019@gmail.com</a></span></strong></pre>
-
-<pre><strong><span style="color: #993300;">Office Hours</span></strong> : <a title="Weekly Schedule" href="https://canvas.harvard.edu/courses/48088/pages/weekly-schedule" data-api-endpoint="https://canvas.harvard.edu/api/v1/courses/48088/pages/weekly-schedule" data-api-returntype="Page">Weekly Schedule</a></pre>
+**Head TFs:** Eleni Kaxiras <eleni@seas.harvard.edu> <br>
+**Head TF for DCE:** Sol Girouard <solgirouard@g.harvard.edu>
 
 
-<pre><span><strong><span style="color: #993300;">For enrollment issues</span></strong> including cross-registration: contact the <strong style="font-weight: 400;">FAS Registrar's Office</strong> either in person at the Smith Campus Center (1350 Massachusetts Avenue, Suite 450) or by sending an email to <a style="font-weight: 400;" href="mailto:registrar@fas.harvard.edu">registrar@fas.harvard.ed</a></span></pre>
-<pre><strong><span style="color: #993300;">Lecture 2</span></strong> including Slides, datasets, and notebook will only be available via Canvas (Modules), not the public GitHub.</pre>
+<hr>
+ 
+**Lectures:** Mon and Wed 1:30‐2:45pm in Maxwell-Dworkin G-115 <br>
+**Labs:** Thur 4:30-6:00pm in Pierce 301 <br>
+**Advanced Sections:** Wed. 3:00pm-4:15pm, location TBD (starting 2/13)
 
 
-<h4>Course&nbsp;<a class="" title="Link" href="https://canvas.harvard.edu/courses/48088/pages/calendar" data-preview-alt="" data-api-endpoint="https://canvas.harvard.edu/api/v1/courses/48088/pages/calendar" data-api-returntype="Page">Calendar</a></h4>
-<h4><strong>Meeting Time</strong></h4>
-<p><span style="font-size: 12pt;"><strong>Lectures</strong>: <span style="color: #000000;">Mon&nbsp;and Wed <strong>1:30‐2:45pm</strong> in Maxwell-Dworkin G-115</span></span><br /><span style="font-size: 12pt;"><strong>Labs</strong>: Thur <strong>4:30-6:00pm</strong> in Pierce 301(<span style="color: #993300;"><strong>starting 1/31</strong></span>)</span><span style="font-size: 12pt;"></span><br /><span style="font-size: 12pt;"><strong>Advanced Sections</strong>: Wed.&nbsp;</span><span style="background-color: #ffff00;"><strong>3</strong></span><span style="font-weight: 400;"><span style="background-color: #ffff00;"><strong>:00pm-4:15pm</strong></span>, (NOTICE CHANGE IN TIME) location TBD (<strong><span style="color: #993300;">starting 2/13</span></strong>)</span></p>
-<p><strong>Prerequisite</strong><strong>s: </strong><span style="font-weight: 400;">CS 109a, A</span><span style="font-weight: 400;">C 209a, Stat 121a, or CSCI E-109a or the equivalent. Students who have not previously taken CS 109, AC 209, Stat 121, or CSCI E-109 should obtain instructor approval.</span></p>
-<h4><strong>Instructional Staff</strong></h4>
-<p><strong>Helpline</strong><span style="font-weight: 400;">&nbsp;<a href="mailto:cs109b2019@gmail.com">cs109b2019@gmail.com</a></span></p>
-<p><strong>Head TF</strong><span style="font-weight: 400;">: Eleni Kaxiras &lt;eleni@seas.harvard.edu&gt;</span></p>
-<p><strong>Head TF for DCE</strong><span style="font-weight: 400;">: Sol Girouard &lt;solgirouard@g.harvard.edu&gt;</span></p>
-<p><span style="font-weight: 400;"><span style="background-color: #ffff99;">Self-Assessment Homework</span>: <a title="HW0" href="https://canvas.harvard.edu/courses/48088/assignments/262670" data-api-endpoint="https://canvas.harvard.edu/api/v1/courses/48088/assignments/262670" data-api-returntype="Assignment">HW0</a></span></p>
-<hr />
+**Prerequisites:** CS 109a, AC 209a, Stat 121a, CSCI E-109a or equivalent. 
+
+
+Data Science 2 is the second half of a one-year introduction to data science. Building upon the material in Data Science 1, 
+the course introduces advanced methods for data wrangling, data visualization, and deep neural networks, statistical modeling, 
+and prediction. Topics include big data and database management, multiple deep learning subjects such as CNNs, RNNs, autoencoders, and generative models as well as basic Bayesian methods, nonlinear statistical models and unsupervised learning. 
+
+<hr> 
+####Announcements:
+
+<pre><strong>HELPLINE: </strong> <a style="font-weight: 400;" href="mailto:cs109b2019@gmail.com">cs109b2019@gmail.com</a></pre>
+
+<pre><strong>Office Hours</strong> : <a title="Weekly Schedule" href="https://docs.google.com/spreadsheets/d/1RnbyIEKJG6jfv1I0cHSOnicFMBlxPPHsjqO2JSes-38/edit#gid=0">Weekly Schedule</a></pre>
+
+
+<pre><strong>For enrollment issues</strong> including cross-registration: contact the <strong>FAS Registrar's Office</strong> either in person at the Smith Campus Center (1350 Massachusetts Avenue, Suite 450) or by sending an email to <a style="font-weight: 400;" href="mailto:registrar@fas.harvard.edu">registrar@fas.harvard.ed</a></pre>
+
+<hr>
+
 
 <style>
 pre {
