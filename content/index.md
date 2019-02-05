@@ -13,7 +13,7 @@ Spring 2019 <br><br>
  
 * Pavlos: Mondays 3-4pm at MD G108
 * Mark: By appointment 
-
+ 
 <hr> 
 
 **Head TFs:** Eleni Kaxiras <eleni@seas.harvard.edu> <br>
