@@ -1,12 +1,12 @@
 Title: Lecture 2: Smoothing and Additive 1/3
-Date: 2019-01-11
+Date: 2019-02-02
 Slug: lecture2
-Author: 
+Author: Mark Glickman
 
 
 
 
 ### Slides
-These lectures are only available to registered students
+This lecture is only available to registered students
 
-- [PDF](https://canvas.harvard.edu/courses/48088/files/7282186?module_item_id=484111)
+- [Lecture 2-4 PDF](https://canvas.harvard.edu/courses/48088/files/7282186?module_item_id=484111)

@@ -2,7 +2,7 @@ COURSE_NAME = 'CS109B'
 
 AUTHOR = 'Pavlos Protopapas'
 
-SITEURL = 'https://harvard-iacs.github.io/2019-CS109B/'
+SITEURL = 'https://harvard-iacs.github.io/2019-CS109B'
 
 GITHUB = 'https://github.com/Harvard-IACS/2019-CS109B'
 

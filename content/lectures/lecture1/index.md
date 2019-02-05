@@ -1,21 +1,12 @@
-Title: Lecture 1: Data, Summaries, and Visuals
+Title: Lecture 1: 
 Category: lectures
 Slug: lecture1
 Author: Pavlos Protopapas
-Date: 2018-09-10
-Tags: Statistcis, Introduction
+Date: 2019-01-28
+Tags: Introduction, logistics
 
 
 ### Slides
 
-- [PDF]({attach}presentation/Lecture1_Data.pdf)
-
-### Sections 
-- [Section 1 student]({filename}../../sections/section1/notebook/section_1_student.ipynb) 
-- [Section 1 solutions]({filename}../../sections/section1/notebook/section_1_solutions.ipynb)  
-
-
-
-<!-- ### Notebooks
-
-- [Examples]({filename}notebook/lecture1_notebook.ipynb) -->
+- [PDF]({attach}presentation/cs109b_lecture1_intro.pdf)
+- [PPTX]({attach}presentation/cs109b_lecture1_intro.pptx)
