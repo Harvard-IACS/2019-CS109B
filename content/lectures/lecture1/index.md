@@ -1,4 +1,4 @@
-Title: Lecture 1: 
+Title: Lecture 1:  Introduction, Review of 109A and preview of 109B
 Category: lectures
 Slug: lecture1
 Author: Pavlos Protopapas
