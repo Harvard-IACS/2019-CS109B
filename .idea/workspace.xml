@@ -103,8 +103,8 @@
         <entry file="file://$PROJECT_DIR$/content/pages/syllabus.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="208">
-                <caret line="157" lean-forward="true" selection-start-line="157" selection-end-line="157" />
+              <first_editor relative-caret-position="265">
+                <caret line="28" column="78" selection-start-line="28" selection-start-column="78" selection-end-line="28" selection-end-column="78" />
               </first_editor>
               <second_editor />
             </state>
@@ -114,6 +114,10 @@
     </leaf>
   </component>
   <component name="FindInProjectRecents">
+    <findStrings>
+      <find>getting-help</find>
+      <find>getting</find>
+    </findStrings>
     <replaceStrings>
       <replace>*</replace>
       <replace>###</replace>
@@ -200,7 +204,7 @@
       <option name="presentableId" value="Default" />
       <updated>1549335658943</updated>
       <workItem from="1549335660188" duration="3313000" />
-      <workItem from="1549430660431" duration="2225000" />
+      <workItem from="1549430660431" duration="3423000" />
     </task>
     <task id="LOCAL-00001" summary="Some cleaning">
       <created>1549335913883</created>
@@ -241,7 +245,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5538000" />
+    <option name="totallyTimeSpent" value="6736000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="834" extended-state="6" />
@@ -357,8 +361,8 @@
     <entry file="file://$PROJECT_DIR$/content/pages/syllabus.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="208">
-            <caret line="157" lean-forward="true" selection-start-line="157" selection-end-line="157" />
+          <first_editor relative-caret-position="265">
+            <caret line="28" column="78" selection-start-line="28" selection-start-column="78" selection-end-line="28" selection-end-column="78" />
           </first_editor>
           <second_editor />
         </state>
