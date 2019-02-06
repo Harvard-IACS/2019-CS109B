@@ -16,9 +16,8 @@ Spring 2019 <br><br>
  
 <hr> 
 
-**Head TFs:** Eleni Kaxiras <eleni@seas.harvard.edu> <br>
-**Head TF for DCE:** Sol Girouard <solgirouard@g.harvard.edu>
-
+**Head TFs:** Eleni Kaxiras <a href="mailto:eleni@seas.harvard.edu">eleni@seas.harvard.edu</a> <br>
+**Head TF for DCE:** Sol Girouard <a href="solgirouard@g.harvard.edu">solgirouard@g.harvard.edu</a>
 
 <hr>
  
@@ -45,7 +44,8 @@ and prediction. Topics include big data and database management, multiple deep l
 <pre><strong>For enrollment issues</strong> including cross-registration: contact the <strong>FAS Registrar's Office</strong> either in person at the Smith Campus Center (1350 Massachusetts Avenue, Suite 450) or by sending an email to <a style="font-weight: 400;" href="mailto:registrar@fas.harvard.edu">registrar@fas.harvard.ed</a></pre>
 
 <hr>
-
+#### Previous Material: 
+<a href="https://harvard-iacs.github.io/2018-CS109B/">2018</a> 
 
 <style>
 pre {

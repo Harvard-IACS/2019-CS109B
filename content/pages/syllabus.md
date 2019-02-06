@@ -2,19 +2,9 @@ Title: Syllabus
 Slug: syllabus
 Date: 2019-01-26
 
-## Syllabus - Spring 2019
-<h4>Spring 2019</h4>
-<h4>Instructors</h4>
-<p><span style="font-weight: 400;">Pavlos Protopapas (SEAS), Mark Glickman (Statistics)</span></p>
-<p><span style="font-weight: 400;"><a href="mailto:pavlos@seas.harvard.edu">pavlos@seas.harvard.edu</a>&nbsp;-&nbsp;</span><span style="font-weight: 400;"><a href="mailto:glickman@fas.harvard.edu">glickman@fas.harvard.edu</a>&nbsp;</span></p>
-<h4>Meeting Times</h4>
-<p><span style="font-size: 12pt;">Lectures: <span style="color: #000000;">Mon&nbsp;and Wed 1:30‐2:45pm in Maxwell-Dworkin G-115</span></span><br /><span style="font-size: 12pt;">Labs: Thur 4:30-6:00pm in Pierce 301</span><span style="font-size: 12pt;"></span><span style="font-size: 12pt;"></span><span style="font-size: 12pt;"></span><span style="font-size: 12pt;"></span><span style="font-size: 12pt;"></span></p>
-<p><strong>Prerequisites</strong><strong>s: </strong><span style="font-weight: 400;">CS 109a, A</span><span style="font-weight: 400;">C 209a, Stat 121a, or CSCI E-109a or the equivalent. Students who have not previously taken CS 109, AC 209, Stat 121, or CSCI E-109 should obtain instructor approval.</span></p>
-<h4><strong>Instructional Staff</strong></h4>
-<p><strong>Head TF</strong><span style="font-weight: 400;">: Eleni Kaxiras</span></p>
-<p><strong>Head TF for DCE</strong><span style="font-weight: 400;">: Sol Girouard &lt;solgirouard@g.harvard.edu&gt;</span></p>
-<hr />
-<h2><strong>Syllabus Spring 2019</strong></h2>
+
+
+
 <h3><strong>Course description</strong></h3>
 <p><span style="font-weight: 400;">Data Science 2 is the second half of a one-year introduction to data science. Building upon the material in Data Science 1, the course introduces advanced methods for data wrangling, data visualization, and deep neural networks, statistical modeling, and prediction. Topics include big data and database management, &nbsp;multiple deep learning subjects such as CNNs, RNNs, autoencoders, and generative models as well as basic Bayesian methods, nonlinear statistical models and unsupervised learning. </span></p>
 <p><span style="font-weight: 400;">The programming language will be python.</span></p>
