@@ -2,8 +2,160 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="385a24d9-42ba-483a-8dd4-19b5d639a739" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/content/pages/syllabus.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/pages/syllabus.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/pages/syllabus.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/pages/syllabus.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/labs/lab1/cs109b_lab1_Rsetup.ipynb-meta" beforeDir="false" afterPath="$PROJECT_DIR$/content/labs/lab1/cs109b_lab1_Rsetup.ipynb-meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/pages/schedule.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/pages/schedule.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/category/labs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/category/lectures.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/category/pages.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/category/pages2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/category/{slug}.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/category/{slug}2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/labs/lab1/JupyterHub_User_Documentation.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/labs/lab1/Rset/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/labs/lab1/cs109b.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/labs/lab1/cs109b_lab1_Rsetup.ipynb-meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/labs/lab1/cs109b_lab1_setup.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/labs/lab1/cs109b_lab1_setup.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/labs/lab1/data/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/labs/lab1/data/cs109b_lab1_data.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/labs/lab1/fig/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/labs/lab1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/labs/lab1/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/labs/lab1/~$cs109b_lab1_setup.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture1/data/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture1/fig/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture1/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture1/notes/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture1/presentation/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture1/presentation/cs109b_lecture1_intro.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture1/presentation/cs109b_lecture1_intro.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture10/data/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture10/fig/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture10/notes/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture10/presentation/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture11/data/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture11/fig/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture11/notes/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture11/presentation/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture12/data/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture12/fig/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture12/notes/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture12/presentation/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture13/data/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture13/fig/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture13/notes/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture13/presentation/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture14/data/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture14/fig/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture14/notes/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture14/presentation/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture15/data/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture15/fig/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture15/notes/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture15/presentation/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture16/data/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture16/fig/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture16/notes/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture16/presentation/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture17/data/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture17/fig/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture17/notes/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture17/presentation/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture18/data/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture18/fig/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture18/notes/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture18/presentation/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture19/data/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture19/fig/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture19/notes/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture19/presentation/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture2/data/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture2/fig/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture2/notes/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture2/presentation/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture20/data/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture20/fig/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture20/notes/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture20/presentation/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture21/data/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture21/fig/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture21/notes/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture21/presentation/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture22/data/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture22/fig/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture22/notes/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture22/presentation/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture23/data/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture23/fig/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture23/notes/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture23/presentation/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture24/data/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture24/fig/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture24/notes/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture24/presentation/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture25/data/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture25/fig/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture25/notes/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture25/presentation/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture3/data/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture3/fig/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture3/notes/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture3/presentation/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture4/data/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture4/fig/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture4/notes/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture4/presentation/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture5/data/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture5/fig/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture5/notes/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture5/presentation/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture6/data/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture6/fig/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture6/notes/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture6/presentation/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture7/data/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture7/fig/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture7/notes/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture7/presentation/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture8/data/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture8/fig/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture8/notes/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture8/presentation/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture9/data/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture9/fig/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture9/notes/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lectures/lecture9/presentation/.placeholder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/pages/a-section1/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/pages/a-section2/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/pages/a-section3/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/pages/a-section4/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/pages/a-section5/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/pages/a-section6/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/pages/a-section7/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/pages/github.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/pages/lecture24/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/pages/lecture25/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/pages/materials.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/pages/materials2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/pages/modules.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/pages/schedule.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/pages/syllabus.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/search.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/style/css/hiacs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/style/images/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/style/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/style/images/logo_tUV_icon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/style/tipuesearch/tipuesearch.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/style/tipuesearch/tipuesearch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/style/tipuesearch/tipuesearch.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/style/tipuesearch/tipuesearch_set.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/tag/conda.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/tag/environments.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/tag/introduction.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/tag/logistics.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/tag/r.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/tags.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/tipuesearch_content.js" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,18 +165,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/pages/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor>
-                <caret column="9" selection-start-column="9" selection-end-column="9" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/content/lectures/lecture1/index.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -97,7 +237,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/content/pages/syllabus.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -109,12 +249,46 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/labs/lab1/index.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor>
+                <caret selection-end-line="16" selection-end-column="87" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/content/labs/lab2/index.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="45">
+                <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/labs/lab1/cs109b_lab1_Rsetup.ipynb-meta">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>getting-help</find>
       <find>getting</find>
+      <find>&lt;span style=&quot;font-weight: 400;&quot;&gt;</find>
     </findStrings>
     <replaceStrings>
       <replace>*</replace>
@@ -137,13 +311,16 @@
         <option value="$PROJECT_DIR$/content/pages/modules.md" />
         <option value="$PROJECT_DIR$/content/lectures/lecture4/index.md" />
         <option value="$PROJECT_DIR$/content/pages/syllabus.md" />
+        <option value="$PROJECT_DIR$/content/labs/lab1/cs109b_lab1_Rsetup.ipynb-meta" />
+        <option value="$PROJECT_DIR$/content/labs/lab2/index.md" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="23" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="60" />
+    <option name="y" value="69" />
     <option name="width" value="1440" />
-    <option name="height" value="834" />
+    <option name="height" value="830" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -167,7 +344,21 @@
               <item name="2019-CS109B" type="b2602c69:ProjectViewProjectNode" />
               <item name="2019-CS109B" type="462c0819:PsiDirectoryNode" />
               <item name="content" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="labs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="2019-CS109B" type="b2602c69:ProjectViewProjectNode" />
+              <item name="2019-CS109B" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
+              <item name="labs" type="462c0819:PsiDirectoryNode" />
+              <item name="lab1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="2019-CS109B" type="b2602c69:ProjectViewProjectNode" />
+              <item name="2019-CS109B" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
+              <item name="labs" type="462c0819:PsiDirectoryNode" />
+              <item name="lab2" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -203,7 +394,7 @@
       <updated>1549335658943</updated>
       <workItem from="1549335660188" duration="3313000" />
       <workItem from="1549430660431" duration="3559000" />
-      <workItem from="1549489457189" duration="586000" />
+      <workItem from="1549489457189" duration="909000" />
     </task>
     <task id="LOCAL-00001" summary="Some cleaning">
       <created>1549335913883</created>
@@ -244,10 +435,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7458000" />
+    <option name="totallyTimeSpent" value="7781000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="830" extended-state="6" />
+    <frame x="60" y="69" width="1440" height="830" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27110156" />
@@ -362,6 +553,33 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="753">
             <caret line="199" column="62" selection-start-line="199" selection-start-column="62" selection-end-line="199" selection-end-column="62" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/labs/lab1/cs109b_lab1_Rsetup.ipynb-meta">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/labs/lab1/index.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret selection-end-line="16" selection-end-column="87" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/labs/lab2/index.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="45">
+            <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
           </first_editor>
           <second_editor />
         </state>
