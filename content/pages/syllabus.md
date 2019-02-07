@@ -135,14 +135,25 @@ For questions about homework, course content, package installation, the process 
 
 
 ### Course Policies and Expectations <a name='course-policies-and-expectations'>
-#### Grading <a name='grading'>
+    
+#### Grading for CS109b, STAT121b, and CS209b<a name='grading'>
 The course grade comprises: 
 
 * Paired-option Homeworks 40% (5 homework for which you have the option to work in pairs)
 * Individual Homeworks 30% (2 homework which you must complete individually)
 * Quizzes 10% (you may drop 40% of the quizzes)
 * Project 20%
-------------------
+---
+* TOTAL 100%</strong><br>
+All 109b homework is graded out of 5 and the extra homework for 209 students is worth 1 point.
+
+#### Grading for DCE students<a name='grading'>
+The course grade comprises: 
+
+* Paired-option Homeworks 45% (5 homework for which you have the option to work in pairs)
+* Individual Homeworks 35% (2 homework which you must complete individually)
+* Project 20%
+---
 * TOTAL 100%</strong>
 
 #### Collaboration Policy <a name='collaboration-policy'>
