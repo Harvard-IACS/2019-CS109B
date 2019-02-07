@@ -136,25 +136,23 @@ For questions about homework, course content, package installation, the process 
 
 ### Course Policies and Expectations <a name='course-policies-and-expectations'>
     
-#### Grading for CS109b, STAT121b, and CS209b<a name='grading'>
-The course grade comprises: 
+#### Grading for CS109b, STAT121b, and CS209b:<a name='grading'>
+Paired-option Homeworks 45%   (5 homework for which you have the option to work in pairs)
+Individual Homeworks 25% (2 homework which you must complete individually)
+Quizzes  10% (you may drop 40% of the quizzes) 
+Project  20%
+------------------
+TOTAL 100%
 
-* Paired-option Homeworks 40% (5 homework for which you have the option to work in pairs)
-* Individual Homeworks 30% (2 homework which you must complete individually)
-* Quizzes 10% (you may drop 40% of the quizzes)
-* Project 20%
----
-* TOTAL 100%</strong><br>
-All 109b homework is graded out of 5 and the extra homework for 209 students is worth 1 point.
+**Note:** Regular homework (for everyone) counts as 5 points. 209b extra homework counts as 1 point.
+    
+#### Grading for DCE:
+Paired-option Homeworks 48%   (5 homework for which you have the option to work in pairs)
+Individual Homeworks 28% (2 homework which you must complete individually)
+Project 24%
 
-#### Grading for DCE students<a name='grading'>
-The course grade comprises: 
-
-* Paired-option Homeworks 45% (5 homework for which you have the option to work in pairs)
-* Individual Homeworks 35% (2 homework which you must complete individually)
-* Project 20%
----
-* TOTAL 100%</strong>
+------------------
+TOTAL 100%
 
 #### Collaboration Policy <a name='collaboration-policy'>
 We expect you to adhere to the </span><a href="http://honor.fas.harvard.edu/honor-code"><span style="font-weight: 400;">Harvard Honor Code</span></a><span style="font-weight: 400;"> at all times. Failure to adhere to the honor code and our policies may result in serious penalties, up to and including automatic failure in the course and reference to the ad board.
