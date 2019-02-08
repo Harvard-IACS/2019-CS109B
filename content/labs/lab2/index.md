@@ -10,3 +10,6 @@ Tags: R, smooths, splines, GAMs
 
 ### Notebooks
  - [Lab2 Smooths and GAMs]({filename}cs109b_lab2_smooths_and_GAMs.ipynb)
+ - [Lab2 Smooths and GAMs with solutions]({filename}cs109b_lab2_smooths_and_GAMs_solutions.ipynb)
+
+
