@@ -1076,7 +1076,7 @@ h6:hover .anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [1]:</div>
+<div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## RUN THIS CELL TO PROPERLY HIGHLIGHT THE EXERCISES</span>
@@ -1085,77 +1085,6 @@ h6:hover .anchor-link {
 <span class="n">styles</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"https://raw.githubusercontent.com/Harvard-IACS/2019-CS109B/master/content/styles/cs109.css"</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
 <span class="n">HTML</span><span class="p">(</span><span class="n">styles</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
-</div>
-<div class="output_wrapper">
-<div class="output">
-<div class="output_area">
-<div class="prompt output_prompt">Out[1]:</div>
-<div class="output_html rendered_html output_subarea output_execute_result">
-<style>
-blockquote { background: #AEDE94; }
-h1 { 
-    padding-top: 25px;
-    padding-bottom: 25px;
-    text-align: left; 
-    padding-left: 10px;
-    background-color: #DDDDDD; 
-    color: black;
-}
-h2 { 
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: left; 
-    padding-left: 5px;
-    background-color: #EEEEEE; 
-    color: black;
-}
-
-div.exercise {
-	background-color: #ffcccc;
-	border-color: #E9967A; 	
-	border-left: 5px solid #800080; 
-	padding: 0.5em;
-}
-div.discussion {
-	background-color: #ccffcc;
-	border-color: #88E97A;
-	border-left: 5px solid #0A8000; 
-	padding: 0.5em;
-}
-div.theme {
-	background-color: #DDDDDD;
-	border-color: #E9967A; 	
-	border-left: 5px solid #800080; 
-	padding: 0.5em;
-	font-size: 18pt;
-}
-div.gc { 
-	background-color: #AEDE94;
-	border-color: #E9967A; 	 
-	border-left: 5px solid #800080; 
-	padding: 0.5em;
-	font-size: 12pt;
-}
-p.q1 { 
-    padding-top: 5px;
-    padding-bottom: 5px;
-    text-align: left; 
-    padding-left: 5px;
-    background-color: #EEEEEE; 
-    color: black;
-}
-header {
-   padding-top: 35px;
-    padding-bottom: 35px;
-    text-align: left; 
-    padding-left: 10px;
-    background-color: #DDDDDD; 
-    color: black;
-}
-</style>
-</div>
 </div>
 </div>
 </div>
@@ -1865,7 +1794,16 @@ Sections:</p>
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#TODO</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">CI_matrix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">r_predict</span><span class="p">(</span><span class="n">diab_lm</span><span class="p">,</span> <span class="n">predict_df</span><span class="p">,</span> <span class="n">interval</span><span class="o">=</span><span class="s2">"confidence"</span><span class="p">))</span>
+
+<span class="n">ax</span> <span class="o">=</span> <span class="n">diab</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">'age'</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s1">'y'</span><span class="p">,</span><span class="n">c</span><span class="o">=</span><span class="s1">'Red'</span><span class="p">,</span><span class="n">title</span><span class="o">=</span><span class="s2">"Diabetes data"</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">"Age at Diagnosis"</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">"Log C-Peptide Concentration"</span><span class="p">);</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_vals</span><span class="p">,</span><span class="n">CI_matrix</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s2">"prediction"</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_vals</span><span class="p">,</span><span class="n">CI_matrix</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s2">"95% CI"</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s1">'g'</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_vals</span><span class="p">,</span><span class="n">CI_matrix</span><span class="p">[:,</span><span class="mi">2</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s2">"95% CI"</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s1">'g'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">();</span>
 </pre></div>
 </div>
 </div>
@@ -1895,7 +1833,16 @@ Sections:</p>
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#TODO</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ploy5_formula</span> <span class="o">=</span> <span class="n">robjects</span><span class="o">.</span><span class="n">Formula</span><span class="p">(</span><span class="s2">"y~poly(age,5)"</span><span class="p">)</span> <span class="c1"># reset the formula</span>
+<span class="n">diab5_lm</span> <span class="o">=</span> <span class="n">r_lm</span><span class="p">(</span><span class="n">formula</span><span class="o">=</span><span class="n">ploy5_formula</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">diab_r</span><span class="p">)</span> <span class="c1">#can also use a 'dumb' formula and pass a dataframe</span>
+
+<span class="n">predictions</span> <span class="o">=</span> <span class="n">r_predict</span><span class="p">(</span><span class="n">diab5_lm</span><span class="p">,</span> <span class="n">predict_df</span><span class="p">,</span> <span class="n">interval</span><span class="o">=</span><span class="s2">"confidence"</span><span class="p">)</span>
+
+<span class="n">ax</span> <span class="o">=</span> <span class="n">diab</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">'age'</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s1">'y'</span><span class="p">,</span><span class="n">c</span><span class="o">=</span><span class="s1">'Red'</span><span class="p">,</span><span class="n">title</span><span class="o">=</span><span class="s2">"Diabetes data"</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">"Age at Diagnosis"</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">"Log C-Peptide Concentration"</span><span class="p">);</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_vals</span><span class="p">,</span><span class="n">predictions</span><span class="p">);</span>
 </pre></div>
 </div>
 </div>
