@@ -1,0 +1,14 @@
+\begin{tikzpicture}[>=latex']
+        \tikzset{block/.style= {draw, rectangle, align=center,minimum width=2cm,minimum height=1cm},
+        % rblock/.style={draw, shape=rectangle,rounded corners=1.5em,align=center,minimum width=2cm,minimum height=1cm}
+        }
+        \node [block]  (human) {Bayes \\ error};
+        \node [block, right = 2cm of human] (training) {Training\\ error};
+        \node [block, right = 2cm of training] (val) {Val error};
+
+
+%% paths
+        \path[draw,<->] (human) edge node[above,text width=2cm, align=center] {Avoidable bias} (training) 
+                    (training) edge node[above,text width=2cm, align=center] {Avoidable variance} (val) 
+                    ;
+\end{tikzpicture}

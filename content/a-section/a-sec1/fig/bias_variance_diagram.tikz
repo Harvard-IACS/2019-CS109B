@@ -1,0 +1,27 @@
+\begin{tikzpicture}[>=latex']
+        \tikzset{block/.style= {rectangle, align=center,minimum width=2cm,minimum height=1cm},
+        % rblock/.style={draw, shape=rectangle,rounded corners=1.5em,align=center,minimum width=2cm,minimum height=1cm}
+        }
+        \node [block]  (human) {Human \\ level error};
+        \node [block, below = 1cm of human] (training) {Training\\ error};
+        \node [block, below = 1cm of training] (dev) {Val error};
+
+
+%% paths
+        \path[draw,<->] (human) edge node[right,text width=2cm, align=center] (abias) {Avoidable bias} (training) 
+                    (training) edge node[right,text width=2cm, align=center] (avar) {Avoidable variance} (dev);
+        
+        \node[block, right = 0.5cm of abias.east] (tr2) {Train longer/better optimization alg.};
+        \node[block, above right= 0em and 0.5cm of abias.east] (tr1) {Train a bigger model};
+        \node[block, below right= 0em and 0.5cm of abias.east] (tr3) {NN architecture/hyperparameter search.};
+        
+        \node[block, right =  0.5cm of avar.east, node distance=2in, align= left] (vr2) {Use regularization (L2, dropout, data aug., etc.)};
+        \node[block, above right = 0em and 0.5cm of avar.east, node distance=2in, align= left] (vr1) {Get more data.};
+        \node[block, below right = 0em and 0.5cm of avar.east, node distance=2in, align= left] (vr3) {NN architecture/hyperparameter search.};
+        
+        
+        \draw [decorate,decoration={brace},xshift=-20pt,yshift=0pt]
+([yshift=-10pt]tr3.west) -- ([yshift=10pt]tr1.west);
+		\draw [decorate,decoration={brace},xshift=-20pt,yshift=0pt]
+([yshift=-10pt]vr3.west) -- ([yshift=10pt]vr1.west);
+\end{tikzpicture}
