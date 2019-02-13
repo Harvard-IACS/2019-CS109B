@@ -138,4 +138,19 @@ venv.bak/
 .dmypy.json
 dmypy.json
 
-/cache/
+# Latex related
+**/*.aux
+**/*.bbl
+**/*.bib.bak
+**/*.blg
+**/*.cls.bak
+**/*.dvi
+**/*.log
+**/*.nav
+**/*.snm
+**/*.out
+**/*.synctex.gz
+**/*.synctex.gz(busy)
+**/*.tex.bak
+**/*.tikz.bak
+**/*.toc
