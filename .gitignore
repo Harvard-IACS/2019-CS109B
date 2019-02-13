@@ -154,3 +154,5 @@ dmypy.json
 **/*.tex.bak
 **/*.tikz.bak
 **/*.toc
+
+cache/
