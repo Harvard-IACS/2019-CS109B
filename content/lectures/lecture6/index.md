@@ -1,8 +1,9 @@
 Title: Lecture 6: NN Optimization 
-Date: 2019-02-11
+Category: lectures
 Slug: lecture6
 Author: Pavlos Protopapas
 Date: 02-13-2019
+Tags: Optimization, sgd, gradient descent, Adam, RMSprop
 
 
 

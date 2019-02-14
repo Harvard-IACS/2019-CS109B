@@ -3,7 +3,7 @@ Slug: schedule
 Date: 2019-02-14
 
 
-|﻿Week|Date|Lecture (Mon)|Date|Lecture (Wed)|Lab|a-sections|Assignment (release and due) |
+|﻿Week|Date|Lecture (Mon)|Date|Lecture (Wed)|Lab|Advanced Section (Wed) |Assignment (release and due)|
 |-----|-----|-----|-----|-----|-----|-----|-----|
 |1|28-Jan|[Lecture 1: Intro + Review of 109A Preview of 109B ]({filename}/lectures/lecture1/index.md)|30-Jan|[Lecture 2: Smoothing and Additive 1/3]({filename}/lectures/lecture2/index.md)|[Lab 1: Setting up enviroment]({filename}/labs/lab1/index.md)|||
 |2|4-Feb|[Lecture 3: Smoothing and Additive 2/3]({filename}/lectures/lecture3/index.md)|6-Feb|[Lecture 4: Smoothing and GAM 3/3 ]({filename}/lectures/lecture4/index.md)|[Lab 2: Smoothing/GAM ]({filename}/labs/lab2/index.md)| | HW1 (2/3)|

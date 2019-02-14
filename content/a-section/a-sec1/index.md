@@ -1,4 +1,5 @@
 Title: Advanced Section 1
+Category: A-sec
 Date: 2019-02-13
 Slug: a-section1
 Author: Javier Zazo
