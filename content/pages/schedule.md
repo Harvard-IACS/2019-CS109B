@@ -7,7 +7,7 @@ Date: 2019-02-13
 |-----|-----|-----|-----|-----|-----|-----|-----|
 |1|28-Jan|[Lecture 1: Intro + Review of 109A Preview of 109B ]({filename}/lectures/lecture1/index.md)|30-Jan|[Lecture 2: Smoothing and Additive 1/3]({filename}/lectures/lecture2/index.md)|[Lab 1: Setting up enviroment]({filename}/labs/lab1/index.md)|||
 |2|4-Feb|[Lecture 3: Smoothing and Additive 2/3]({filename}/lectures/lecture3/index.md)|6-Feb|[Lecture 4: Smoothing and GAM 3/3 ]({filename}/lectures/lecture4/index.md)|[Lab 2: Smoothing/GAM ]({filename}/labs/lab2/index.md)| | HW1 (2/3)|
-|3|11-Feb|[Lecture 5: Feed Forward + Reg + Review from NN fall ]({filename}/lectures/lecture5/index.md)|13-Feb|Lecture 6: Optimization of NN (Solvers) |Lab 3: Optimization|[Advanced Section 1: Optimization/Dropout ]({filename}/a-section/a-sec1/index.md)| HW2 (2/10)|
+|3|11-Feb|[Lecture 5: Feed Forward + Reg + Review from NN fall ]({filename}/lectures/lecture5/index.md)|13-Feb|[Lecture 6: Optimization of NN (Solvers) ]({filename}/lectures/lecture6/index.md)|Lab 3: Optimization|[Advanced Section 1: Optimization/Dropout ]({filename}/a-section/a-sec1/index.md)| HW2 (2/10)|
 |4|18-Feb|Holiday|20-Feb|Lecture 7:  AWS scalable systems SQL|Lab 4: Setting UP AWS|Advanced Section 2: EMD||
 |5|25-Feb|Lecture 8: CNNs-1|27-Feb|Lecture 9: CNNs-2|Lab 5: CNNs|Advanced Section 3: ConvNets: LeNet, AlexNet, VGG-15, ResNet and Inception| HW3 (2/24)|
 |6|4-Mar|Lecture 10: RNN 1|6-Mar|Lecture 11: RNN 2|Lab 6: RNNS|Advanced Section 4: LSTN, GRU in NLP | HW4 (3/3)|
