@@ -8,3 +8,6 @@ Tags: dropout, batch normalization, moving average, exponential weights, optimiz
 # Advanced Section 1
 ### Slides
 - [PDF]({attach}presentation/cs109b_asec1_slides_dropout.pdf)
+
+### Lecture notes
+- [PDF]({attach}notes/cs109b_asec1_notes_dropout.pdf)
