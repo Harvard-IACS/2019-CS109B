@@ -1,8 +1,9 @@
 Title: Lecture 5: Review of NN from 109A
+Category: lectures
 Date: 2019-02-11
 Slug: lecture5
 Author: Pavlos Protopapas
-
+Tags: MLP
 
 
 
