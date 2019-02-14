@@ -38,6 +38,10 @@ and prediction. Topics include big data and database management, multiple deep l
 
 <pre><strong>Advanced Sections</strong> start tomorrow Wed. Feb 13th at NW B-103</pre>
 
+<pre><strong>Pierce Hall</strong> is at 29 Oxford St in Cambridge.<br/>
+<strong>Maxwell Dworkin</strong> (MD) is at 33 Oxford St, Cambridge.<br/>
+<strong>Northwest Building (NW)</strong> is at 52 Oxford St, Cambridge.</pre>
+
 <pre><strong>HELPLINE: </strong> <a style="font-weight: 400;" href="mailto:cs109b2019@gmail.com">cs109b2019@gmail.com</a></pre>
 
 <pre><strong>Office Hours</strong> : <a title="Weekly Schedule" href="https://docs.google.com/spreadsheets/d/1RnbyIEKJG6jfv1I0cHSOnicFMBlxPPHsjqO2JSes-38/edit#gid=0">Weekly Schedule</a></pre>
