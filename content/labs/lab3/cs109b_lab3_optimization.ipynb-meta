@@ -1,6 +1,7 @@
-Title: Lab 3:  
-Category: labs 
-Slug: lab3 
-Author:  
-Date: 2019 
-Tags:  
+Title: Lab 3: Optimization of Neural Networks
+Date: 2019-2-14
+Slug: lab3
+Author: Eleni Kaxiras
+Tags: keras, optimizers, callbacks, cross validation, learning rate, batch size, momentum
+
+
