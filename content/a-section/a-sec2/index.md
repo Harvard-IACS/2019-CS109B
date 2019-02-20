@@ -9,3 +9,13 @@ Tags: Earth Mover's distance, Optimal transport, Wasserstein, Domain adaptation,
 ### Slides
 - [PDF]({attach}presentation/cs109b_asec2_slides_optimal_transport.pdf)
 
+### Lecture Notes
+- [PDF]({attach}presentation/cs109b_asec2_notes_optimal_tranport.pdf)
+
+### Intro to optimization notes
+- [PDF]({attach}presentation/cs109b_asec2_notes_optimization.pdf)
+
+### References for further reading
+- [Computation optimal transport](https://arxiv.org/abs/1803.00567)
+- [Learning with a Wasserstein Loss](https://arxiv.org/abs/1506.05439)
+- [Optimal Transport for Domain Adaptation](https://arxiv.org/abs/1507.00504)
