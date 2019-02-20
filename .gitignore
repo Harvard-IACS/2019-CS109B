@@ -156,3 +156,6 @@ dmypy.json
 **/*.toc
 
 cache/
+
+# ignore workspace
+.idea/workspace.xml
