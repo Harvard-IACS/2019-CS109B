@@ -1,6 +1,6 @@
 Title: Schedule
 Slug: schedule
-Date: 2019-02-19
+Date: 2019-02-20
 
 
 |﻿Week|Date|Lecture (Mon)|Date|Lecture (Wed)|Lab|Advanced Section (Wed) |Assignment (release and due)|
