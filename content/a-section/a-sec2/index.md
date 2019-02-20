@@ -1,8 +1,12 @@
-Title: Advance Sections 2
-Date: 2019-01-11
+Title: A-Section 2: Optimal Transport
+Category: A-section
+Date: 2019-02-19
 Slug: a-section2
-Author: 
+Author: Javier Zazo
+Tags: Earth Mover's distance, Optimal transport, Wasserstein, Domain adaptation, Cross-entropy
 
 
+# Advanced Section 2: Optimal Transport
+### Slides
+- [PDF]({attach}presentation/cs109b_asec2_slides_emd.pdf)
 
-# Advance Sections 2
