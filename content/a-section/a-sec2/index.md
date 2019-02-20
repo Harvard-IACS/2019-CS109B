@@ -8,5 +8,5 @@ Tags: Earth Mover's distance, Optimal transport, Wasserstein, Domain adaptation,
 
 # Advanced Section 2: Optimal Transport
 ### Slides
-- [PDF]({attach}presentation/cs109b_asec2_slides_emd.pdf)
+- [PDF]({attach}presentation/cs109b_asec2_slides_optimal_transport.pdf)
 
