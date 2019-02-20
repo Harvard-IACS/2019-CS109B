@@ -1,5 +1,5 @@
 Title: A-Section 2: Optimal Transport
-Category: A-section
+Category: A-sections
 Date: 2019-02-19
 Slug: a-section2
 Author: Javier Zazo
