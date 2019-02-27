@@ -1,4 +1,4 @@
-Title: Advance Section 3: CNNs and Object Detection
+Title: Advanced Section 3: CNNs and Object Detection
 Category: A-sections
 Date: 2019-02-27
 Slug: a-section3
