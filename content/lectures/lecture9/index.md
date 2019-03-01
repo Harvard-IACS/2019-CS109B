@@ -15,4 +15,9 @@ Tags: CNN, Convolutional Neural Network, representation learning, Saliency maps,
 
 
 ### Associated Materials
+##### Advanced Sections
 - [Advanced Section 3 PDF]({static}../../a-section/a-sec3/presentation/cs109b_asec3_slides_convnets.pdf)
+
+##### Labs
+- [Lab5 Notebook with Solutions]({filename}../../labs/lab5/cs109b-lab5-cnn_solutions.ipynb)
+
