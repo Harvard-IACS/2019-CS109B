@@ -10,7 +10,7 @@ Tags: CNNs, YOLO, SSD, RPN, FPN, AlexNet, LeNet, ResNets, DenseNets, R-CNN, Fast
 - [PDF]({attach}presentation/cs109b_asec3_slides_convnets.pdf)
 
 ### Lecture notes on ConvNets and architectures
-- [PDF]({attach}notes/cs109b_asec3_slides_convnets.pdf)
+- [PDF]({attach}notes/cs109b_asec3_notes_convnets.pdf)
 
 ### External resources on object recognition
 - [What do we learn from region based object detectors (Faster R-CNN, R-FCN, FPN)?](https://medium.com/@jonathan_hui/what-do-we-learn-from-region-based-object-detectors-faster-r-cnn-r-fcn-fpn-7e354377a7c9)
