@@ -8,15 +8,14 @@ Tags: AWS
 
 
 ### Slides
-
 - [Lecture 7 PDF]({attach}presentation/cs109b_lecture7.pdf)
--
+
 
 ### Associated Materials
 
  
 ##### Labs
-- [Lab5 Notebook with Solutions]({filename}../../labs/lab5/cs109b-lab5-cnn_solutions.ipynb)
+<!-- - [Lab5 Notebook with Solutions]({filename}../../labs/lab5/cs109b-lab5-cnn_solutions.ipynb) -->
 
 
 
