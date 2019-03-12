@@ -1,4 +1,4 @@
-Title: Advance Sections 4: RNNs
+Title: Advanced Section 4: RNNs
 Category: A-sections
 Date: 2019-03-06
 Slug: a-section4
