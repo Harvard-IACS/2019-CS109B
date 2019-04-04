@@ -1064,11 +1064,11 @@ h6:hover .anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1><img src="https://raw.githubusercontent.com/Harvard-IACS/2018-CS109A/master/content/styles/iacs.png" style="float: left; padding-right: 10px; width: 45px" /> CS-109B Advanced Data Science</h1>
-<h2 id="Lab-6:-Recurrent-Neural-Networks">Lab 6: Recurrent Neural Networks<a class="anchor-link" href="#Lab-6:-Recurrent-Neural-Networks">¶</a></h2><p><strong>Harvard University</strong><br />
-<strong>Spring 2019</strong><br />
-<strong>Lab instructor:</strong> Srivatsan Srinivasan<br />
-<strong>Instructors:</strong> Pavlos Protopapas and Mark Glickman<br />
+<h1><img src="https://raw.githubusercontent.com/Harvard-IACS/2018-CS109A/master/content/styles/iacs.png" style="float: left; padding-right: 10px; width: 45px"> CS-109B Advanced Data Science</h1>
+<h2 id="Lab-6:-Recurrent-Neural-Networks">Lab 6: Recurrent Neural Networks<a class="anchor-link" href="#Lab-6:-Recurrent-Neural-Networks">¶</a></h2><p><strong>Harvard University</strong><br>
+<strong>Spring 2019</strong><br>
+<strong>Lab instructor:</strong> Srivatsan Srinivasan<br>
+<strong>Instructors:</strong> Pavlos Protopapas and Mark Glickman<br>
 <strong>Authors:</strong> Srivatsan Srinivasan, Pavlos Protopapas</p>
 </div>
 </div>
@@ -1078,7 +1078,7 @@ h6:hover .anchor-link {
 <div class="prompt input_prompt">In [1]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># RUN THIS CELL TO PROPERLY HIGHLIGHT THE EXERCISES</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># RUN THIS CELL TO PROPERLY HIGHLIGHT THE EXERCISES</span>
 <span class="kn">import</span> <span class="nn">requests</span>
 <span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="k">import</span> <span class="n">HTML</span>
 <span class="n">styles</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"https://raw.githubusercontent.com/Harvard-IACS/2019-CS109B/master/content/styles/cs109.css"</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
@@ -1196,7 +1196,7 @@ header {
 <div class="prompt input_prompt">In [2]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span>
 <span class="kn">from</span> <span class="nn">keras.datasets</span> <span class="k">import</span> <span class="n">imdb</span>
 <span class="kn">from</span> <span class="nn">keras.models</span> <span class="k">import</span> <span class="n">Sequential</span>
 <span class="kn">from</span> <span class="nn">keras.layers</span> <span class="k">import</span> <span class="n">Dense</span>
@@ -1231,7 +1231,7 @@ header {
 <div class="prompt input_prompt">In [3]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># We want to have a finite vocabulary to make sure that our word matrices are not arbitrarily small</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># We want to have a finite vocabulary to make sure that our word matrices are not arbitrarily small</span>
 <span class="n">vocabulary_size</span> <span class="o">=</span> <span class="mi">10000</span>
 
 <span class="c1">#We also want to have a finite length of reviews and not have to process really long sentences.</span>
@@ -1274,7 +1274,7 @@ header {
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">),</span> <span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span> <span class="o">=</span> <span class="n">imdb</span><span class="o">.</span><span class="n">load_data</span><span class="p">(</span><span class="n">num_words</span><span class="o">=</span><span class="n">vocabulary_size</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">),</span> <span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span> <span class="o">=</span> <span class="n">imdb</span><span class="o">.</span><span class="n">load_data</span><span class="p">(</span><span class="n">num_words</span><span class="o">=</span><span class="n">vocabulary_size</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s1">'Number of reviews'</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">X_train</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">'Length of first and fifth review before padding'</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">X_train</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">X_train</span><span class="p">[</span><span class="mi">4</span><span class="p">]))</span>
@@ -1298,7 +1298,7 @@ header {
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_train</span> <span class="o">=</span> <span class="n">sequence</span><span class="o">.</span><span class="n">pad_sequences</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">maxlen</span><span class="o">=</span><span class="n">max_review_length</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">X_train</span> <span class="o">=</span> <span class="n">sequence</span><span class="o">.</span><span class="n">pad_sequences</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">maxlen</span><span class="o">=</span><span class="n">max_review_length</span><span class="p">)</span>
 <span class="n">X_test</span> <span class="o">=</span> <span class="n">sequence</span><span class="o">.</span><span class="n">pad_sequences</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">maxlen</span><span class="o">=</span><span class="n">max_review_length</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">'Length of first and fifth review after padding'</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">X_train</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">X_train</span><span class="p">[</span><span class="mi">4</span><span class="p">]))</span>
 </pre></div>
@@ -1320,7 +1320,7 @@ header {
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#### YOUR CODE HERE ####</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#### YOUR CODE HERE ####</span>
 </pre></div>
 </div>
 </div>
@@ -1339,7 +1339,7 @@ header {
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">embedding_dim</span> <span class="o">=</span> <span class="mi">100</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">embedding_dim</span> <span class="o">=</span> <span class="mi">100</span>
 </pre></div>
 </div>
 </div>
@@ -1350,7 +1350,7 @@ header {
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">Sequential</span><span class="p">()</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">Sequential</span><span class="p">()</span>
 
 <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Embedding</span><span class="p">(</span><span class="n">vocabulary_size</span><span class="p">,</span> <span class="n">embedding_dim</span><span class="p">,</span> <span class="n">input_length</span><span class="o">=</span><span class="n">max_review_length</span><span class="p">))</span>
 <span class="c1">#inputs will be converted from batch_size * sentence_length to batch_size*sentence_length*embedding _dim</span>
@@ -1369,7 +1369,7 @@ header {
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Fit the model</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Fit the model</span>
 <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">),</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">128</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
 <span class="c1"># Final evaluation of the model</span>
 <span class="n">scores</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
@@ -1402,7 +1402,7 @@ header {
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#### YOUR CODE HERE ####</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#### YOUR CODE HERE ####</span>
 </pre></div>
 </div>
 </div>
@@ -1420,7 +1420,7 @@ header {
 <p>Mathematically speaking, a simple RNN does the following. It constructs a set of hidden states using the state variable from the previous timestep and the input at current time. Mathematically, a simpleRNN can be defined by the following relation.</p>
 <p><center>$h_t = \sigma(W([h_{t-1},x_{t}])+b)$</center></p>
 <p>If we extend this recurrence relation to the length of sequences we have in hand, we have our RNN network constructed.</p>
-<p><img src="fig/LSTM_classification.jpg" width="400" /></p>
+<p><img src="fig/LSTM_classification.jpg" width="400"></p>
 </div>
 </div>
 </div>
@@ -1429,7 +1429,7 @@ header {
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">Sequential</span><span class="p">()</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">Sequential</span><span class="p">()</span>
 <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Embedding</span><span class="p">(</span><span class="n">vocabulary_size</span><span class="p">,</span> <span class="n">embedding_dim</span><span class="p">,</span> <span class="n">input_length</span><span class="o">=</span><span class="n">max_review_length</span><span class="p">))</span>
 <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">SimpleRNN</span><span class="p">(</span><span class="mi">100</span><span class="p">))</span>
 
@@ -1472,7 +1472,7 @@ Remember RNN is a "really deep" feedforward network (when unrolled in time). Hen
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#### YOUR CODE HERE ####</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#### YOUR CODE HERE ####</span>
 </pre></div>
 </div>
 </div>
@@ -1491,7 +1491,7 @@ Remember RNN is a "really deep" feedforward network (when unrolled in time). Hen
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#### YOUR CODE HERE ####</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#### YOUR CODE HERE ####</span>
 </pre></div>
 </div>
 </div>
@@ -1519,7 +1519,7 @@ Remember RNN is a "really deep" feedforward network (when unrolled in time). Hen
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="k">import</span> <span class="n">print_function</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="k">import</span> <span class="n">print_function</span>
 <span class="kn">from</span> <span class="nn">keras.models</span> <span class="k">import</span> <span class="n">Sequential</span>
 <span class="kn">from</span> <span class="nn">keras</span> <span class="k">import</span> <span class="n">layers</span>
 <span class="kn">from</span> <span class="nn">keras.layers</span> <span class="k">import</span> <span class="n">Dense</span><span class="p">,</span> <span class="n">RepeatVector</span><span class="p">,</span> <span class="n">TimeDistributed</span>
@@ -1543,7 +1543,7 @@ Remember RNN is a "really deep" feedforward network (when unrolled in time). Hen
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">CharacterTable</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">CharacterTable</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">chars</span><span class="p">):</span>        
         <span class="bp">self</span><span class="o">.</span><span class="n">chars</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">chars</span><span class="p">))</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">char_indices</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">((</span><span class="n">c</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">c</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">chars</span><span class="p">))</span>
@@ -1571,7 +1571,7 @@ Remember RNN is a "really deep" feedforward network (when unrolled in time). Hen
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">TRAINING_SIZE</span> <span class="o">=</span> <span class="mi">50000</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">TRAINING_SIZE</span> <span class="o">=</span> <span class="mi">50000</span>
 <span class="n">DIGITS</span> <span class="o">=</span> <span class="mi">3</span>
 <span class="n">MAXOUTPUTLEN</span> <span class="o">=</span> <span class="n">DIGITS</span> <span class="o">+</span> <span class="mi">1</span>
 <span class="n">MAXLEN</span> <span class="o">=</span> <span class="n">DIGITS</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">+</span> <span class="n">DIGITS</span>
@@ -1588,7 +1588,7 @@ Remember RNN is a "really deep" feedforward network (when unrolled in time). Hen
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">return_random_digit</span><span class="p">():</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">return_random_digit</span><span class="p">():</span>
   <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="s1">'0123456789'</span><span class="p">))</span>  
   
 <span class="k">def</span> <span class="nf">generate_number</span><span class="p">():</span>
@@ -1641,7 +1641,7 @@ Remember RNN is a "really deep" feedforward network (when unrolled in time). Hen
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">q</span><span class="p">,</span><span class="n">a</span> <span class="o">=</span> <span class="n">data_generate</span><span class="p">(</span><span class="n">TRAINING_SIZE</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">q</span><span class="p">,</span><span class="n">a</span> <span class="o">=</span> <span class="n">data_generate</span><span class="p">(</span><span class="n">TRAINING_SIZE</span><span class="p">)</span>
 <span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="o">=</span> <span class="n">encode_examples</span><span class="p">(</span><span class="n">q</span><span class="p">,</span><span class="n">a</span><span class="p">)</span>
 <span class="n">split_at</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">//</span> <span class="mi">10</span>
 <span class="n">x_train</span><span class="p">,</span> <span class="n">x_val</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_val</span> <span class="o">=</span> <span class="n">x</span><span class="p">[:</span><span class="n">split_at</span><span class="p">],</span> <span class="n">x</span><span class="p">[</span><span class="n">split_at</span><span class="p">:],</span><span class="n">y</span><span class="p">[:</span><span class="n">split_at</span><span class="p">],</span><span class="n">y</span><span class="p">[</span><span class="n">split_at</span><span class="p">:]</span>
@@ -1679,7 +1679,7 @@ Remember RNN is a "really deep" feedforward network (when unrolled in time). Hen
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">Sequential</span><span class="p">()</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">Sequential</span><span class="p">()</span>
 <span class="c1">#Inputs to it will be batch_size*time_steps*input_vector_dim(to Dense) . Output will be batch_size*time_steps* output_vector_dim</span>
 <span class="c1">#Here dense converts a 5-dim input vector to a 8-dim vector.</span>
 <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">TimeDistributed</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="mi">8</span><span class="p">),</span> <span class="n">input_shape</span><span class="o">=</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">)))</span>
@@ -1706,7 +1706,7 @@ Remember RNN is a "really deep" feedforward network (when unrolled in time). Hen
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">Sequential</span><span class="p">()</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">Sequential</span><span class="p">()</span>
 <span class="c1">#converts from 1*10 to 1 * 6</span>
 <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="n">input_dim</span><span class="o">=</span><span class="mi">10</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">output_shape</span><span class="p">)</span>
@@ -1730,7 +1730,7 @@ Remember RNN is a "really deep" feedforward network (when unrolled in time). Hen
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="MODEL-ARCHITECTURE">MODEL ARCHITECTURE<a class="anchor-link" href="#MODEL-ARCHITECTURE">¶</a></h3><p><img src="fig/LSTM_addition.jpg" width="400" /></p>
+<h3 id="MODEL-ARCHITECTURE">MODEL ARCHITECTURE<a class="anchor-link" href="#MODEL-ARCHITECTURE">¶</a></h3><p><img src="fig/LSTM_addition.jpg" width="400"></p>
 </div>
 </div>
 </div>
@@ -1749,7 +1749,7 @@ Remember RNN is a "really deep" feedforward network (when unrolled in time). Hen
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#### YOUR CODE HERE ####</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#### YOUR CODE HERE ####</span>
 </pre></div>
 </div>
 </div>
@@ -1768,7 +1768,7 @@ Remember RNN is a "really deep" feedforward network (when unrolled in time). Hen
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">iteration</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">):</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">iteration</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">()</span>  
     <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span>
               <span class="n">batch_size</span><span class="o">=</span><span class="n">BATCH_SIZE</span><span class="p">,</span>

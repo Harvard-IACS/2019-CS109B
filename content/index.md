@@ -36,9 +36,9 @@ and prediction. Topics include big data and database management, multiple deep l
 <hr> 
 ####Announcements:
 
-<pre>Video-recorded Lectures from <a href="https://matterhorn.dce.harvard.edu/engage/ui/index.html#/2019/01/15178">CS109A Fall '18</a></pre>
+<pre>Video-recorded Lectures from <a href="https://matterhorn.dce.harvard.edu/engage/ui/index.html#/2019/01/15178"> CS109A Fall '18</a></pre>
 
-<pre><strong>Advanced Sections</strong> start tomorrow Wed. Feb 13th at NW B-103</pre>
+<pre><strong>Advanced Sections</strong> take place in NW B-103</pre>
 
 <pre><strong>Pierce Hall</strong> is at 29 Oxford St in Cambridge.<br/>
 <strong>Maxwell Dworkin</strong> (MD) is at 33 Oxford St, Cambridge.<br/>
