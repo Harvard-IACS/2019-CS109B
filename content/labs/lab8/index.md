@@ -1,7 +1,7 @@
 Title: Lab 8: Bayesian Analysis using pyjags (+ Reinforcement Learning with gym)
 Category: labs
 Date: 2019-03-27
-Slug: lab2
+Slug: lab8
 Author: Paul Tylkin and Vivek HV
 Tags: R, bayesian, pyjags, gym, reinforcement learning
 
