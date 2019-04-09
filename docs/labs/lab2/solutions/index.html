@@ -1064,13 +1064,13 @@ h6:hover .anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1><img src="https://raw.githubusercontent.com/Harvard-IACS/2018-CS109A/master/content/styles/iacs.png" style="float: left; padding-right: 10px; width: 45px"> CS109B Data Science 2: Advanced Topics in Data Science</h1>
-<h2 id="Lab-2---Smoothers-and-Generalized-Additive-Models">Lab 2 - Smoothers and Generalized Additive Models<a class="anchor-link" href="#Lab-2---Smoothers-and-Generalized-Additive-Models">¶</a></h2><p><strong>Harvard University</strong><br>
-<strong>Spring 2019</strong><br>
-<strong>Instructors:</strong> Mark Glickman and Pavlos Protopapas<br>
-<strong>Lab Instructors:</strong> Will Claybaugh<br>
+<h1><img src="https://raw.githubusercontent.com/Harvard-IACS/2018-CS109A/master/content/styles/iacs.png" style="float: left; padding-right: 10px; width: 45px" /> CS109B Data Science 2: Advanced Topics in Data Science</h1>
+<h2 id="Lab-2---Smoothers-and-Generalized-Additive-Models">Lab 2 - Smoothers and Generalized Additive Models<a class="anchor-link" href="#Lab-2---Smoothers-and-Generalized-Additive-Models">¶</a></h2><p><strong>Harvard University</strong><br />
+<strong>Spring 2019</strong><br />
+<strong>Instructors:</strong> Mark Glickman and Pavlos Protopapas<br />
+<strong>Lab Instructors:</strong> Will Claybaugh<br />
 <strong>Contributors:</strong> Paul Tyklin and Will Claybaugh</p>
-<hr>
+<hr />
 </div>
 </div>
 </div>
@@ -1079,7 +1079,7 @@ h6:hover .anchor-link {
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1">## RUN THIS CELL TO PROPERLY HIGHLIGHT THE EXERCISES</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## RUN THIS CELL TO PROPERLY HIGHLIGHT THE EXERCISES</span>
 <span class="kn">import</span> <span class="nn">requests</span>
 <span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="k">import</span> <span class="n">HTML</span>
 <span class="n">styles</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"https://raw.githubusercontent.com/Harvard-IACS/2019-CS109B/master/content/styles/cs109.css"</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
@@ -1115,7 +1115,7 @@ h6:hover .anchor-link {
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 
@@ -1146,7 +1146,7 @@ h6:hover .anchor-link {
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">diab</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"data/diabetes.csv"</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">diab</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"data/diabetes.csv"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"""</span>
 <span class="s2"># Variables are:</span>
 <span class="s2">#   subject:   subject ID number</span>
@@ -1180,7 +1180,7 @@ h6:hover .anchor-link {
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">ax0</span> <span class="o">=</span> <span class="n">diab</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">'age'</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s1">'y'</span><span class="p">,</span><span class="n">c</span><span class="o">=</span><span class="s1">'Red'</span><span class="p">,</span><span class="n">title</span><span class="o">=</span><span class="s2">"Diabetes data"</span><span class="p">)</span> <span class="c1">#plotting direclty from pandas!</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ax0</span> <span class="o">=</span> <span class="n">diab</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">'age'</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s1">'y'</span><span class="p">,</span><span class="n">c</span><span class="o">=</span><span class="s1">'Red'</span><span class="p">,</span><span class="n">title</span><span class="o">=</span><span class="s2">"Diabetes data"</span><span class="p">)</span> <span class="c1">#plotting direclty from pandas!</span>
 <span class="n">ax0</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">"Age at Diagnosis"</span><span class="p">)</span>
 <span class="n">ax0</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">"Log C-Peptide Concentration"</span><span class="p">);</span>
 </pre></div>
@@ -1205,7 +1205,7 @@ h6:hover .anchor-link {
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Using statsmodels</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Using statsmodels</span>
 <span class="kn">import</span> <span class="nn">statsmodels.formula.api</span> <span class="k">as</span> <span class="nn">sm</span>
 
 
@@ -1232,7 +1232,7 @@ h6:hover .anchor-link {
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">x_pred</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">16</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x_pred</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">16</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span>
 
 <span class="n">predict_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="p">{</span><span class="s2">"age"</span><span class="p">:</span><span class="n">x_pred</span><span class="p">})</span>
 <span class="n">predict_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -1254,7 +1254,7 @@ h6:hover .anchor-link {
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">prediction_output</span> <span class="o">=</span> <span class="n">fit1_lm</span><span class="o">.</span><span class="n">get_prediction</span><span class="p">(</span><span class="n">predict_df</span><span class="p">)</span><span class="o">.</span><span class="n">summary_frame</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">prediction_output</span> <span class="o">=</span> <span class="n">fit1_lm</span><span class="o">.</span><span class="n">get_prediction</span><span class="p">(</span><span class="n">predict_df</span><span class="p">)</span><span class="o">.</span><span class="n">summary_frame</span><span class="p">()</span>
 <span class="n">prediction_output</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -1274,7 +1274,7 @@ h6:hover .anchor-link {
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">ax1</span> <span class="o">=</span> <span class="n">diab</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">'age'</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s1">'y'</span><span class="p">,</span><span class="n">c</span><span class="o">=</span><span class="s1">'Red'</span><span class="p">,</span><span class="n">title</span><span class="o">=</span><span class="s2">"Diabetes data with least-squares linear fit"</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ax1</span> <span class="o">=</span> <span class="n">diab</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">'age'</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s1">'y'</span><span class="p">,</span><span class="n">c</span><span class="o">=</span><span class="s1">'Red'</span><span class="p">,</span><span class="n">title</span><span class="o">=</span><span class="s2">"Diabetes data with least-squares linear fit"</span><span class="p">)</span>
 <span class="n">ax1</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">"Age at Diagnosis"</span><span class="p">)</span>
 <span class="n">ax1</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">"Log C-Peptide Concentration"</span><span class="p">)</span>
 
@@ -1329,7 +1329,7 @@ h6:hover .anchor-link {
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># your code here</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># your code here</span>
 </pre></div>
 </div>
 </div>
@@ -1340,7 +1340,7 @@ h6:hover .anchor-link {
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">fit2_lm</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">ols</span><span class="p">(</span><span class="n">formula</span><span class="o">=</span><span class="s2">"y ~ age + np.power(age, 2) + np.power(age, 3)"</span><span class="p">,</span><span class="n">data</span><span class="o">=</span><span class="n">diab</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fit2_lm</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">ols</span><span class="p">(</span><span class="n">formula</span><span class="o">=</span><span class="s2">"y ~ age + np.power(age, 2) + np.power(age, 3)"</span><span class="p">,</span><span class="n">data</span><span class="o">=</span><span class="n">diab</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
 
 <span class="n">poly_predictions</span> <span class="o">=</span> <span class="n">fit2_lm</span><span class="o">.</span><span class="n">get_prediction</span><span class="p">(</span><span class="n">predict_df</span><span class="p">)</span><span class="o">.</span><span class="n">summary_frame</span><span class="p">()</span>
 <span class="n">poly_predictions</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -1362,7 +1362,7 @@ h6:hover .anchor-link {
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># your code here</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># your code here</span>
 </pre></div>
 </div>
 </div>
@@ -1373,7 +1373,7 @@ h6:hover .anchor-link {
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">ax2</span> <span class="o">=</span> <span class="n">diab</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">'age'</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s1">'y'</span><span class="p">,</span><span class="n">c</span><span class="o">=</span><span class="s1">'Red'</span><span class="p">,</span><span class="n">title</span><span class="o">=</span><span class="s2">"Diabetes data with least-squares cubic fit"</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ax2</span> <span class="o">=</span> <span class="n">diab</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">'age'</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s1">'y'</span><span class="p">,</span><span class="n">c</span><span class="o">=</span><span class="s1">'Red'</span><span class="p">,</span><span class="n">title</span><span class="o">=</span><span class="s2">"Diabetes data with least-squares cubic fit"</span><span class="p">)</span>
 <span class="n">ax2</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">"Age at Diagnosis"</span><span class="p">)</span>
 <span class="n">ax2</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">"Log C-Peptide Concentration"</span><span class="p">)</span>
 
@@ -1430,7 +1430,7 @@ h6:hover .anchor-link {
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># if you're on JupyterHub you may need to specify the path to R</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># if you're on JupyterHub you may need to specify the path to R</span>
 
 <span class="c1">#import os</span>
 <span class="c1">#os.environ['R_HOME'] = "/usr/share/anaconda3/lib/R"</span>
@@ -1446,7 +1446,7 @@ h6:hover .anchor-link {
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">r_lm</span> <span class="o">=</span> <span class="n">robjects</span><span class="o">.</span><span class="n">r</span><span class="p">[</span><span class="s2">"lm"</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">r_lm</span> <span class="o">=</span> <span class="n">robjects</span><span class="o">.</span><span class="n">r</span><span class="p">[</span><span class="s2">"lm"</span><span class="p">]</span>
 <span class="n">r_predict</span> <span class="o">=</span> <span class="n">robjects</span><span class="o">.</span><span class="n">r</span><span class="p">[</span><span class="s2">"predict"</span><span class="p">]</span>
 <span class="c1">#r_plot = robjects.r["plot"] # more on plotting later</span>
 
@@ -1469,7 +1469,7 @@ h6:hover .anchor-link {
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">rpy2.robjects.packages</span> <span class="k">import</span> <span class="n">importr</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">rpy2.robjects.packages</span> <span class="k">import</span> <span class="n">importr</span>
 <span class="c1">#r_cluster = importr('cluster')</span>
 <span class="c1">#r_cluster.pam;</span>
 </pre></div>
@@ -1490,7 +1490,7 @@ h6:hover .anchor-link {
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">r_y</span> <span class="o">=</span> <span class="n">robjects</span><span class="o">.</span><span class="n">FloatVector</span><span class="p">(</span><span class="n">diab</span><span class="p">[</span><span class="s1">'y'</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">r_y</span> <span class="o">=</span> <span class="n">robjects</span><span class="o">.</span><span class="n">FloatVector</span><span class="p">(</span><span class="n">diab</span><span class="p">[</span><span class="s1">'y'</span><span class="p">])</span>
 <span class="n">r_age</span> <span class="o">=</span> <span class="n">robjects</span><span class="o">.</span><span class="n">FloatVector</span><span class="p">(</span><span class="n">diab</span><span class="p">[</span><span class="s1">'age'</span><span class="p">])</span>
 <span class="c1"># What happens if we pass the wrong type?</span>
 <span class="c1"># How does r_age display?</span>
@@ -1513,7 +1513,7 @@ h6:hover .anchor-link {
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">diab_r</span> <span class="o">=</span> <span class="n">robjects</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">"y"</span><span class="p">:</span><span class="n">r_y</span><span class="p">,</span> <span class="s2">"age"</span><span class="p">:</span><span class="n">r_age</span><span class="p">})</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">diab_r</span> <span class="o">=</span> <span class="n">robjects</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">"y"</span><span class="p">:</span><span class="n">r_y</span><span class="p">,</span> <span class="s2">"age"</span><span class="p">:</span><span class="n">r_age</span><span class="p">})</span>
 <span class="c1"># How does diab_r display?</span>
 <span class="c1"># How does diab_r print?</span>
 </pre></div>
@@ -1534,7 +1534,7 @@ h6:hover .anchor-link {
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">simple_formula</span> <span class="o">=</span> <span class="n">robjects</span><span class="o">.</span><span class="n">Formula</span><span class="p">(</span><span class="s2">"y~age"</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">simple_formula</span> <span class="o">=</span> <span class="n">robjects</span><span class="o">.</span><span class="n">Formula</span><span class="p">(</span><span class="s2">"y~age"</span><span class="p">)</span>
 <span class="n">simple_formula</span><span class="o">.</span><span class="n">environment</span><span class="p">[</span><span class="s2">"y"</span><span class="p">]</span> <span class="o">=</span> <span class="n">r_y</span> <span class="c1">#populate the formula's .environment, so it knows what 'y' and 'age' refer to</span>
 <span class="n">simple_formula</span><span class="o">.</span><span class="n">environment</span><span class="p">[</span><span class="s2">"age"</span><span class="p">]</span> <span class="o">=</span> <span class="n">r_age</span>
 </pre></div>
@@ -1555,7 +1555,7 @@ h6:hover .anchor-link {
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">diab_lm</span> <span class="o">=</span> <span class="n">r_lm</span><span class="p">(</span><span class="n">formula</span><span class="o">=</span><span class="n">simple_formula</span><span class="p">)</span> <span class="c1"># the formula object is storing all the needed variables</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">diab_lm</span> <span class="o">=</span> <span class="n">r_lm</span><span class="p">(</span><span class="n">formula</span><span class="o">=</span><span class="n">simple_formula</span><span class="p">)</span> <span class="c1"># the formula object is storing all the needed variables</span>
 </pre></div>
 </div>
 </div>
@@ -1566,7 +1566,7 @@ h6:hover .anchor-link {
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">simple_formula</span> <span class="o">=</span> <span class="n">robjects</span><span class="o">.</span><span class="n">Formula</span><span class="p">(</span><span class="s2">"y~age"</span><span class="p">)</span> <span class="c1"># reset the formula</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">simple_formula</span> <span class="o">=</span> <span class="n">robjects</span><span class="o">.</span><span class="n">Formula</span><span class="p">(</span><span class="s2">"y~age"</span><span class="p">)</span> <span class="c1"># reset the formula</span>
 <span class="n">diab_lm</span> <span class="o">=</span> <span class="n">r_lm</span><span class="p">(</span><span class="n">formula</span><span class="o">=</span><span class="n">simple_formula</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">diab_r</span><span class="p">)</span> <span class="c1">#can also use a 'dumb' formula and pass a dataframe</span>
 </pre></div>
 </div>
@@ -1586,7 +1586,7 @@ h6:hover .anchor-link {
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">diab_lm</span> <span class="c1">#the result is already 'in' python, but it's a special object</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">diab_lm</span> <span class="c1">#the result is already 'in' python, but it's a special object</span>
 </pre></div>
 </div>
 </div>
@@ -1597,7 +1597,7 @@ h6:hover .anchor-link {
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">diab_lm</span><span class="o">.</span><span class="n">names</span><span class="p">)</span> <span class="c1"># view all names</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">diab_lm</span><span class="o">.</span><span class="n">names</span><span class="p">)</span> <span class="c1"># view all names</span>
 </pre></div>
 </div>
 </div>
@@ -1608,7 +1608,7 @@ h6:hover .anchor-link {
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">diab_lm</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="c1">#grab the first element</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">diab_lm</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="c1">#grab the first element</span>
 </pre></div>
 </div>
 </div>
@@ -1619,7 +1619,7 @@ h6:hover .anchor-link {
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">diab_lm</span><span class="o">.</span><span class="n">rx2</span><span class="p">(</span><span class="s2">"coefficients"</span><span class="p">)</span> <span class="c1">#use rx2 to get elements by name!</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">diab_lm</span><span class="o">.</span><span class="n">rx2</span><span class="p">(</span><span class="s2">"coefficients"</span><span class="p">)</span> <span class="c1">#use rx2 to get elements by name!</span>
 </pre></div>
 </div>
 </div>
@@ -1630,7 +1630,7 @@ h6:hover .anchor-link {
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">diab_lm</span><span class="o">.</span><span class="n">rx2</span><span class="p">(</span><span class="s2">"coefficients"</span><span class="p">))</span> <span class="c1">#r vectors can be converted to numpy (but rarely needed)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">diab_lm</span><span class="o">.</span><span class="n">rx2</span><span class="p">(</span><span class="s2">"coefficients"</span><span class="p">))</span> <span class="c1">#r vectors can be converted to numpy (but rarely needed)</span>
 </pre></div>
 </div>
 </div>
@@ -1649,7 +1649,7 @@ h6:hover .anchor-link {
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># make a df to predict on (might just be the validation or test dataframe)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># make a df to predict on (might just be the validation or test dataframe)</span>
 <span class="n">predict_df</span> <span class="o">=</span> <span class="n">robjects</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">"age"</span><span class="p">:</span> <span class="n">robjects</span><span class="o">.</span><span class="n">FloatVector</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">16</span><span class="p">,</span><span class="mi">100</span><span class="p">))})</span>
 
 <span class="c1"># call R's predict() function, passing the model and the data </span>
@@ -1664,7 +1664,7 @@ h6:hover .anchor-link {
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">x_vals</span> <span class="o">=</span> <span class="n">predict_df</span><span class="o">.</span><span class="n">rx2</span><span class="p">(</span><span class="s2">"age"</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x_vals</span> <span class="o">=</span> <span class="n">predict_df</span><span class="o">.</span><span class="n">rx2</span><span class="p">(</span><span class="s2">"age"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1675,7 +1675,7 @@ h6:hover .anchor-link {
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">ax</span> <span class="o">=</span> <span class="n">diab</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">'age'</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s1">'y'</span><span class="p">,</span><span class="n">c</span><span class="o">=</span><span class="s1">'Red'</span><span class="p">,</span><span class="n">title</span><span class="o">=</span><span class="s2">"Diabetes data"</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ax</span> <span class="o">=</span> <span class="n">diab</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">'age'</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s1">'y'</span><span class="p">,</span><span class="n">c</span><span class="o">=</span><span class="s1">'Red'</span><span class="p">,</span><span class="n">title</span><span class="o">=</span><span class="s2">"Diabetes data"</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">"Age at Diagnosis"</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">"Log C-Peptide Concentration"</span><span class="p">);</span>
 
@@ -1698,7 +1698,7 @@ h6:hover .anchor-link {
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">load_ext</span> rpy2.ipython
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">load_ext</span> rpy2.ipython
 </pre></div>
 </div>
 </div>
@@ -1727,7 +1727,7 @@ h6:hover .anchor-link {
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">R</span> -i diab_lm plot(diab_lm);
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">R</span> -i diab_lm plot(diab_lm);
 </pre></div>
 </div>
 </div>
@@ -1783,7 +1783,7 @@ Sections:</p>
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># your code here</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># your code here</span>
 </pre></div>
 </div>
 </div>
@@ -1794,7 +1794,7 @@ Sections:</p>
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">CI_matrix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">r_predict</span><span class="p">(</span><span class="n">diab_lm</span><span class="p">,</span> <span class="n">predict_df</span><span class="p">,</span> <span class="n">interval</span><span class="o">=</span><span class="s2">"confidence"</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">CI_matrix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">r_predict</span><span class="p">(</span><span class="n">diab_lm</span><span class="p">,</span> <span class="n">predict_df</span><span class="p">,</span> <span class="n">interval</span><span class="o">=</span><span class="s2">"confidence"</span><span class="p">))</span>
 
 <span class="n">ax</span> <span class="o">=</span> <span class="n">diab</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">'age'</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s1">'y'</span><span class="p">,</span><span class="n">c</span><span class="o">=</span><span class="s1">'Red'</span><span class="p">,</span><span class="n">title</span><span class="o">=</span><span class="s2">"Diabetes data"</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">"Age at Diagnosis"</span><span class="p">)</span>
@@ -1822,7 +1822,7 @@ Sections:</p>
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># your code here</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># your code here</span>
 </pre></div>
 </div>
 </div>
@@ -1833,7 +1833,7 @@ Sections:</p>
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">ploy5_formula</span> <span class="o">=</span> <span class="n">robjects</span><span class="o">.</span><span class="n">Formula</span><span class="p">(</span><span class="s2">"y~poly(age,5)"</span><span class="p">)</span> <span class="c1"># reset the formula</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ploy5_formula</span> <span class="o">=</span> <span class="n">robjects</span><span class="o">.</span><span class="n">Formula</span><span class="p">(</span><span class="s2">"y~poly(age,5)"</span><span class="p">)</span> <span class="c1"># reset the formula</span>
 <span class="n">diab5_lm</span> <span class="o">=</span> <span class="n">r_lm</span><span class="p">(</span><span class="n">formula</span><span class="o">=</span><span class="n">ploy5_formula</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">diab_r</span><span class="p">)</span> <span class="c1">#can also use a 'dumb' formula and pass a dataframe</span>
 
 <span class="n">predictions</span> <span class="o">=</span> <span class="n">r_predict</span><span class="p">(</span><span class="n">diab5_lm</span><span class="p">,</span> <span class="n">predict_df</span><span class="p">,</span> <span class="n">interval</span><span class="o">=</span><span class="s2">"confidence"</span><span class="p">)</span>
@@ -1881,7 +1881,7 @@ Sections:</p>
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">statsmodels.nonparametric.smoothers_lowess</span> <span class="k">import</span> <span class="n">lowess</span> <span class="k">as</span> <span class="n">lowess</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">statsmodels.nonparametric.smoothers_lowess</span> <span class="k">import</span> <span class="n">lowess</span> <span class="k">as</span> <span class="n">lowess</span>
 
 <span class="n">ss1</span> <span class="o">=</span> <span class="n">lowess</span><span class="p">(</span><span class="n">diab</span><span class="p">[</span><span class="s1">'y'</span><span class="p">],</span><span class="n">diab</span><span class="p">[</span><span class="s1">'age'</span><span class="p">],</span><span class="n">frac</span><span class="o">=</span><span class="mf">0.15</span><span class="p">)</span>
 <span class="n">ss2</span> <span class="o">=</span> <span class="n">lowess</span><span class="p">(</span><span class="n">diab</span><span class="p">[</span><span class="s1">'y'</span><span class="p">],</span><span class="n">diab</span><span class="p">[</span><span class="s1">'age'</span><span class="p">],</span><span class="n">frac</span><span class="o">=</span><span class="mf">0.25</span><span class="p">)</span>
@@ -1897,7 +1897,7 @@ Sections:</p>
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">ss1</span><span class="p">[:</span><span class="mi">10</span><span class="p">,:]</span> <span class="c1"># we get back simple a smoothed y value for each x value in the data</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ss1</span><span class="p">[:</span><span class="mi">10</span><span class="p">,:]</span> <span class="c1"># we get back simple a smoothed y value for each x value in the data</span>
 </pre></div>
 </div>
 </div>
@@ -1916,7 +1916,7 @@ Sections:</p>
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">cur_model</span><span class="p">,</span> <span class="n">cur_frac</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">([</span><span class="n">ss1</span><span class="p">,</span><span class="n">ss2</span><span class="p">,</span><span class="n">ss3</span><span class="p">,</span><span class="n">ss4</span><span class="p">],[</span><span class="mf">0.15</span><span class="p">,</span><span class="mf">0.25</span><span class="p">,</span><span class="mf">0.7</span><span class="p">,</span><span class="mi">1</span><span class="p">]):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">cur_model</span><span class="p">,</span> <span class="n">cur_frac</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">([</span><span class="n">ss1</span><span class="p">,</span><span class="n">ss2</span><span class="p">,</span><span class="n">ss3</span><span class="p">,</span><span class="n">ss4</span><span class="p">],[</span><span class="mf">0.15</span><span class="p">,</span><span class="mf">0.25</span><span class="p">,</span><span class="mf">0.7</span><span class="p">,</span><span class="mi">1</span><span class="p">]):</span>
 
     <span class="n">ax</span> <span class="o">=</span> <span class="n">diab</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">'age'</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s1">'y'</span><span class="p">,</span><span class="n">c</span><span class="o">=</span><span class="s1">'Red'</span><span class="p">,</span><span class="n">title</span><span class="o">=</span><span class="s2">"Lowess Fit, Fraction = </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">cur_frac</span><span class="p">))</span>
     <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">"Age at Diagnosis"</span><span class="p">)</span>
@@ -1959,7 +1959,7 @@ Sections:</p>
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">r_loess</span> <span class="o">=</span> <span class="n">robjects</span><span class="o">.</span><span class="n">r</span><span class="p">[</span><span class="s1">'loess.smooth'</span><span class="p">]</span> <span class="c1">#extract R function</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">r_loess</span> <span class="o">=</span> <span class="n">robjects</span><span class="o">.</span><span class="n">r</span><span class="p">[</span><span class="s1">'loess.smooth'</span><span class="p">]</span> <span class="c1">#extract R function</span>
 <span class="n">r_y</span> <span class="o">=</span> <span class="n">robjects</span><span class="o">.</span><span class="n">FloatVector</span><span class="p">(</span><span class="n">diab</span><span class="p">[</span><span class="s1">'y'</span><span class="p">])</span>
 <span class="n">r_age</span> <span class="o">=</span> <span class="n">robjects</span><span class="o">.</span><span class="n">FloatVector</span><span class="p">(</span><span class="n">diab</span><span class="p">[</span><span class="s1">'age'</span><span class="p">])</span>
 
@@ -1974,7 +1974,7 @@ Sections:</p>
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">ss1_r</span> <span class="c1">#again, a smoothed y value for each x value in the data</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ss1_r</span> <span class="c1">#again, a smoothed y value for each x value in the data</span>
 </pre></div>
 </div>
 </div>
@@ -2028,7 +2028,7 @@ Sections:</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Varying span</strong><br>
+<p><strong>Varying span</strong><br />
 Next, some extremely clean code to fit and plot models with various parameter settings. (Though the <code>zip()</code> method seen earlier is great when e.g. the label and the parameter differ)</p>
 </div>
 </div>
@@ -2038,7 +2038,7 @@ Next, some extremely clean code to fit and plot models with various parameter se
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">cur_frac</span> <span class="ow">in</span> <span class="p">[</span><span class="mf">0.15</span><span class="p">,</span><span class="mf">0.25</span><span class="p">,</span><span class="mf">0.7</span><span class="p">,</span><span class="mi">1</span><span class="p">]:</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">cur_frac</span> <span class="ow">in</span> <span class="p">[</span><span class="mf">0.15</span><span class="p">,</span><span class="mf">0.25</span><span class="p">,</span><span class="mf">0.7</span><span class="p">,</span><span class="mi">1</span><span class="p">]:</span>
     
     <span class="n">cur_smooth</span> <span class="o">=</span> <span class="n">r_loess</span><span class="p">(</span><span class="n">r_age</span><span class="p">,</span><span class="n">r_y</span><span class="p">,</span> <span class="n">span</span><span class="o">=</span><span class="n">cur_frac</span><span class="p">)</span>
 
@@ -2090,7 +2090,7 @@ Next, some extremely clean code to fit and plot models with various parameter se
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">r_smooth_spline</span> <span class="o">=</span> <span class="n">robjects</span><span class="o">.</span><span class="n">r</span><span class="p">[</span><span class="s1">'smooth.spline'</span><span class="p">]</span> <span class="c1">#extract R function</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">r_smooth_spline</span> <span class="o">=</span> <span class="n">robjects</span><span class="o">.</span><span class="n">r</span><span class="p">[</span><span class="s1">'smooth.spline'</span><span class="p">]</span> <span class="c1">#extract R function</span>
 
 <span class="c1"># run smoothing function</span>
 <span class="n">spline1</span> <span class="o">=</span> <span class="n">r_smooth_spline</span><span class="p">(</span><span class="n">r_age</span><span class="p">,</span> <span class="n">r_y</span><span class="p">,</span> <span class="n">spar</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
@@ -2123,7 +2123,7 @@ Next, some extremely clean code to fit and plot models with various parameter se
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># your answer here</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># your answer here</span>
 </pre></div>
 </div>
 </div>
@@ -2134,7 +2134,7 @@ Next, some extremely clean code to fit and plot models with various parameter se
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">lambda1</span> <span class="o">=</span> <span class="n">spline1</span><span class="o">.</span><span class="n">rx2</span><span class="p">(</span><span class="s2">"lambda"</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">lambda1</span> <span class="o">=</span> <span class="n">spline1</span><span class="o">.</span><span class="n">rx2</span><span class="p">(</span><span class="s2">"lambda"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -2153,7 +2153,7 @@ Next, some extremely clean code to fit and plot models with various parameter se
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># your answer here</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># your answer here</span>
 </pre></div>
 </div>
 </div>
@@ -2164,7 +2164,7 @@ Next, some extremely clean code to fit and plot models with various parameter se
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">cur_spar</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">0.9</span><span class="p">,</span><span class="mi">2</span><span class="p">]:</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">cur_spar</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">0.9</span><span class="p">,</span><span class="mi">2</span><span class="p">]:</span>
     
     <span class="n">cur_model</span> <span class="o">=</span> <span class="n">r_smooth_spline</span><span class="p">(</span><span class="n">r_age</span><span class="p">,</span> <span class="n">r_y</span><span class="p">,</span> <span class="n">spar</span><span class="o">=</span> <span class="n">cur_spar</span><span class="p">)</span>
     <span class="n">cur_lambda</span> <span class="o">=</span> <span class="n">cur_model</span><span class="o">.</span><span class="n">rx2</span><span class="p">(</span><span class="s2">"lambda"</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
@@ -2184,7 +2184,7 @@ Next, some extremely clean code to fit and plot models with various parameter se
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>CV</strong><br>
+<p><strong>CV</strong><br />
 R's <code>smooth_spline</code> funciton has built-in CV to find a good lambda. See package <a href="https://www.rdocumentation.org/packages/stats/versions/3.5.2/topics/smooth.spline">docs</a>.</p>
 </div>
 </div>
@@ -2194,7 +2194,7 @@ R's <code>smooth_spline</code> funciton has built-in CV to find a good lambda. S
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">spline_cv</span> <span class="o">=</span> <span class="n">r_smooth_spline</span><span class="p">(</span><span class="n">r_age</span><span class="p">,</span> <span class="n">r_y</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">spline_cv</span> <span class="o">=</span> <span class="n">r_smooth_spline</span><span class="p">(</span><span class="n">r_age</span><span class="p">,</span> <span class="n">r_y</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> 
 
 <span class="n">lambda_cv</span> <span class="o">=</span> <span class="n">spline_cv</span><span class="o">.</span><span class="n">rx2</span><span class="p">(</span><span class="s2">"lambda"</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
 
@@ -2245,7 +2245,7 @@ R's <code>smooth_spline</code> funciton has built-in CV to find a good lambda. S
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#We will now work with a new dataset, called GAGurine.</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#We will now work with a new dataset, called GAGurine.</span>
 <span class="c1">#The dataset description (from the R package MASS) is below:</span>
 <span class="c1">#Data were collected on the concentration of a chemical GAG </span>
 <span class="c1"># in the urine of 314 children aged from zero to seventeen years. </span>
@@ -2265,7 +2265,7 @@ R's <code>smooth_spline</code> funciton has built-in CV to find a good lambda. S
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">GAGurine</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"data/GAGurine.csv"</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">GAGurine</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"data/GAGurine.csv"</span><span class="p">)</span>
 <span class="n">display</span><span class="p">(</span><span class="n">GAGurine</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
 
 <span class="n">ax31</span> <span class="o">=</span> <span class="n">GAGurine</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">'Age'</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s1">'GAG'</span><span class="p">,</span><span class="n">c</span><span class="o">=</span><span class="s1">'black'</span><span class="p">,</span><span class="n">title</span><span class="o">=</span><span class="s2">"GAG in urine of children"</span><span class="p">)</span>
@@ -2289,7 +2289,7 @@ R's <code>smooth_spline</code> funciton has built-in CV to find a good lambda. S
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">rpy2.robjects.packages</span> <span class="k">import</span> <span class="n">importr</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">rpy2.robjects.packages</span> <span class="k">import</span> <span class="n">importr</span>
 <span class="n">r_splines</span> <span class="o">=</span> <span class="n">importr</span><span class="p">(</span><span class="s1">'splines'</span><span class="p">)</span>
 
 <span class="c1"># populate R variables</span>
@@ -2314,7 +2314,7 @@ R's <code>smooth_spline</code> funciton has built-in CV to find a good lambda. S
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">ns_design</span> <span class="o">=</span> <span class="n">r_splines</span><span class="o">.</span><span class="n">ns</span><span class="p">(</span><span class="n">r_age</span><span class="p">,</span> <span class="n">knots</span><span class="o">=</span><span class="n">r_quarts</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ns_design</span> <span class="o">=</span> <span class="n">r_splines</span><span class="o">.</span><span class="n">ns</span><span class="p">(</span><span class="n">r_age</span><span class="p">,</span> <span class="n">knots</span><span class="o">=</span><span class="n">r_quarts</span><span class="p">)</span>
 <span class="n">bs_design</span> <span class="o">=</span> <span class="n">r_splines</span><span class="o">.</span><span class="n">bs</span><span class="p">(</span><span class="n">r_age</span><span class="p">,</span> <span class="n">knots</span><span class="o">=</span><span class="n">r_quarts</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -2326,7 +2326,7 @@ R's <code>smooth_spline</code> funciton has built-in CV to find a good lambda. S
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">ns_design</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">ns_design</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -2345,7 +2345,7 @@ R's <code>smooth_spline</code> funciton has built-in CV to find a good lambda. S
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">r_lm</span> <span class="o">=</span> <span class="n">robjects</span><span class="o">.</span><span class="n">r</span><span class="p">[</span><span class="s1">'lm'</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">r_lm</span> <span class="o">=</span> <span class="n">robjects</span><span class="o">.</span><span class="n">r</span><span class="p">[</span><span class="s1">'lm'</span><span class="p">]</span>
 <span class="n">r_predict</span> <span class="o">=</span> <span class="n">robjects</span><span class="o">.</span><span class="n">r</span><span class="p">[</span><span class="s1">'predict'</span><span class="p">]</span>
 
 <span class="c1"># populate the formula</span>
@@ -2374,7 +2374,7 @@ R's <code>smooth_spline</code> funciton has built-in CV to find a good lambda. S
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># predict</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># predict</span>
 <span class="n">predict_frame</span> <span class="o">=</span> <span class="n">robjects</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">"Age"</span><span class="p">:</span> <span class="n">robjects</span><span class="o">.</span><span class="n">FloatVector</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">100</span><span class="p">))})</span>
 
 <span class="n">ns_out</span> <span class="o">=</span> <span class="n">r_predict</span><span class="p">(</span><span class="n">ns_model</span><span class="p">,</span> <span class="n">predict_frame</span><span class="p">)</span>
@@ -2388,7 +2388,7 @@ R's <code>smooth_spline</code> funciton has built-in CV to find a good lambda. S
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">ax32</span> <span class="o">=</span> <span class="n">GAGurine</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">'Age'</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s1">'GAG'</span><span class="p">,</span><span class="n">c</span><span class="o">=</span><span class="s1">'grey'</span><span class="p">,</span><span class="n">title</span><span class="o">=</span><span class="s2">"GAG in urine of children"</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ax32</span> <span class="o">=</span> <span class="n">GAGurine</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">'Age'</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s1">'GAG'</span><span class="p">,</span><span class="n">c</span><span class="o">=</span><span class="s1">'grey'</span><span class="p">,</span><span class="n">title</span><span class="o">=</span><span class="s2">"GAG in urine of children"</span><span class="p">)</span>
 <span class="n">ax32</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">"Age"</span><span class="p">)</span>
 <span class="n">ax32</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">"GAG"</span><span class="p">)</span>
 <span class="n">ax32</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">predict_frame</span><span class="o">.</span><span class="n">rx2</span><span class="p">(</span><span class="s2">"Age"</span><span class="p">),</span><span class="n">ns_out</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'red'</span><span class="p">)</span>
@@ -2413,7 +2413,7 @@ R's <code>smooth_spline</code> funciton has built-in CV to find a good lambda. S
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answers:</strong><br>
+<p><strong>Answers:</strong><br />
 1.</p>
 </div>
 </div>
@@ -2423,7 +2423,7 @@ R's <code>smooth_spline</code> funciton has built-in CV to find a good lambda. S
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># your answer here</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># your answer here</span>
 </pre></div>
 </div>
 </div>
@@ -2434,7 +2434,7 @@ R's <code>smooth_spline</code> funciton has built-in CV to find a good lambda. S
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">bs_formula</span> <span class="o">=</span> <span class="n">robjects</span><span class="o">.</span><span class="n">Formula</span><span class="p">(</span><span class="s2">"Gag ~ bs(Age, knots=r_quarts)"</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">bs_formula</span> <span class="o">=</span> <span class="n">robjects</span><span class="o">.</span><span class="n">Formula</span><span class="p">(</span><span class="s2">"Gag ~ bs(Age, knots=r_quarts)"</span><span class="p">)</span>
 <span class="n">bs_formula</span><span class="o">.</span><span class="n">environment</span><span class="p">[</span><span class="s1">'Gag'</span><span class="p">]</span> <span class="o">=</span> <span class="n">r_gag</span>
 <span class="n">bs_formula</span><span class="o">.</span><span class="n">environment</span><span class="p">[</span><span class="s1">'Age'</span><span class="p">]</span> <span class="o">=</span> <span class="n">r_age</span>
 <span class="n">bs_formula</span><span class="o">.</span><span class="n">environment</span><span class="p">[</span><span class="s1">'r_quarts'</span><span class="p">]</span> <span class="o">=</span> <span class="n">r_quarts</span>
@@ -2451,7 +2451,7 @@ R's <code>smooth_spline</code> funciton has built-in CV to find a good lambda. S
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">ax32</span> <span class="o">=</span> <span class="n">GAGurine</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">'Age'</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s1">'GAG'</span><span class="p">,</span><span class="n">c</span><span class="o">=</span><span class="s1">'grey'</span><span class="p">,</span><span class="n">title</span><span class="o">=</span><span class="s2">"GAG in urine of children"</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ax32</span> <span class="o">=</span> <span class="n">GAGurine</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">'Age'</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s1">'GAG'</span><span class="p">,</span><span class="n">c</span><span class="o">=</span><span class="s1">'grey'</span><span class="p">,</span><span class="n">title</span><span class="o">=</span><span class="s2">"GAG in urine of children"</span><span class="p">)</span>
 <span class="n">ax32</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">"Age"</span><span class="p">)</span>
 <span class="n">ax32</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">"GAG"</span><span class="p">)</span>
 <span class="n">ax32</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">predict_frame</span><span class="o">.</span><span class="n">rx2</span><span class="p">(</span><span class="s2">"Age"</span><span class="p">),</span><span class="n">ns_out</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'red'</span><span class="p">)</span>
@@ -2475,7 +2475,7 @@ R's <code>smooth_spline</code> funciton has built-in CV to find a good lambda. S
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># your answer here</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># your answer here</span>
 </pre></div>
 </div>
 </div>
@@ -2486,7 +2486,7 @@ R's <code>smooth_spline</code> funciton has built-in CV to find a good lambda. S
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">overfit_formula</span> <span class="o">=</span> <span class="n">robjects</span><span class="o">.</span><span class="n">Formula</span><span class="p">(</span><span class="s2">"Gag ~ bs(Age, knots=r_quarts)"</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">overfit_formula</span> <span class="o">=</span> <span class="n">robjects</span><span class="o">.</span><span class="n">Formula</span><span class="p">(</span><span class="s2">"Gag ~ bs(Age, knots=r_quarts)"</span><span class="p">)</span>
 <span class="n">overfit_formula</span><span class="o">.</span><span class="n">environment</span><span class="p">[</span><span class="s1">'Gag'</span><span class="p">]</span> <span class="o">=</span> <span class="n">r_gag</span>
 <span class="n">overfit_formula</span><span class="o">.</span><span class="n">environment</span><span class="p">[</span><span class="s1">'Age'</span><span class="p">]</span> <span class="o">=</span> <span class="n">r_age</span>
 <span class="n">overfit_formula</span><span class="o">.</span><span class="n">environment</span><span class="p">[</span><span class="s1">'r_quarts'</span><span class="p">]</span> <span class="o">=</span> <span class="n">robjects</span><span class="o">.</span><span class="n">FloatVector</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">14</span><span class="p">,</span><span class="mi">16</span><span class="p">]))</span>
@@ -2503,7 +2503,7 @@ R's <code>smooth_spline</code> funciton has built-in CV to find a good lambda. S
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">ax32</span> <span class="o">=</span> <span class="n">GAGurine</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">'Age'</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s1">'GAG'</span><span class="p">,</span><span class="n">c</span><span class="o">=</span><span class="s1">'grey'</span><span class="p">,</span><span class="n">title</span><span class="o">=</span><span class="s2">"GAG in urine of children"</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ax32</span> <span class="o">=</span> <span class="n">GAGurine</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">'Age'</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s1">'GAG'</span><span class="p">,</span><span class="n">c</span><span class="o">=</span><span class="s1">'grey'</span><span class="p">,</span><span class="n">title</span><span class="o">=</span><span class="s2">"GAG in urine of children"</span><span class="p">)</span>
 <span class="n">ax32</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">"Age"</span><span class="p">)</span>
 <span class="n">ax32</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">"GAG"</span><span class="p">)</span>
 <span class="n">ax32</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">predict_frame</span><span class="o">.</span><span class="n">rx2</span><span class="p">(</span><span class="s2">"Age"</span><span class="p">),</span><span class="n">ns_out</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'red'</span><span class="p">)</span>
@@ -2520,7 +2520,7 @@ R's <code>smooth_spline</code> funciton has built-in CV to find a good lambda. S
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#%R -i overfit_model plot(overfit_model)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#%R -i overfit_model plot(overfit_model)</span>
 <span class="c1"># we'd get the same diagnostic plot we get from an lm model</span>
 </pre></div>
 </div>
@@ -2541,7 +2541,7 @@ R's <code>smooth_spline</code> funciton has built-in CV to find a good lambda. S
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">kyphosis</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"data/kyphosis.csv"</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">kyphosis</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"data/kyphosis.csv"</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">"""</span>
 <span class="s2"># kyphosis - wherther a particular deformation was present post-operation</span>
@@ -2563,7 +2563,7 @@ R's <code>smooth_spline</code> funciton has built-in CV to find a good lambda. S
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#If there are errors about missing R packages, run the code below:</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#If there are errors about missing R packages, run the code below:</span>
 
 <span class="c1">#r_utils = importr('utils')</span>
 <span class="c1">#r_utils.install_packages('codetools')</span>
@@ -2597,7 +2597,7 @@ R's <code>smooth_spline</code> funciton has built-in CV to find a good lambda. S
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#There is a Python library in development for using GAMs (https://github.com/dswah/pyGAM)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#There is a Python library in development for using GAMs (https://github.com/dswah/pyGAM)</span>
 <span class="c1"># but it is not yet as comprehensive as the R GAM library, which we will use here instead.</span>
 
 <span class="c1"># R also has the mgcv library, which implements some more advanced/flexible fitting methods</span>
@@ -2636,7 +2636,7 @@ R's <code>smooth_spline</code> funciton has built-in CV to find a good lambda. S
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">kyph1_gam</span><span class="o">.</span><span class="n">names</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">kyph1_gam</span><span class="o">.</span><span class="n">names</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -2655,7 +2655,7 @@ R's <code>smooth_spline</code> funciton has built-in CV to find a good lambda. S
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">R</span> -i kyph1_gam plot(kyph1_gam, residuals=TRUE,se=TRUE, scale=20);
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">R</span> -i kyph1_gam plot(kyph1_gam, residuals=TRUE,se=TRUE, scale=20);
 </pre></div>
 </div>
 </div>
@@ -2675,7 +2675,7 @@ R's <code>smooth_spline</code> funciton has built-in CV to find a good lambda. S
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">kyph_new</span> <span class="o">=</span> <span class="n">robjects</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">'Age'</span><span class="p">:</span> <span class="n">robjects</span><span class="o">.</span><span class="n">IntVector</span><span class="p">((</span><span class="mi">84</span><span class="p">,</span><span class="mi">85</span><span class="p">,</span><span class="mi">86</span><span class="p">)),</span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">kyph_new</span> <span class="o">=</span> <span class="n">robjects</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">'Age'</span><span class="p">:</span> <span class="n">robjects</span><span class="o">.</span><span class="n">IntVector</span><span class="p">((</span><span class="mi">84</span><span class="p">,</span><span class="mi">85</span><span class="p">,</span><span class="mi">86</span><span class="p">)),</span> 
                                <span class="s1">'Start'</span><span class="p">:</span> <span class="n">robjects</span><span class="o">.</span><span class="n">IntVector</span><span class="p">((</span><span class="mi">5</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">)),</span> 
                                <span class="s1">'Number'</span><span class="p">:</span> <span class="n">robjects</span><span class="o">.</span><span class="n">IntVector</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">10</span><span class="p">))})</span>
 
@@ -2728,7 +2728,7 @@ R's <code>smooth_spline</code> funciton has built-in CV to find a good lambda. S
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">r_anova</span> <span class="o">=</span> <span class="n">robjects</span><span class="o">.</span><span class="n">r</span><span class="p">[</span><span class="s2">"anova"</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">r_anova</span> <span class="o">=</span> <span class="n">robjects</span><span class="o">.</span><span class="n">r</span><span class="p">[</span><span class="s2">"anova"</span><span class="p">]</span>
 
 <span class="n">kyph0_fmla</span> <span class="o">=</span> <span class="n">robjects</span><span class="o">.</span><span class="n">Formula</span><span class="p">(</span><span class="s2">"Kyphosis~1"</span><span class="p">)</span>
 <span class="n">kyph0_fmla</span><span class="o">.</span><span class="n">environment</span><span class="p">[</span><span class="s1">'Kyphosis'</span><span class="p">]</span><span class="o">=</span><span class="n">r_kyph</span>
@@ -2753,7 +2753,7 @@ R's <code>smooth_spline</code> funciton has built-in CV to find a good lambda. S
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">h</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">xi</span><span class="p">,</span> <span class="n">pow_arg</span><span class="p">):</span> <span class="c1">#pow is a reserved keyword in Python</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">h</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">xi</span><span class="p">,</span> <span class="n">pow_arg</span><span class="p">):</span> <span class="c1">#pow is a reserved keyword in Python</span>
     <span class="k">if</span> <span class="p">(</span><span class="n">x</span> <span class="o">></span> <span class="n">xi</span><span class="p">):</span>
         <span class="k">return</span> <span class="nb">pow</span><span class="p">((</span><span class="n">x</span><span class="o">-</span><span class="n">xi</span><span class="p">),</span><span class="n">pow_arg</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
@@ -2770,7 +2770,7 @@ R's <code>smooth_spline</code> funciton has built-in CV to find a good lambda. S
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">xvals</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mf">10.1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">xvals</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mf">10.1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">)</span>
 <span class="n">ax20</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xvals</span><span class="p">,</span><span class="n">h</span><span class="p">(</span><span class="n">xvals</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span><span class="n">color</span><span class="o">=</span><span class="s2">"red"</span><span class="p">)</span>
 <span class="n">_</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">"Truncated linear basis function with knot at x=4"</span><span class="p">)</span>
 <span class="n">_</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">"$x$"</span><span class="p">)</span>
@@ -2785,7 +2785,7 @@ R's <code>smooth_spline</code> funciton has built-in CV to find a good lambda. S
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">ax21</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xvals</span><span class="p">,</span><span class="n">h</span><span class="p">(</span><span class="n">xvals</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span><span class="n">color</span><span class="o">=</span><span class="s2">"red"</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ax21</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xvals</span><span class="p">,</span><span class="n">h</span><span class="p">(</span><span class="n">xvals</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span><span class="n">color</span><span class="o">=</span><span class="s2">"red"</span><span class="p">)</span>
 <span class="n">_</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">"Truncated cubic basis function with knot at x=4"</span><span class="p">)</span>
 <span class="n">_</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">"$x$"</span><span class="p">)</span>
 <span class="n">_</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">"$(x-4)_+^3$"</span><span class="p">)</span>
@@ -2799,7 +2799,7 @@ R's <code>smooth_spline</code> funciton has built-in CV to find a good lambda. S
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">ax22</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xvals</span><span class="p">,</span><span class="mi">2</span><span class="o">+</span><span class="n">xvals</span><span class="o">+</span><span class="mi">3</span><span class="o">*</span><span class="n">h</span><span class="p">(</span><span class="n">xvals</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span><span class="o">-</span><span class="mi">4</span><span class="o">*</span><span class="n">h</span><span class="p">(</span><span class="n">xvals</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span><span class="o">+</span><span class="mf">0.5</span><span class="o">*</span><span class="n">h</span><span class="p">(</span><span class="n">xvals</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span><span class="n">color</span><span class="o">=</span><span class="s2">"red"</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ax22</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xvals</span><span class="p">,</span><span class="mi">2</span><span class="o">+</span><span class="n">xvals</span><span class="o">+</span><span class="mi">3</span><span class="o">*</span><span class="n">h</span><span class="p">(</span><span class="n">xvals</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span><span class="o">-</span><span class="mi">4</span><span class="o">*</span><span class="n">h</span><span class="p">(</span><span class="n">xvals</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span><span class="o">+</span><span class="mf">0.5</span><span class="o">*</span><span class="n">h</span><span class="p">(</span><span class="n">xvals</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span><span class="n">color</span><span class="o">=</span><span class="s2">"red"</span><span class="p">)</span>
 <span class="n">_</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">"Piecewise linear spline with knots at x=2, 5, and 8"</span><span class="p">)</span>
 <span class="n">_</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">"$x$"</span><span class="p">)</span>
 <span class="n">_</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">"$y$"</span><span class="p">)</span>
@@ -2821,7 +2821,7 @@ R's <code>smooth_spline</code> funciton has built-in CV to find a good lambda. S
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mf">9.9</span><span class="o">/</span><span class="mi">100</span><span class="p">)</span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mf">9.9</span><span class="o">/</span><span class="mi">100</span><span class="p">)</span> 
 <span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="k">import</span> <span class="n">norm</span>
 <span class="c1">#ppf (percent point function) is the rather unusual name for</span>
 <span class="c1">#the quantile or inverse CDF function in SciPy</span>
@@ -2842,7 +2842,7 @@ R's <code>smooth_spline</code> funciton has built-in CV to find a good lambda. S
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">ax24</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">facecolors</span><span class="o">=</span><span class="s1">'none'</span><span class="p">,</span> <span class="n">edgecolors</span><span class="o">=</span><span class="s1">'black'</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ax24</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">facecolors</span><span class="o">=</span><span class="s1">'none'</span><span class="p">,</span> <span class="n">edgecolors</span><span class="o">=</span><span class="s1">'black'</span><span class="p">)</span>
 <span class="n">_</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">"6 knots"</span><span class="p">)</span>
 <span class="n">_</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">"$x$"</span><span class="p">)</span>
 <span class="n">_</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">"$y$"</span><span class="p">)</span>
@@ -2858,7 +2858,7 @@ R's <code>smooth_spline</code> funciton has built-in CV to find a good lambda. S
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">ax25</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">facecolors</span><span class="o">=</span><span class="s1">'none'</span><span class="p">,</span> <span class="n">edgecolors</span><span class="o">=</span><span class="s1">'black'</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ax25</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">facecolors</span><span class="o">=</span><span class="s1">'none'</span><span class="p">,</span> <span class="n">edgecolors</span><span class="o">=</span><span class="s1">'black'</span><span class="p">)</span>
 <span class="n">_</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">"9 knots"</span><span class="p">)</span>
 <span class="n">_</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">"$x$"</span><span class="p">)</span>
 <span class="n">_</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">"$y$"</span><span class="p">)</span>
@@ -2874,7 +2874,7 @@ R's <code>smooth_spline</code> funciton has built-in CV to find a good lambda. S
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">regstr</span> <span class="o">=</span> <span class="s1">'y~x+'</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">regstr</span> <span class="o">=</span> <span class="s1">'y~x+'</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">26</span><span class="p">):</span>
     <span class="n">regstr</span> <span class="o">+=</span> <span class="s1">'h(x,'</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="o">/</span><span class="mi">26</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span><span class="o">+</span><span class="s1">',1)+'</span>
 <span class="n">regstr</span> <span class="o">=</span> <span class="n">regstr</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="c1">#drop last +</span>
@@ -2902,7 +2902,7 @@ R's <code>smooth_spline</code> funciton has built-in CV to find a good lambda. S
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># try it here</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># try it here</span>
 </pre></div>
 </div>
 </div>
@@ -2913,7 +2913,7 @@ R's <code>smooth_spline</code> funciton has built-in CV to find a good lambda. S
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#So, we see that increasing the number of knots results in a more polynomial-like fit</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#So, we see that increasing the number of knots results in a more polynomial-like fit</span>
 </pre></div>
 </div>
 </div>
@@ -2924,7 +2924,7 @@ R's <code>smooth_spline</code> funciton has built-in CV to find a good lambda. S
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Next, we look at cubic splines with increasing numbers of knots</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Next, we look at cubic splines with increasing numbers of knots</span>
 <span class="n">ax27</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">facecolors</span><span class="o">=</span><span class="s1">'none'</span><span class="p">,</span> <span class="n">edgecolors</span><span class="o">=</span><span class="s1">'black'</span><span class="p">)</span>
 <span class="n">_</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">"3 knots"</span><span class="p">)</span>
 <span class="n">_</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">"$x$"</span><span class="p">)</span>
@@ -2941,7 +2941,7 @@ R's <code>smooth_spline</code> funciton has built-in CV to find a good lambda. S
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">ax28</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">facecolors</span><span class="o">=</span><span class="s1">'none'</span><span class="p">,</span> <span class="n">edgecolors</span><span class="o">=</span><span class="s1">'black'</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ax28</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">facecolors</span><span class="o">=</span><span class="s1">'none'</span><span class="p">,</span> <span class="n">edgecolors</span><span class="o">=</span><span class="s1">'black'</span><span class="p">)</span>
 <span class="n">_</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">"6 knots"</span><span class="p">)</span>
 <span class="n">_</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">"$x$"</span><span class="p">)</span>
 <span class="n">_</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">"$y$"</span><span class="p">)</span>
@@ -2957,7 +2957,7 @@ R's <code>smooth_spline</code> funciton has built-in CV to find a good lambda. S
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">ax29</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">facecolors</span><span class="o">=</span><span class="s1">'none'</span><span class="p">,</span> <span class="n">edgecolors</span><span class="o">=</span><span class="s1">'black'</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ax29</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">facecolors</span><span class="o">=</span><span class="s1">'none'</span><span class="p">,</span> <span class="n">edgecolors</span><span class="o">=</span><span class="s1">'black'</span><span class="p">)</span>
 <span class="n">_</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">"9 knots"</span><span class="p">)</span>
 <span class="n">_</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">"$x$"</span><span class="p">)</span>
 <span class="n">_</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">"$y$"</span><span class="p">)</span>
@@ -2973,7 +2973,7 @@ R's <code>smooth_spline</code> funciton has built-in CV to find a good lambda. S
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">regstr2</span> <span class="o">=</span> <span class="s1">'y~x+np.power(x,2)+np.power(x,3)+'</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">regstr2</span> <span class="o">=</span> <span class="s1">'y~x+np.power(x,2)+np.power(x,3)+'</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">26</span><span class="p">):</span>
     <span class="n">regstr2</span> <span class="o">+=</span> <span class="s1">'h(x,'</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="o">/</span><span class="mi">26</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span><span class="o">+</span><span class="s1">',3)+'</span>
 <span class="n">regstr2</span> <span class="o">=</span> <span class="n">regstr2</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="c1">#drop last +</span>

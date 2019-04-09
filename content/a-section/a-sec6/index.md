@@ -1,8 +1,10 @@
-Title: Advance Sections 6
-Date: 2019-01-11
+Title: Advance Sections 6: Deep Reinforcement Learning
+Category: A-sections
+Date: 2019-03-28
 Slug: a-section6
-Author: 
+Author: Srivatsan  Srinivasan
+Tags: Reinforcement learning, Q-learning, Deep Reinforcement Learning
 
 
-
-# Advance Sections 6
+### Slides
+- [PDF]({attach}presentation/cs109b_asec6_deepRL_slides.pdf)
