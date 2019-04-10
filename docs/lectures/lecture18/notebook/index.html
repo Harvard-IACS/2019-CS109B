@@ -1064,11 +1064,11 @@ h6:hover .anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1><img src="https://raw.githubusercontent.com/Harvard-IACS/2018-CS109A/master/content/styles/iacs.png" style="float: left; padding-right: 10px; width: 45px" /> CS109B Data Science 2: Advanced Topics in Data Science</h1>
-<h2 id="Lecture-18:-Autoencoders-Example">Lecture 18: Autoencoders Example<a class="anchor-link" href="#Lecture-18:-Autoencoders-Example">¶</a></h2><p><strong>Harvard University</strong><br />
-<strong>Spring 2019</strong><br />
-<strong>Instructors:</strong> Pavlos Protopapas and Mark Glickman<br /></p>
-<hr style="height:2pt" />
+<h1><img src="https://raw.githubusercontent.com/Harvard-IACS/2018-CS109A/master/content/styles/iacs.png" style="float: left; padding-right: 10px; width: 45px"> CS109B Data Science 2: Advanced Topics in Data Science</h1>
+<h2 id="Lecture-18:-Autoencoders-Example">Lecture 18: Autoencoders Example<a class="anchor-link" href="#Lecture-18:-Autoencoders-Example">¶</a></h2><p><strong>Harvard University</strong><br>
+<strong>Spring 2019</strong><br>
+<strong>Instructors:</strong> Pavlos Protopapas and Mark Glickman<br></p>
+<hr style="height:2pt">
 <p>Code and ideas taken/borrowed/adapted from 
 Deep Learning From Basics to Practice, by Andrew Glassner, <a href="https://dlbasics.com">https://dlbasics.com</a>, <a href="http://glassner.com">http://glassner.com</a>, Python utilities for saving and loading files, mostly images and Keras model weights</p>
 </div>
@@ -1079,7 +1079,7 @@ Deep Learning From Basics to Practice, by Andrew Glassner, <a href="https://dlba
 <div class="prompt input_prompt">In [1]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#RUN THIS CELL </span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#RUN THIS CELL </span>
 <span class="kn">import</span> <span class="nn">requests</span>
 <span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="k">import</span> <span class="n">HTML</span>
 <span class="n">styles</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"https://raw.githubusercontent.com/Harvard-IACS/2018-CS109A/master/content/styles/cs109.css"</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
@@ -1163,7 +1163,7 @@ header {
 <div class="prompt input_prompt">In [2]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">keras.datasets</span> <span class="k">import</span> <span class="n">mnist</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">keras.datasets</span> <span class="k">import</span> <span class="n">mnist</span>
 <span class="kn">from</span> <span class="nn">keras.models</span> <span class="k">import</span> <span class="n">Sequential</span><span class="p">,</span> <span class="n">Model</span>
 <span class="kn">from</span> <span class="nn">keras.layers</span> <span class="k">import</span> <span class="n">Dense</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -1196,7 +1196,7 @@ header {
 <div class="prompt input_prompt">In [3]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># I will be saving everything so I can re-use them </span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># I will be saving everything so I can re-use them </span>
 <span class="n">save_files</span> <span class="o">=</span> <span class="kc">True</span>
 
 <span class="kn">import</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">sys</span><span class="o">,</span> <span class="nn">inspect</span>
@@ -1214,7 +1214,7 @@ header {
 <div class="prompt input_prompt">In [4]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">random_seed</span> <span class="o">=</span> <span class="mi">52</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">random_seed</span> <span class="o">=</span> <span class="mi">52</span>
 <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="n">random_seed</span><span class="p">)</span>
 
 <span class="c1"># Read MNIST data. Of course we will not be using y_train and y_test</span>
@@ -1257,7 +1257,7 @@ header {
 <div class="prompt input_prompt">In [5]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">draw_predictions_set</span><span class="p">(</span><span class="n">predictions</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">draw_predictions_set</span><span class="p">(</span><span class="n">predictions</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
         <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
@@ -1283,7 +1283,7 @@ header {
 <div class="prompt input_prompt">In [28]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Build and train our first autoencoder</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Build and train our first autoencoder</span>
 <span class="n">num_latent_vars</span> <span class="o">=</span> <span class="mi">20</span>
 
 <span class="n">modelAE1</span> <span class="o">=</span> <span class="n">Sequential</span><span class="p">()</span>
@@ -1310,7 +1310,7 @@ header {
 <div class="prompt input_prompt">In [29]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">predictions1</span> <span class="o">=</span> <span class="n">modelAE1</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">predictions1</span> <span class="o">=</span> <span class="n">modelAE1</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
 <span class="n">draw_predictions_set</span><span class="p">(</span><span class="n">predictions1</span><span class="p">,</span> <span class="s1">'FCC1'</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -1320,7 +1320,7 @@ header {
 <div class="output">
 <div class="output_area">
 <div class="prompt"></div>
-<div class="output_png output_subarea ">
+<div class="output_png output_subarea">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAjgAAAD3CAYAAAAQVC6+AAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAADl0RVh0U29mdHdhcmUAbWF0cGxvdGxpYiB2ZXJzaW9uIDIuMS4wLCBo
 dHRwOi8vbWF0cGxvdGxpYi5vcmcvpW3flQAAGcpJREFUeJzt3XuUVlX5wPE9ilzUJRcZRdK4Ohgi
@@ -1440,7 +1440,7 @@ a5dTV1FRIfHw4cPD7VjImDeOP8Yw/hjD+GMM4481OAAAIJFIcAAAgDqxnKJKKl6rxh9jGH+MYfwx
 hvHHFBUAAEgkEhwAAKAOCQ4AAFCHBAcAAKhDggMAANQhwQEAAOrUSrN9lTHmUBgdwedqlqPnMIb5
 wxjGH2MYf4xh/AUaw7TOwQEAAIgDpqgAAIA6JDgAAEAdEhwAAKAOCQ4AAFCHBAcAAKhDggMAANQh
 wQEAAOqQ4AAAAHVIcAAAgDr/B8+rm3esnd/6AAAAAElFTkSuQmCC
-" />
+">
 </div>
 </div>
 </div>
@@ -1451,7 +1451,7 @@ wQEAAOqQ4AAAAHVIcAAAgDr/B8+rm3esnd/6AAAAAElFTkSuQmCC
 <div class="prompt input_prompt">In [30]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Build and train our first autoencoder</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Build and train our first autoencoder</span>
 <span class="n">num_latent_vars</span> <span class="o">=</span> <span class="mi">20</span>
 
 <span class="n">modelAE1_s</span> <span class="o">=</span> <span class="n">Sequential</span><span class="p">()</span>
@@ -1478,7 +1478,7 @@ wQEAAOqQ4AAAAHVIcAAAgDr/B8+rm3esnd/6AAAAAElFTkSuQmCC
 <div class="prompt input_prompt">In [9]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">predictions1</span> <span class="o">=</span> <span class="n">modelAE1_s</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">predictions1</span> <span class="o">=</span> <span class="n">modelAE1_s</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
 <span class="n">draw_predictions_set</span><span class="p">(</span><span class="n">predictions1</span><span class="p">,</span> <span class="s1">'FCC1-s'</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -1488,7 +1488,7 @@ wQEAAOqQ4AAAAHVIcAAAgDr/B8+rm3esnd/6AAAAAElFTkSuQmCC
 <div class="output">
 <div class="output_area">
 <div class="prompt"></div>
-<div class="output_png output_subarea ">
+<div class="output_png output_subarea">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAjgAAAD3CAYAAAAQVC6+AAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAADl0RVh0U29mdHdhcmUAbWF0cGxvdGxpYiB2ZXJzaW9uIDIuMS4wLCBo
 dHRwOi8vbWF0cGxvdGxpYi5vcmcvpW3flQAAIABJREFUeJzt3XmQVcXZx/FnFEVxQURQQYIsgoCi
@@ -1667,7 +1667,7 @@ QVmaNtLpG57+fTWLn3tf/q3n7AirvTOCAwAAskMHBwAAZIcODgAAyE5dtmqohM/96+vUUtdbbLFF
 NQAAgE6JDg4AAMhOa8vE15jZslpciJcaFksNf69du7Zm19TO+n/2IaXU7R7if2R9D3NOS4ms72En
 kdU9rHTl7tS0jAZQ6h62ag4OAABAIyBFBQAAskMHBwAAZIcODgAAyA4dHAAAkB06OAAAIDt0cAAA
 QHbo4AAAgOzQwQEAANmhgwMAALLzfyvtaz73LSK5AAAAAElFTkSuQmCC
-" />
+">
 </div>
 </div>
 </div>
@@ -1678,7 +1678,7 @@ QHbo4AAAgOzQwQEAANmhgwMAALLzfyvtaz73LSK5AAAAAElFTkSuQmCC
 <div class="prompt input_prompt">In [31]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">PIL</span> <span class="k">import</span> <span class="n">Image</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">PIL</span> <span class="k">import</span> <span class="n">Image</span>
 
 <span class="n">filepath</span> <span class="o">=</span> <span class="n">file_helper</span><span class="o">.</span><span class="n">get_input_file_path</span><span class="p">(</span><span class="s2">"pavlos-gray-28-28.png"</span><span class="p">)</span>
 <span class="n">im</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">filepath</span><span class="p">)</span> 
@@ -1711,7 +1711,7 @@ QHbo4AAAgOzQwQEAANmhgwMAALLzfyvtaz73LSK5AAAAAElFTkSuQmCC
 <div class="output">
 <div class="output_area">
 <div class="prompt"></div>
-<div class="output_png output_subarea ">
+<div class="output_png output_subarea">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAagAAADWCAYAAACE7RbFAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAADl0RVh0U29mdHdhcmUAbWF0cGxvdGxpYiB2ZXJzaW9uIDIuMS4wLCBo
 dHRwOi8vbWF0cGxvdGxpYi5vcmcvpW3flQAAEgRJREFUeJzt3UtvHOUSh/F3fInvdmzHY8dOsJ2Q
@@ -1796,7 +1796,7 @@ HtZaNzMzE9ZevnwZ1mjCO32GaAo6xetpEvjDhw/D2sjISFi7cOFCWKNp4DRRniL7k5OTYe3zzz+v
 3L62thauWVlZCWtRbL0Unnov6e3xDkqSlJINSpKUkg1KkpSSDUqSlJINSpKUkg1KkpRSg6Y6/89/
 3Gisl1L+fnO7I6W32Ol04ucOXoHfI+nVvkddNShJkt4W/4lPkpSSDUqSlJINSpKUkg1KkpSSDUqS
 lJINSpKUkg1KkpSSDUqSlJINSpKU0n8AkhqJB9xPOLEAAAAASUVORK5CYII=
-" />
+">
 </div>
 </div>
 </div>
@@ -1807,7 +1807,7 @@ lJINSpKUkg1KkpSSDUqSlJINSpKU0n8AkhqJB9xPOLEAAAAASUVORK5CYII=
 <div class="prompt input_prompt">In [33]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># rebuild model with the Functional API so we can play with the decoder alone</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># rebuild model with the Functional API so we can play with the decoder alone</span>
 <span class="kn">from</span> <span class="nn">keras.layers</span> <span class="k">import</span> <span class="n">Input</span>
 
 <span class="n">num_latent_vars</span> <span class="o">=</span> <span class="mi">20</span>
@@ -1848,7 +1848,7 @@ lJINSpKUkg1KkpSSDUqSlJINSpKU0n8AkhqJB9xPOLEAAAAASUVORK5CYII=
 <div class="prompt input_prompt">In [36]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">model_AE_F</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">optimizer</span><span class="o">=</span><span class="s1">'adadelta'</span><span class="p">,</span> <span class="n">loss</span><span class="o">=</span><span class="s1">'binary_crossentropy'</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">model_AE_F</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">optimizer</span><span class="o">=</span><span class="s1">'adadelta'</span><span class="p">,</span> <span class="n">loss</span><span class="o">=</span><span class="s1">'binary_crossentropy'</span><span class="p">)</span>
 
 <span class="n">weights_filename</span> <span class="o">=</span> <span class="s2">"model-AE-F-weights"</span>
 <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">52</span><span class="p">)</span>
@@ -1919,7 +1919,7 @@ Epoch 20/20
 <div class="prompt input_prompt">In [37]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># show the input data, its latent values, and the corresponding predicted images</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># show the input data, its latent values, and the corresponding predicted images</span>
 <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="n">random_seed</span><span class="p">)</span>
 <span class="n">encoder_predictions</span> <span class="o">=</span> <span class="n">model_encoder_only_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
 
@@ -1956,7 +1956,7 @@ Epoch 20/20
 <div class="output">
 <div class="output_area">
 <div class="prompt"></div>
-<div class="output_png output_subarea ">
+<div class="output_png output_subarea">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAjgAAAFPCAYAAABAurQSAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAADl0RVh0U29mdHdhcmUAbWF0cGxvdGxpYiB2ZXJzaW9uIDIuMS4wLCBo
 dHRwOi8vbWF0cGxvdGxpYi5vcmcvpW3flQAAIABJREFUeJzt3XmYFNXVx/FT4r68CoiKhICiomhQ
@@ -2138,7 +2138,7 @@ AABAcBjgAACA4AQzi0rp+hrJmje69o3StpTuLl2Nazpw53/2kcPsI4fZRw6zj1lUAACgJjHAAQAA
 wUl7FtUSMyv7fgi6uFCy6JAuPpRRHSp9AqulksNAkcPsI4fZRw6zr6gcpnoPDgAAQBpoUQEAgOAw
 wAEAAMFhgAMAAILDAAcAAASHAQ4AAAgOAxwAABAcBjgAACA4DHAAAEBwGOAAAIDg/D8jdxv+g3Kl
 /gAAAABJRU5ErkJggg==
-" />
+">
 </div>
 </div>
 </div>
@@ -2149,7 +2149,7 @@ wAEAAMFhgAMAAILDAAcAAASHAQ4AAAgOAxwAABAcBjgAACA4DHAAAEBwGOAAAIDg/D8jdxv+g3Kl
 <div class="prompt input_prompt">In [38]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># show the latent values and the corresponding predicted images</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># show the latent values and the corresponding predicted images</span>
 <span class="c1"># this makes big vertical spaces between the </span>
 <span class="k">def</span> <span class="nf">show_latents_and_predictions</span><span class="p">(</span><span class="n">predictions</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
@@ -2181,7 +2181,7 @@ wAEAAMFhgAMAAILDAAcAAASHAQ4AAAgOAxwAABAcBjgAACA4DHAAAEBwGOAAAIDg/D8jdxv+g3Kl
 <div class="prompt input_prompt">In [39]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># add [-noise to all values</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># add [-noise to all values</span>
 <span class="n">encoder_predictions</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">model_encoder_only_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">))</span>
 <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="n">random_seed</span><span class="p">)</span>
 <span class="n">noise</span> <span class="o">=</span> <span class="mi">10</span>
@@ -2197,7 +2197,7 @@ wAEAAMFhgAMAAILDAAcAAASHAQ4AAAgOAxwAABAcBjgAACA4DHAAAEBwGOAAAIDg/D8jdxv+g3Kl
 <div class="output">
 <div class="output_area">
 <div class="prompt"></div>
-<div class="output_png output_subarea ">
+<div class="output_png output_subarea">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAjgAAAEDCAYAAAA4IH4FAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAADl0RVh0U29mdHdhcmUAbWF0cGxvdGxpYiB2ZXJzaW9uIDIuMS4wLCBo
 dHRwOi8vbWF0cGxvdGxpYi5vcmcvpW3flQAAGfVJREFUeJzt3X20VVW5x/HfVEFT8YVAIgEPlpEo
@@ -2318,7 +2318,7 @@ r1u3rnUn1gB+64gfOYwfOYwfOYwfIzgAAKCUKHAAAEBykm9RpYRh1fiRw/iRw/iRw/jRogIAAKVE
 gQMAAJJDgQMAAJJDgQMAAJJDgQMAAJLT6ruJ75C0ocXPmYrj2n0CPchh48hh/Mhh/Mhh/GrKYUuX
 iQMAALQCLSoAAJAcChwAAJAcChwAAJAcChwAAJAcChwAAJAcChwAAJAcChwAAJAcChwAAJAcChwA
 AJCc/wd2BEmBJkPz5QAAAABJRU5ErkJggg==
-" />
+">
 </div>
 </div>
 </div>

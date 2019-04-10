@@ -1,4 +1,4 @@
-Title: CS 109B: Advanced Topics in Data
+Title: CS 109B: Advanced Topics in Data Science
 Date: 2018-11-16
 save_as: index.html
 
