@@ -1,7 +1,7 @@
-Title: Advance Sections 7
-Date: 2019-01-11
+Title: Advance Sections 7: VAE
+Date: 2019-04-10
 Slug: a-section7
-Author: 
+Author: Sri
 
 
 

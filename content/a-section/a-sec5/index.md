@@ -1,6 +1,6 @@
 Title: Advanced Section 5: Neural Style Transfer
 Category: A-sections
-Date: 2019-01-27
+Date: 2019-03-21
 Slug: a-section5
 Author: Javier Zazo
 Tags: Neural style transfer, DeconvNet, Content image, Style image, Generated image, DeepDream
