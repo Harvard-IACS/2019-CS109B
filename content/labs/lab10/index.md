@@ -8,6 +8,5 @@ Tags: ae, autoencoder, decoder, vae
 
 # Lab 10
 ### Notebooks
-- [Lab 10 Notebook][1]
+- [Notebook]({filename}cs109b_lab10.ipynb)
 
-[1]:	cs109b_lab10.ipynb
