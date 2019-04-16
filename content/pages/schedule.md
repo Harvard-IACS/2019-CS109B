@@ -1,6 +1,6 @@
 Title: Schedule
 Slug: schedule
-Date: 2019-04-15
+Date: 2019-04-16
 
 
 |Week|Date|Lecture (Mon)|Date|Lecture (Wed)|Lab|Advanced Section (Wed) |Assignment (release and due)|
@@ -12,7 +12,7 @@ Date: 2019-04-15
 |5|25-Feb|[Lecture 8: CNNs-1]({filename}/lectures/lecture8/index.md)|27-Feb|[Lecture 9: CNNs-2]({filename}/lectures/lecture9/index.md)|[Lab 5: CNNs]({filename}/labs/lab5/index.md)|[Advanced Section 3: CNNs and Object Detection]({filename}/a-section/a-sec3/index.md)| HW3 (2/24)|
 |6|4-Mar|[Lecture 10: RNN 1]({filename}/lectures/lecture10/index.md)|6-Mar|[Lecture 11: RNN 2]({filename}/lectures/lecture11/index.md)|[Lab 6: RNNS]({filename}/labs/lab6/index.md)|[Advanced Section 4: RNNs]({filename}/a-section/a-sec4/index.md)| HW4 (3/3)|
 |7|11-Mar|[Lecture 12:  Unsupervised learning/clustering 1]({filename}/lectures/lecture12/index.md)|13-Mar|[Lecture 13: Unsupervised learning/clustering 2]({filename}/lectures/lecture13/index.md)|[Lab 7: Clusterig]({filename}/labs/lab7/index.md)|[Advanced Section 5: Neural Style Transfer]({filename}/a-section/a-sec5/index.md)| HW5 (3/10)|
-|8|25-Mar|[Lecture 14: Reinforcement Learning]({filename}/lectures/lecture14/index.md)|27-Mar|Lecture 15: Bayesian 1/3|[Lab 8: Bayes 1]({filename}/labs/lab8/index.md)|Advanced Section 6: Deep RL||
+|8|25-Mar|[Lecture 14: Reinforcement Learning]({filename}/lectures/lecture14/index.md)|27-Mar|Lecture 15: Bayesian 1/3|[Lab 8: Bayes 1]({filename}/labs/lab8/index.md)|[Advanced Section 6: Deep RL]({filename}/a-section/a-sec6/index.md)||
 |9|1-Apr|Lecture 16: Bayesian 2/3|3-Apr|Lecture 17: Bayesian 3/3|[Lab 9: Bayes 2]({filename}/labs/lab9/index.md)||HW6 (3/30)|
-|10|8-Apr|[Lecture 18: Generative Models Varational Autoenders 1]({filename}/lectures/lecture18/index.md)|10-Apr|[Lecture 19: Generative Models Varational Autoenders 2]({filename}/lectures/lecture19/index.md)|[Lab 10: VAE]({filename}/labs/lab10/index.md)|Advanced Section 7: Variational Inference |HW7 (4/7)|
+|10|8-Apr|[Lecture 18: Generative Models Varational Autoenders 1]({filename}/lectures/lecture18/index.md)|10-Apr|[Lecture 19: Generative Models Varational Autoenders 2]({filename}/lectures/lecture19/index.md)|[Lab 10: VAE]({filename}/labs/lab10/index.md)|[Advanced Section 7: Variational Inference ]({filename}/a-section/a-sec7/index.md)|HW7 (4/7)|
 |11|15-Apr|Lecture 20: GANS|17-Apr|Lecture 21: GANS 2|Lab 11: Adveserial Networks|Advanced Section 8: GANS||
