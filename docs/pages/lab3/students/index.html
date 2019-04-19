@@ -1813,15 +1813,15 @@ epochs and set the decay argument to 0.002 (0.1/50). We also include a momentum 
 <div class="prompt input_prompt">In [23]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="o">%%</span><span class="k">time</span>
-# Fit the model
-batch_size = 28
+<div class="highlight hl-ipython3"><pre><span></span><span class="o">%%time</span>
+<span class="c1"># Fit the model</span>
+<span class="n">batch_size</span> <span class="o">=</span> <span class="mi">28</span>
 
-lr_model_history = lr_model.fit(x_train, y_train,
-                    batch_size=batch_size,
-                    epochs=epochs,
-                    verbose=1,
-                    validation_data=(x_test, y_test))
+<span class="n">lr_model_history</span> <span class="o">=</span> <span class="n">lr_model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span>
+                    <span class="n">batch_size</span><span class="o">=</span><span class="n">batch_size</span><span class="p">,</span>
+                    <span class="n">epochs</span><span class="o">=</span><span class="n">epochs</span><span class="p">,</span>
+                    <span class="n">verbose</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+                    <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">x_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
@@ -2095,15 +2095,15 @@ Wall time: 2min 32s
 <div class="prompt input_prompt">In [35]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="o">%%</span><span class="k">time</span>
-batch_size = 32
-epochs = 20
+<div class="highlight hl-ipython3"><pre><span></span><span class="o">%%time</span>
+<span class="n">batch_size</span> <span class="o">=</span> <span class="mi">32</span>
+<span class="n">epochs</span> <span class="o">=</span> <span class="mi">20</span>
 
-model_history = model.fit(x_train, y_train,
-                    batch_size=batch_size,
-                    epochs=epochs,
-                    verbose=1,
-                    validation_data=(x_test, y_test))
+<span class="n">model_history</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span>
+                    <span class="n">batch_size</span><span class="o">=</span><span class="n">batch_size</span><span class="p">,</span>
+                    <span class="n">epochs</span><span class="o">=</span><span class="n">epochs</span><span class="p">,</span>
+                    <span class="n">verbose</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+                    <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">x_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
@@ -2348,27 +2348,27 @@ Test R2: 0.9542278387249276
 <div class="prompt input_prompt">In [43]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="o">%%</span><span class="k">time</span>
-seed = 7
-numpy.random.seed(seed)
-batch_size = 128
-epochs = 10
+<div class="highlight hl-ipython3"><pre><span></span><span class="o">%%time</span>
+<span class="n">seed</span> <span class="o">=</span> <span class="mi">7</span>
+<span class="n">numpy</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="n">seed</span><span class="p">)</span>
+<span class="n">batch_size</span> <span class="o">=</span> <span class="mi">128</span>
+<span class="n">epochs</span> <span class="o">=</span> <span class="mi">10</span>
 
-model_CV = KerasClassifier(build_fn=create_model, epochs=epochs, batch_size=batch_size, verbose=0)
-# define the grid search parameters
-init_mode = ['uniform', 'lecun_uniform', 'normal', 'zero', 'glorot_normal', 'glorot_uniform', 'he_normal', 'he_uniform']
+<span class="n">model_CV</span> <span class="o">=</span> <span class="n">KerasClassifier</span><span class="p">(</span><span class="n">build_fn</span><span class="o">=</span><span class="n">create_model</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="n">epochs</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="n">batch_size</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="c1"># define the grid search parameters</span>
+<span class="n">init_mode</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'uniform'</span><span class="p">,</span> <span class="s1">'lecun_uniform'</span><span class="p">,</span> <span class="s1">'normal'</span><span class="p">,</span> <span class="s1">'zero'</span><span class="p">,</span> <span class="s1">'glorot_normal'</span><span class="p">,</span> <span class="s1">'glorot_uniform'</span><span class="p">,</span> <span class="s1">'he_normal'</span><span class="p">,</span> <span class="s1">'he_uniform'</span><span class="p">]</span>
 
-param_grid = dict(init_mode=init_mode)
-grid = GridSearchCV(estimator=model_CV, param_grid=param_grid, n_jobs=-1, cv=3)
-grid_result = grid.fit(x_train, y_train)
+<span class="n">param_grid</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">init_mode</span><span class="o">=</span><span class="n">init_mode</span><span class="p">)</span>
+<span class="n">grid</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">estimator</span><span class="o">=</span><span class="n">model_CV</span><span class="p">,</span> <span class="n">param_grid</span><span class="o">=</span><span class="n">param_grid</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">grid_result</span> <span class="o">=</span> <span class="n">grid</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
 
-# summarize results
-print("Best: %f using %s" % (grid_result.best_score_, grid_result.best_params_))
-means = grid_result.cv_results_['mean_test_score']
-stds = grid_result.cv_results_['std_test_score']
-params = grid_result.cv_results_['params']
-for mean, stdev, param in zip(means, stds, params):
-    print("%f (%f) with: %r" % (mean, stdev, param))
+<span class="c1"># summarize results</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Best: </span><span class="si">%f</span><span class="s2"> using </span><span class="si">%s</span><span class="s2">"</span> <span class="o">%</span> <span class="p">(</span><span class="n">grid_result</span><span class="o">.</span><span class="n">best_score_</span><span class="p">,</span> <span class="n">grid_result</span><span class="o">.</span><span class="n">best_params_</span><span class="p">))</span>
+<span class="n">means</span> <span class="o">=</span> <span class="n">grid_result</span><span class="o">.</span><span class="n">cv_results_</span><span class="p">[</span><span class="s1">'mean_test_score'</span><span class="p">]</span>
+<span class="n">stds</span> <span class="o">=</span> <span class="n">grid_result</span><span class="o">.</span><span class="n">cv_results_</span><span class="p">[</span><span class="s1">'std_test_score'</span><span class="p">]</span>
+<span class="n">params</span> <span class="o">=</span> <span class="n">grid_result</span><span class="o">.</span><span class="n">cv_results_</span><span class="p">[</span><span class="s1">'params'</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">mean</span><span class="p">,</span> <span class="n">stdev</span><span class="p">,</span> <span class="n">param</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">means</span><span class="p">,</span> <span class="n">stds</span><span class="p">,</span> <span class="n">params</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="si">%f</span><span class="s2"> (</span><span class="si">%f</span><span class="s2">) with: </span><span class="si">%r</span><span class="s2">"</span> <span class="o">%</span> <span class="p">(</span><span class="n">mean</span><span class="p">,</span> <span class="n">stdev</span><span class="p">,</span> <span class="n">param</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>

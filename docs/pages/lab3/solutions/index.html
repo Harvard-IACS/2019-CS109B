@@ -1832,15 +1832,15 @@ epochs and set the decay argument to 0.0016 (0.1/60). We also include a momentum
 <div class="prompt input_prompt">In [25]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="o">%%</span><span class="k">time</span>
-# Fit the model
-batch_size = int(input_dim/100)
+<div class="highlight hl-ipython3"><pre><span></span><span class="o">%%time</span>
+<span class="c1"># Fit the model</span>
+<span class="n">batch_size</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">input_dim</span><span class="o">/</span><span class="mi">100</span><span class="p">)</span>
 
-lr_model_history = lr_model.fit(x_train, y_train,
-                    batch_size=batch_size,
-                    epochs=epochs,
-                    verbose=1,
-                    validation_data=(x_test, y_test))
+<span class="n">lr_model_history</span> <span class="o">=</span> <span class="n">lr_model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span>
+                    <span class="n">batch_size</span><span class="o">=</span><span class="n">batch_size</span><span class="p">,</span>
+                    <span class="n">epochs</span><span class="o">=</span><span class="n">epochs</span><span class="p">,</span>
+                    <span class="n">verbose</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+                    <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">x_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
@@ -2414,15 +2414,15 @@ Epoch 60/60
 <div class="prompt input_prompt">In [42]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="o">%%</span><span class="k">time</span>
-batch_size = input_dim
-epochs = 60
+<div class="highlight hl-ipython3"><pre><span></span><span class="o">%%time</span>
+<span class="n">batch_size</span> <span class="o">=</span> <span class="n">input_dim</span>
+<span class="n">epochs</span> <span class="o">=</span> <span class="mi">60</span>
 
-model_history = model.fit(x_train, y_train,
-                    batch_size=batch_size,
-                    epochs=epochs,
-                    verbose=1,
-                    validation_data=(x_test, y_test))
+<span class="n">model_history</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span>
+                    <span class="n">batch_size</span><span class="o">=</span><span class="n">batch_size</span><span class="p">,</span>
+                    <span class="n">epochs</span><span class="o">=</span><span class="n">epochs</span><span class="p">,</span>
+                    <span class="n">verbose</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+                    <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">x_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
@@ -2722,21 +2722,21 @@ Test accuracy: 0.9761
 <div class="prompt input_prompt">In [49]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="o">%%</span><span class="k">time</span>
-seed = 7
-numpy.random.seed(seed)
-batch_size = 128
-epochs = 10
+<div class="highlight hl-ipython3"><pre><span></span><span class="o">%%time</span>
+<span class="n">seed</span> <span class="o">=</span> <span class="mi">7</span>
+<span class="n">numpy</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="n">seed</span><span class="p">)</span>
+<span class="n">batch_size</span> <span class="o">=</span> <span class="mi">128</span>
+<span class="n">epochs</span> <span class="o">=</span> <span class="mi">10</span>
 
-model_CV = KerasClassifier(build_fn=create_model, epochs=epochs, 
-                           batch_size=batch_size, verbose=1)
-# define the grid search parameters
-init_mode = ['uniform', 'lecun_uniform', 'normal', 'zero', 
-             'glorot_normal', 'glorot_uniform', 'he_normal', 'he_uniform']
+<span class="n">model_CV</span> <span class="o">=</span> <span class="n">KerasClassifier</span><span class="p">(</span><span class="n">build_fn</span><span class="o">=</span><span class="n">create_model</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="n">epochs</span><span class="p">,</span> 
+                           <span class="n">batch_size</span><span class="o">=</span><span class="n">batch_size</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="c1"># define the grid search parameters</span>
+<span class="n">init_mode</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'uniform'</span><span class="p">,</span> <span class="s1">'lecun_uniform'</span><span class="p">,</span> <span class="s1">'normal'</span><span class="p">,</span> <span class="s1">'zero'</span><span class="p">,</span> 
+             <span class="s1">'glorot_normal'</span><span class="p">,</span> <span class="s1">'glorot_uniform'</span><span class="p">,</span> <span class="s1">'he_normal'</span><span class="p">,</span> <span class="s1">'he_uniform'</span><span class="p">]</span>
 
-param_grid = dict(init_mode=init_mode)
-grid = GridSearchCV(estimator=model_CV, param_grid=param_grid, n_jobs=-1, cv=3)
-grid_result = grid.fit(x_train, y_train)
+<span class="n">param_grid</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">init_mode</span><span class="o">=</span><span class="n">init_mode</span><span class="p">)</span>
+<span class="n">grid</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">estimator</span><span class="o">=</span><span class="n">model_CV</span><span class="p">,</span> <span class="n">param_grid</span><span class="o">=</span><span class="n">param_grid</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">grid_result</span> <span class="o">=</span> <span class="n">grid</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -2951,26 +2951,26 @@ Model loaded
 <div class="prompt input_prompt">In [54]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="o">%%</span><span class="k">time</span>
-# fix random seed for reproducibility (this might work or might not work 
-# depending on each library's implenentation)
-seed = 7
-numpy.random.seed(seed)
+<div class="highlight hl-ipython3"><pre><span></span><span class="o">%%time</span>
+<span class="c1"># fix random seed for reproducibility (this might work or might not work </span>
+<span class="c1"># depending on each library's implenentation)</span>
+<span class="n">seed</span> <span class="o">=</span> <span class="mi">7</span>
+<span class="n">numpy</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="n">seed</span><span class="p">)</span>
 
-# create the sklearn model for the network
-model_init_batch_epoch_CV = KerasClassifier(build_fn=create_model_2, verbose=1)
+<span class="c1"># create the sklearn model for the network</span>
+<span class="n">model_init_batch_epoch_CV</span> <span class="o">=</span> <span class="n">KerasClassifier</span><span class="p">(</span><span class="n">build_fn</span><span class="o">=</span><span class="n">create_model_2</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 
-# we choose the initializers that came at the top in our previous cross-validation!!
-init_mode = ['glorot_uniform', 'uniform'] 
-batches = [128, 512]
-epochs = [10, 20]
+<span class="c1"># we choose the initializers that came at the top in our previous cross-validation!!</span>
+<span class="n">init_mode</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'glorot_uniform'</span><span class="p">,</span> <span class="s1">'uniform'</span><span class="p">]</span> 
+<span class="n">batches</span> <span class="o">=</span> <span class="p">[</span><span class="mi">128</span><span class="p">,</span> <span class="mi">512</span><span class="p">]</span>
+<span class="n">epochs</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">]</span>
 
-# grid search for initializer, batch size and number of epochs
-param_grid = dict(epochs=epochs, batch_size=batches, init=init_mode)
-grid = GridSearchCV(estimator=model_init_batch_epoch_CV, 
-                    param_grid=param_grid,
-                    cv=3)
-grid_result = grid.fit(x_train, y_train)
+<span class="c1"># grid search for initializer, batch size and number of epochs</span>
+<span class="n">param_grid</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">epochs</span><span class="o">=</span><span class="n">epochs</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="n">batches</span><span class="p">,</span> <span class="n">init</span><span class="o">=</span><span class="n">init_mode</span><span class="p">)</span>
+<span class="n">grid</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">estimator</span><span class="o">=</span><span class="n">model_init_batch_epoch_CV</span><span class="p">,</span> 
+                    <span class="n">param_grid</span><span class="o">=</span><span class="n">param_grid</span><span class="p">,</span>
+                    <span class="n">cv</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">grid_result</span> <span class="o">=</span> <span class="n">grid</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
