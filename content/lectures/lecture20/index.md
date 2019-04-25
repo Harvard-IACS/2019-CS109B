@@ -1,4 +1,4 @@
-Title: Lecture 19: GANS
+Title: Lecture 20: GANS
 Date: 2019-04-15
 Slug: lecture20
 Author: Pavlos Protopapas
