@@ -9,7 +9,7 @@ Tags: Generative models, Variational Autoencoders
 ### Slides
 
 - [Lecture 19 PDF]({attach}presentation/cs109b_lecture19_VAE.pdf)
-- [Lecture 19 PPTX]({attach}presentation/cs109b_lecture18_VAE.pptx)
+- [Lecture 19 PPTX]({attach}presentation/cs109b_lecture19_VAE.pptx)
 
 
 

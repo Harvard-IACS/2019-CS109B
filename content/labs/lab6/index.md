@@ -2,7 +2,6 @@ Title: Lab 6: Recurrent Neural Networks
 Date: 2019-3-07
 Slug: lab6
 Author:  Srivatsan Srinivasan
-Date: 03-07-2019
 Tags: keras, RNN, LSTM 
 
 

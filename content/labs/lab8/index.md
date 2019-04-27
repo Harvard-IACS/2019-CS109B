@@ -6,7 +6,7 @@ Author: Paul Tylkin, Vivek HV and Pavlos Protopapas
 Tags: R, bayesian, pyjags, gym, reinforcement learning
 
 
-# Lab 8
+
 
 ### Slides
 - [PDF](Presentation.pdf)
