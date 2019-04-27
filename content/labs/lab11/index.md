@@ -2,7 +2,7 @@ Title: Lab 11: Generative Adversarial Networks
 Category: labs
 Date: 2019-04-18
 Slug: lab11
-Author: Srivatsan
+Author: Srivatsan Srinivasan
 Tags: keras, GAN, MNIST
 
 
