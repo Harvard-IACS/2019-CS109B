@@ -12,6 +12,9 @@ Tags: Adveserial , Generative Adveserial Network, GAN, GANS
 
 
 ### Associated Materials 
+##### Examples
+- [Adversarial Example Code]({filename}notes/cs109b_lecture21_example.ipynb)
+
 ##### Labs
 - [Lab11 Notebook]({filename}../../labs/lab11/cs109b_lab11_gan.ipynb)
 - [Lab11 GAN with solutions]({filename}../../labs/lab11/cs109b_lab11_gan_solutions.ipynb)
