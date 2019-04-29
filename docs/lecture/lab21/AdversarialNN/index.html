@@ -1060,11 +1060,11 @@ h6:hover .anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1><img src="https://raw.githubusercontent.com/Harvard-IACS/2018-CS109A/master/content/styles/iacs.png" style="float: left; padding-right: 10px; width: 45px" /> CS109B Data Science 2: Advanced Topics in Data Science</h1>
-<h2 id="Lecture-21:--Adversarial-Examples">Lecture 21:  Adversarial Examples<a class="anchor-link" href="#Lecture-21:--Adversarial-Examples">¶</a></h2><p><strong>Harvard University</strong><br />
-<strong>Spring 2019</strong><br />
-<strong>Instructors:</strong> Pavlos Protopapas and Mark Glickman<br /></p>
-<hr style="height:2pt" />
+<h1><img src="https://raw.githubusercontent.com/Harvard-IACS/2018-CS109A/master/content/styles/iacs.png" style="float: left; padding-right: 10px; width: 45px"> CS109B Data Science 2: Advanced Topics in Data Science</h1>
+<h2 id="Lecture-21:--Adversarial-Examples">Lecture 21:  Adversarial Examples<a class="anchor-link" href="#Lecture-21:--Adversarial-Examples">¶</a></h2><p><strong>Harvard University</strong><br>
+<strong>Spring 2019</strong><br>
+<strong>Instructors:</strong> Pavlos Protopapas and Mark Glickman<br></p>
+<hr style="height:2pt">
 <p>Code and ideas taken/borrowed/adapted from 
 Deep Learning From Basics to Practice, by Andrew Glassner, <a href="https://dlbasics.com">https://dlbasics.com</a>, <a href="http://glassner.com">http://glassner.com</a>, Python utilities for saving and loading files, mostly images and Keras model weights</p>
 <h4 id="Authors:-Pavlos-Protopapas,-Amil-Merchant,-Alex-Lin,-Thomas-Chang,-ZiZi-Zhang">Authors: Pavlos Protopapas, Amil Merchant, Alex Lin, Thomas Chang, ZiZi Zhang<a class="anchor-link" href="#Authors:-Pavlos-Protopapas,-Amil-Merchant,-Alex-Lin,-Thomas-Chang,-ZiZi-Zhang">¶</a></h4>
@@ -1076,7 +1076,7 @@ Deep Learning From Basics to Practice, by Andrew Glassner, <a href="https://dlba
 <div class="prompt input_prompt">In [1]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#RUN THIS CELL </span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#RUN THIS CELL </span>
 <span class="kn">import</span> <span class="nn">requests</span>
 <span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="k">import</span> <span class="n">HTML</span>
 <span class="n">styles</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"https://raw.githubusercontent.com/Harvard-IACS/2018-CS109A/master/content/styles/cs109.css"</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
@@ -1206,7 +1206,7 @@ header {
 <div class="prompt input_prompt">In [2]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">from</span> <span class="nn">keras.datasets</span> <span class="k">import</span> <span class="n">mnist</span>
 <span class="kn">from</span> <span class="nn">keras.datasets</span> <span class="k">import</span> <span class="n">cifar10</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -1238,7 +1238,7 @@ header {
 <div class="prompt input_prompt">In [3]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="p">(</span><span class="n">mn_x_train</span><span class="p">,</span> <span class="n">mn_y_train</span><span class="p">),</span> <span class="p">(</span><span class="n">mn_x_test</span><span class="p">,</span> <span class="n">mn_y_test</span><span class="p">)</span> <span class="o">=</span> <span class="n">mnist</span><span class="o">.</span><span class="n">load_data</span><span class="p">()</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="p">(</span><span class="n">mn_x_train</span><span class="p">,</span> <span class="n">mn_y_train</span><span class="p">),</span> <span class="p">(</span><span class="n">mn_x_test</span><span class="p">,</span> <span class="n">mn_y_test</span><span class="p">)</span> <span class="o">=</span> <span class="n">mnist</span><span class="o">.</span><span class="n">load_data</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -1258,7 +1258,7 @@ header {
 <div class="prompt input_prompt">In [4]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span> <span class="p">(</span><span class="s2">"Training Examples: </span><span class="si">%d</span><span class="s2">"</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span><span class="n">mn_x_train</span><span class="p">))</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span> <span class="p">(</span><span class="s2">"Training Examples: </span><span class="si">%d</span><span class="s2">"</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span><span class="n">mn_x_train</span><span class="p">))</span>
 <span class="nb">print</span> <span class="p">(</span><span class="s2">"Test Examples: </span><span class="si">%d</span><span class="s2">"</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span><span class="n">mn_x_test</span><span class="p">))</span>
 </pre></div>
 </div>
@@ -1282,7 +1282,7 @@ Test Examples: 10000
 <div class="prompt input_prompt">In [5]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">n_classes</span> <span class="o">=</span> <span class="mi">10</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">n_classes</span> <span class="o">=</span> <span class="mi">10</span>
 <span class="n">inds</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">mn_y_train</span><span class="o">==</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n_classes</span><span class="p">)])</span>
 <span class="n">f</span><span class="p">,</span><span class="n">ax</span><span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
 <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>
@@ -1298,7 +1298,7 @@ Test Examples: 10000
 <div class="output">
 <div class="output_area">
 <div class="prompt"></div>
-<div class="output_png output_subarea ">
+<div class="output_png output_subarea">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlMAAAEjCAYAAAAWi4S0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAADl0RVh0U29mdHdhcmUAbWF0cGxvdGxpYiB2ZXJzaW9uIDIuMS4wLCBo
 dHRwOi8vbWF0cGxvdGxpYi5vcmcvpW3flQAAIABJREFUeJzt3XeYVNX5B/Dvu4VeF1lEOrIrAiIo
@@ -1556,7 +1556,7 @@ tK9lKgdTMwEUiEgnEakD4EIAk1P4+fsyGcCQSDwEFXOxNUpEBMBTAOYaYx4IMhcfWEuEppYA6wkg
 NPVkLRGaWgKsZ+bUMsULx04HsADADwD+kOLPngCgCEAJKkb7VwBogYq7ABZG/sxLQR7HoeIy7bcA
 vo78d3oQubCWrCXrGb56spbhqSXrmTm15ONkiIiIiHzgDuhEREREPnAwRUREROQDB1NEREREPnAw
 RUREROQDB1NEREREPnAwRUREROQDB1NEREREPvw/GN3/WowIKXUAAAAASUVORK5CYII=
-" />
+">
 </div>
 </div>
 </div>
@@ -1591,7 +1591,7 @@ RUREROQDB1NEREREPnAwRUREROQDB1NEREREPvw/GN3/WowIKXUAAAAASUVORK5CYII=
 <div class="prompt input_prompt">In [6]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">keras</span> <span class="k">import</span> <span class="n">models</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">keras</span> <span class="k">import</span> <span class="n">models</span>
 <span class="kn">from</span> <span class="nn">keras</span> <span class="k">import</span> <span class="n">layers</span>
 
 <span class="n">network</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">Sequential</span><span class="p">()</span>
@@ -1619,7 +1619,7 @@ RUREROQDB1NEREREPnAwRUREROQDB1NEREREPvw/GN3/WowIKXUAAAAASUVORK5CYII=
 <div class="prompt input_prompt">In [14]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">train_images_1d</span> <span class="o">=</span> <span class="n">mn_x_train</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="mi">60000</span><span class="p">,</span> <span class="mi">28</span> <span class="o">*</span> <span class="mi">28</span><span class="p">))</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">train_images_1d</span> <span class="o">=</span> <span class="n">mn_x_train</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="mi">60000</span><span class="p">,</span> <span class="mi">28</span> <span class="o">*</span> <span class="mi">28</span><span class="p">))</span>
 <span class="n">train_images_1d</span> <span class="o">=</span> <span class="n">train_images_1d</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">'float32'</span><span class="p">)</span> <span class="o">/</span> <span class="mi">255</span>
 
 <span class="n">test_images_1d</span> <span class="o">=</span> <span class="n">mn_x_test</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="mi">10000</span><span class="p">,</span> <span class="mi">28</span> <span class="o">*</span> <span class="mi">28</span><span class="p">))</span>
@@ -1634,7 +1634,7 @@ RUREROQDB1NEREREPnAwRUREROQDB1NEREREPvw/GN3/WowIKXUAAAAASUVORK5CYII=
 <div class="prompt input_prompt">In [15]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">keras.utils</span> <span class="k">import</span> <span class="n">to_categorical</span> <span class="c1">#this just converts the labels to one-hot class</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">keras.utils</span> <span class="k">import</span> <span class="n">to_categorical</span> <span class="c1">#this just converts the labels to one-hot class</span>
 <span class="n">train_labels</span> <span class="o">=</span> <span class="n">to_categorical</span><span class="p">(</span><span class="n">mn_y_train</span><span class="p">)</span>
 <span class="n">test_labels</span> <span class="o">=</span> <span class="n">to_categorical</span><span class="p">(</span><span class="n">mn_y_test</span><span class="p">)</span>
 </pre></div>
@@ -1655,7 +1655,7 @@ RUREROQDB1NEREREPnAwRUREROQDB1NEREREPvw/GN3/WowIKXUAAAAASUVORK5CYII=
 <div class="prompt input_prompt">In [16]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">keras.callbacks</span> <span class="k">import</span> <span class="n">ModelCheckpoint</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">keras.callbacks</span> <span class="k">import</span> <span class="n">ModelCheckpoint</span>
 
 <span class="n">h</span><span class="o">=</span><span class="n">network</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">train_images_1d</span><span class="p">,</span> 
               <span class="n">train_labels</span><span class="p">,</span> 
@@ -1707,7 +1707,7 @@ Epoch 5/5
 <div class="prompt input_prompt">In [17]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># summarize history for accuracy</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># summarize history for accuracy</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">h</span><span class="o">.</span><span class="n">history</span><span class="p">[</span><span class="s1">'acc'</span><span class="p">])</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">'model accuracy'</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">'accuracy'</span><span class="p">)</span>
@@ -1722,7 +1722,7 @@ Epoch 5/5
 <div class="output">
 <div class="output_area">
 <div class="prompt"></div>
-<div class="output_png output_subarea ">
+<div class="output_png output_subarea">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZIAAAEWCAYAAABMoxE0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAADl0RVh0U29mdHdhcmUAbWF0cGxvdGxpYiB2ZXJzaW9uIDIuMS4wLCBo
 dHRwOi8vbWF0cGxvdGxpYi5vcmcvpW3flQAAIABJREFUeJzt3XeYVOX5xvHvw7L0pVdZelMERFiw
@@ -1947,7 +1947,7 @@ hO5Pc0bUd0okQhoiReTYOI/QAH1zgsZCdUJDjRcAbwfLvAmMNbM6QF13nxlMfx14x8ySgObuPg7A
 IseAuy8zs/uByWZWCcgFbgaygRPNbC6hu9INClb5JfBiEBRr+G6032uAl4KRW3OBK2K4GyJHRaP/
 ikSRme1x91rxrkMkmtS1JSIiJaIWiYiIlIhaJCIiUiIKEhERKREFiYiIlIiCRERESkRBIiIiJfL/
 5kI70nAQEZYAAAAASUVORK5CYII=
-" />
+">
 </div>
 </div>
 </div>
@@ -1958,7 +1958,7 @@ ikSRme1x91rxrkMkmtS1JSIiJaIWiYiIlIhaJCIiUiIKEhERKREFiYiIlIiCRERESkRBIiIiJfL/
 <div class="prompt input_prompt">In [18]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">score</span><span class="p">,</span> <span class="n">acc</span> <span class="o">=</span> <span class="n">network</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">test_images_1d</span><span class="p">,</span> 
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">score</span><span class="p">,</span> <span class="n">acc</span> <span class="o">=</span> <span class="n">network</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">test_images_1d</span><span class="p">,</span> 
                             <span class="n">test_labels</span><span class="p">,</span>
                             <span class="n">batch_size</span><span class="o">=</span><span class="mi">128</span><span class="p">)</span>
 
@@ -1985,7 +1985,7 @@ Test Accuracy: 0.98310
 <div class="prompt input_prompt">In [19]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">network</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s1">'tutorial_MNIST.h5'</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">network</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s1">'tutorial_MNIST.h5'</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -2013,7 +2013,7 @@ Test Accuracy: 0.98310
 <div class="prompt input_prompt">In [20]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">keras.models</span> <span class="k">import</span> <span class="n">load_model</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">keras.models</span> <span class="k">import</span> <span class="n">load_model</span>
 <span class="n">network</span> <span class="o">=</span> <span class="n">load_model</span><span class="p">(</span><span class="s1">'tutorial_MNIST.h5'</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -2025,7 +2025,7 @@ Test Accuracy: 0.98310
 <div class="prompt input_prompt">In [21]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#%pip install -e git+https://github.com/tensorflow/cleverhans.git#egg=cleverhans</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#%pip install -e git+https://github.com/tensorflow/cleverhans.git#egg=cleverhans</span>
 </pre></div>
 </div>
 </div>
@@ -2036,7 +2036,7 @@ Test Accuracy: 0.98310
 <div class="prompt input_prompt">In [22]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">cleverhans.utils_keras</span> <span class="k">import</span> <span class="n">KerasModelWrapper</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">cleverhans.utils_keras</span> <span class="k">import</span> <span class="n">KerasModelWrapper</span>
 <span class="n">wrap</span> <span class="o">=</span> <span class="n">KerasModelWrapper</span><span class="p">(</span><span class="n">network</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -2056,7 +2056,7 @@ Test Accuracy: 0.98310
 <div class="prompt input_prompt">In [23]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">placeholder</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">float32</span><span class="p">,</span> <span class="n">shape</span><span class="o">=</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="mi">784</span><span class="p">))</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">placeholder</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">float32</span><span class="p">,</span> <span class="n">shape</span><span class="o">=</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="mi">784</span><span class="p">))</span>
 <span class="n">y</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">placeholder</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">float32</span><span class="p">,</span> <span class="n">shape</span><span class="o">=</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
 </pre></div>
 </div>
@@ -2076,7 +2076,7 @@ Test Accuracy: 0.98310
 <div class="prompt input_prompt">In [24]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">cleverhans.attacks</span> <span class="k">import</span> <span class="n">FastGradientMethod</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">cleverhans.attacks</span> <span class="k">import</span> <span class="n">FastGradientMethod</span>
 <span class="n">fgsm</span> <span class="o">=</span> <span class="n">FastGradientMethod</span><span class="p">(</span><span class="n">wrap</span><span class="p">,</span> <span class="n">sess</span><span class="o">=</span><span class="n">session</span><span class="p">)</span>
 
 <span class="n">fgsm_rate</span> <span class="o">=</span> <span class="mf">0.08</span>
@@ -2094,7 +2094,7 @@ Test Accuracy: 0.98310
 <div class="prompt input_prompt">In [25]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fetches</span> <span class="o">=</span> <span class="p">[</span><span class="n">adv_prob</span><span class="p">]</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">fetches</span> <span class="o">=</span> <span class="p">[</span><span class="n">adv_prob</span><span class="p">]</span>
 <span class="n">fetches</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">adv_x</span><span class="p">)</span>
 <span class="n">outputs</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">fetches</span><span class="o">=</span><span class="n">fetches</span><span class="p">,</span> <span class="n">feed_dict</span><span class="o">=</span><span class="p">{</span><span class="n">x</span><span class="p">:</span><span class="n">test_images_1d</span><span class="p">})</span> 
 <span class="n">adv_prob</span> <span class="o">=</span> <span class="n">outputs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
@@ -2109,7 +2109,7 @@ Test Accuracy: 0.98310
 <div class="prompt input_prompt">In [26]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">adv_predicted</span> <span class="o">=</span> <span class="n">adv_prob</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">adv_predicted</span> <span class="o">=</span> <span class="n">adv_prob</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">adv_accuracy</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">adv_predicted</span> <span class="o">==</span> <span class="n">mn_y_test</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Adversarial accuracy: </span><span class="si">%.5f</span><span class="s2">"</span> <span class="o">%</span> <span class="n">adv_accuracy</span><span class="p">)</span>
@@ -2134,7 +2134,7 @@ Test Accuracy: 0.98310
 <div class="prompt input_prompt">In [27]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">n_classes</span> <span class="o">=</span> <span class="mi">10</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">n_classes</span> <span class="o">=</span> <span class="mi">10</span>
 <span class="n">f</span><span class="p">,</span><span class="n">ax</span><span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
 <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n_classes</span><span class="p">):</span>
@@ -2149,7 +2149,7 @@ Test Accuracy: 0.98310
 <div class="output">
 <div class="output_area">
 <div class="prompt"></div>
-<div class="output_png output_subarea ">
+<div class="output_png output_subarea">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlMAAAEjCAYAAAAWi4S0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAADl0RVh0U29mdHdhcmUAbWF0cGxvdGxpYiB2ZXJzaW9uIDIuMS4wLCBo
 dHRwOi8vbWF0cGxvdGxpYi5vcmcvpW3flQAAIABJREFUeJztnXeY3cT1979n17suuOHeu41tTDDF
@@ -2525,7 +2525,7 @@ KIwtAdoTQGHsSVuiMLYEaM+GY8uMHceOBDAbwDwAv8247scALAOwDUZv/xwAbWGsAphj/m+TgR4H
 wBim/RjAh+bfkaXQhbakLWnP4tmTtiyOLWnPhmNLbidDCCGEEBIDRkAnhBBCCIkBO1OEEEIIITFg
 Z4oQQgghJAbsTBFCCCGExICdKUIIIYSQGLAzRQghhBASA3amCCGEEEJi8P8Bd2jnT5Sxjc8AAAAA
 SUVORK5CYII=
-" />
+">
 </div>
 </div>
 </div>
@@ -2552,7 +2552,7 @@ SUVORK5CYII=
 <div class="prompt input_prompt">In [18]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">placeholder</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">float32</span><span class="p">,</span> <span class="n">shape</span><span class="o">=</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="mi">784</span><span class="p">))</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">placeholder</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">float32</span><span class="p">,</span> <span class="n">shape</span><span class="o">=</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="mi">784</span><span class="p">))</span>
 <span class="n">y</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">placeholder</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">float32</span><span class="p">,</span> <span class="n">shape</span><span class="o">=</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
 
 <span class="n">results</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10000</span><span class="p">))</span>
@@ -2579,7 +2579,7 @@ SUVORK5CYII=
 <div class="prompt input_prompt">In [19]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">cleverhans.utils</span> <span class="k">import</span> <span class="n">other_classes</span><span class="p">,</span> <span class="n">grid_visual</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">cleverhans.utils</span> <span class="k">import</span> <span class="n">other_classes</span><span class="p">,</span> <span class="n">grid_visual</span>
 
 <span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">mn_x_test</span><span class="p">)</span> <span class="o">/</span> <span class="mi">100</span><span class="p">)):</span>
     <span class="n">sample</span> <span class="o">=</span> <span class="n">test_images_1d</span><span class="p">[</span><span class="n">index</span><span class="p">:</span> <span class="n">index</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span>
@@ -2662,7 +2662,7 @@ SUVORK5CYII=
 <div class="prompt input_prompt">In [22]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span> <span class="o">=</span> <span class="p">(</span><span class="mi">80</span><span class="p">,</span> <span class="mi">80</span><span class="p">))</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span> <span class="o">=</span> <span class="p">(</span><span class="mi">80</span><span class="p">,</span> <span class="mi">80</span><span class="p">))</span>
 <span class="n">_</span> <span class="o">=</span> <span class="n">grid_visual</span><span class="p">(</span><span class="n">grid_data</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -2672,13 +2672,13 @@ SUVORK5CYII=
 <div class="output">
 <div class="output_area">
 <div class="prompt"></div>
-<div class="output_text output_subarea ">
+<div class="output_text output_subarea">
 <pre><matplotlib.figure.figure at 0x1240cbe48></pre>
 </div>
 </div>
 <div class="output_area">
 <div class="prompt"></div>
-<div class="output_png output_subarea ">
+<div class="output_png output_subarea">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWsAAAD8CAYAAACxUoU3AAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAADl0RVh0U29mdHdhcmUAbWF0cGxvdGxpYiB2ZXJzaW9uIDIuMS4wLCBo
 dHRwOi8vbWF0cGxvdGxpYi5vcmcvpW3flQAAIABJREFUeJztnX2MFGcdx3+79wIc5LgevWvDSaly
@@ -2829,7 +2829,7 @@ efiXzSTmYURnLfB32J/85CdLjqbKwFvJYZ2xCo9qkOlRaYWl0qMW4AEPQdCZFknLw6jO2k9bWxt9
 AABwFXTWAABgAeisAQDAAtBZAwCABaCzBgAAC0BnDQAAFoDOGgAALACdNQAAWAA6awAAsAB01gAA
 YAHorAEAwALQWQMAgAWgswYAAAtAZw0AABaAzhoAACwAnTUAAFgAOmsAALAAdNYAAGAB6KwBAMAC
 0FkDAIAFoLMGAAALQGcNAAAWgM4aAAAs4P8th7iJCaxb5AAAAABJRU5ErkJggg==
-" />
+">
 </div>
 </div>
 </div>
@@ -2864,7 +2864,7 @@ YAHorAEAwALQWQMAgAWgswYAAAtAZw0AABaAzhoAACwAnTUAAFgAOmsAALAAdNYAAGAB6KwBAMAC
 <div class="prompt input_prompt">In [23]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">from</span> <span class="nn">keras.datasets</span> <span class="k">import</span> <span class="n">mnist</span>
 <span class="kn">from</span> <span class="nn">keras.datasets</span> <span class="k">import</span> <span class="n">cifar10</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -2894,7 +2894,7 @@ YAHorAEAwALQWQMAgAWgswYAAAtAZw0AABaAzhoAACwAnTUAAFgAOmsAALAAdNYAAGAB6KwBAMAC
 <div class="prompt input_prompt">In [24]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span> <span class="p">(</span><span class="s2">"Training Examples: </span><span class="si">%d</span><span class="s2">"</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span><span class="n">c10_x_train</span><span class="p">))</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span> <span class="p">(</span><span class="s2">"Training Examples: </span><span class="si">%d</span><span class="s2">"</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span><span class="n">c10_x_train</span><span class="p">))</span>
 <span class="nb">print</span> <span class="p">(</span><span class="s2">"Test Examples: </span><span class="si">%d</span><span class="s2">"</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span><span class="n">c10_x_test</span><span class="p">))</span>
 </pre></div>
 </div>
@@ -2918,7 +2918,7 @@ Test Examples: 10000
 <div class="prompt input_prompt">In [25]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">n_classes</span> <span class="o">=</span> <span class="mi">10</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">n_classes</span> <span class="o">=</span> <span class="mi">10</span>
 <span class="n">inds</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">c10_y_train</span><span class="o">==</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n_classes</span><span class="p">)])</span>
 <span class="n">f</span><span class="p">,</span><span class="n">ax</span><span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
 <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>
@@ -2934,7 +2934,7 @@ Test Examples: 10000
 <div class="output">
 <div class="output_area">
 <div class="prompt"></div>
-<div class="output_png output_subarea ">
+<div class="output_png output_subarea">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlMAAAEjCAYAAAAWi4S0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAADl0RVh0U29mdHdhcmUAbWF0cGxvdGxpYiB2ZXJzaW9uIDIuMS4wLCBo
 dHRwOi8vbWF0cGxvdGxpYi5vcmcvpW3flQAAIABJREFUeJzsvWmUJNlVJnifme/hHvuSEZGZlVlZ
@@ -3740,7 +3740,7 @@ Ur8oIv+7iNgi8oda6//1wB5+AFBKPSEiPxCR10Uk6B7+V9Lhf/9MRA6JyHUR+bLWeuOOVLJPMLYc
 HFuKGHvKANnT2HJwbCli7CnvE3uadDIGBgYGBgYGBvuAiYBuYGBgYGBgYLAPmI8pAwMDAwMDA4N9
 wHxMGRgYGBgYGBjsA+ZjysDAwMDAwMBgHzAfUwYGBgYGBgYG+4D5mDIwMDAwMDAw2AfMx5SBgYGB
 gYGBwT7w/wPpoQPL9bG3WgAAAABJRU5ErkJggg==
-" />
+">
 </div>
 </div>
 </div>

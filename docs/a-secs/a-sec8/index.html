@@ -1064,11 +1064,11 @@ h6:hover .anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1><img src="https://raw.githubusercontent.com/Harvard-IACS/2018-CS109A/master/content/styles/iacs.png" style="float: left; padding-right: 10px; width: 45px" /> CS-209B Advanced Data Science</h1>
-<h2 id="Advanced-Section-8:-Generative-Adversarial-Networks">Advanced Section 8: Generative Adversarial Networks<a class="anchor-link" href="#Advanced-Section-8:-Generative-Adversarial-Networks">¶</a></h2><p><strong>Harvard University</strong><br />
-<strong>Spring 2019</strong><br />
-<strong>Section instructor:</strong> Vincent Casser<br />
-<strong>Instructors:</strong> Pavlos Protopapas and Mark Glickman<br />
+<h1><img src="https://raw.githubusercontent.com/Harvard-IACS/2018-CS109A/master/content/styles/iacs.png" style="float: left; padding-right: 10px; width: 45px"> CS-209B Advanced Data Science</h1>
+<h2 id="Advanced-Section-8:-Generative-Adversarial-Networks">Advanced Section 8: Generative Adversarial Networks<a class="anchor-link" href="#Advanced-Section-8:-Generative-Adversarial-Networks">¶</a></h2><p><strong>Harvard University</strong><br>
+<strong>Spring 2019</strong><br>
+<strong>Section instructor:</strong> Vincent Casser<br>
+<strong>Instructors:</strong> Pavlos Protopapas and Mark Glickman<br>
 <strong>Authors:</strong> Vincent Casser, Pavlos Protopapas</p>
 <p>We describe a minimalistic implementation of Generative Adversarial Networks (GANs) in Keras. We train a simple GAN for the task of face synthesis on the CelebA dataset. The goal of this is to enhance understanding of the concepts, and to give an easy to understand hands-on example.</p>
 <p>To increase the visual quality of samples, you are encouraged to try out some tricks you learned in class, such as switching to Wasserstein GANs (WGANs), applying label smoothing, expanding and regularizing the architecture or trying pretraining.</p>
@@ -1088,7 +1088,7 @@ h6:hover .anchor-link {
 <div class="prompt input_prompt">In [12]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">keras</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">keras</span>
 <span class="kn">from</span> <span class="nn">keras.layers</span> <span class="k">import</span> <span class="o">*</span>
 <span class="kn">from</span> <span class="nn">keras.datasets</span> <span class="k">import</span> <span class="n">cifar10</span>
 <span class="kn">import</span> <span class="nn">glob</span><span class="o">,</span> <span class="nn">cv2</span><span class="o">,</span> <span class="nn">os</span>
@@ -1114,7 +1114,7 @@ h6:hover .anchor-link {
 <div class="prompt input_prompt">In [25]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">SPATIAL_DIM</span> <span class="o">=</span> <span class="mi">64</span> <span class="c1"># Spatial dimensions of the images.</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">SPATIAL_DIM</span> <span class="o">=</span> <span class="mi">64</span> <span class="c1"># Spatial dimensions of the images.</span>
 <span class="n">LATENT_DIM</span> <span class="o">=</span> <span class="mi">100</span> <span class="c1"># Dimensionality of the noise vector.</span>
 <span class="n">BATCH_SIZE</span> <span class="o">=</span> <span class="mi">32</span> <span class="c1"># Batchsize to use for training.</span>
 <span class="n">DISC_UPDATES</span> <span class="o">=</span> <span class="mi">1</span>  <span class="c1"># Number of discriminator updates per training iteration.</span>
@@ -1147,7 +1147,7 @@ h6:hover .anchor-link {
 <div class="prompt input_prompt">In [14]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">plot_image</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">plot_image</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">x</span> <span class="o">*</span> <span class="mf">0.5</span> <span class="o">+</span> <span class="mf">0.5</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -1159,7 +1159,7 @@ h6:hover .anchor-link {
 <div class="prompt input_prompt">In [15]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">X</span> <span class="o">=</span> <span class="p">[]</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">X</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="c1"># Reference to CelebA dataset here.</span>
 <span class="n">faces</span> <span class="o">=</span> <span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">'../Harvard/ComputeFest 2019/celeba/img_align_celeba/*.jpg'</span><span class="p">)</span>
 
@@ -1188,7 +1188,7 @@ h6:hover .anchor-link {
 </div>
 <div class="output_area">
 <div class="prompt"></div>
-<div class="output_png output_subarea ">
+<div class="output_png output_subarea">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAP4AAAD8CAYAAABXXhlaAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAADl0RVh0U29mdHdhcmUAbWF0cGxvdGxpYiB2ZXJzaW9uIDIuMi4yLCBo
 dHRwOi8vbWF0cGxvdGxpYi5vcmcvhp/UCwAAIABJREFUeJztfXusZed111r7cZ73fe/MeMZje+zx
@@ -1482,7 +1482,7 @@ T1eo7G/+PG610cQYKT5CRC/Tlj75z/bwvP+ViM4RUY+2flU/Tlu65DNEdLL//9wezOMnaEtsfZ6I
 vtP/95G9ngsRPUpE3zFji5YAAAB1SURBVO7P4wUi+uf9v99HRN8goleI6L8RUXUP79H7iejz+zGP
 /vm+2//34pVnc5+ekceI6Ln+vfkfRDR7K+bhkXsOxxjCI/ccjjGEb3yHYwzhG9/hGEP4xnc4xhC+
 8R2OMYRvfIdjDOEb3+EYQ/jGdzjGEP8fV0O3FAMdwt8AAAAASUVORK5CYII=
-" />
+">
 </div>
 </div>
 </div>
@@ -1501,7 +1501,7 @@ vtP/95G9ngsRPUpE3zFji5YAAAB1SURBVO7P4wUi+uf9v99HRN8goleI6L8RUXUP79H7iejz+zGP
 <div class="prompt input_prompt">In [16]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">add_encoder_block</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">filters</span><span class="p">,</span> <span class="n">filter_size</span><span class="p">):</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">add_encoder_block</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">filters</span><span class="p">,</span> <span class="n">filter_size</span><span class="p">):</span>
     <span class="n">x</span> <span class="o">=</span> <span class="n">Conv2D</span><span class="p">(</span><span class="n">filters</span><span class="p">,</span> <span class="n">filter_size</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="s1">'same'</span><span class="p">)(</span><span class="n">x</span><span class="p">)</span>
     <span class="n">x</span> <span class="o">=</span> <span class="n">BatchNormalization</span><span class="p">()(</span><span class="n">x</span><span class="p">)</span>
     <span class="n">x</span> <span class="o">=</span> <span class="n">Conv2D</span><span class="p">(</span><span class="n">filters</span><span class="p">,</span> <span class="n">filter_size</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="s1">'same'</span><span class="p">,</span> <span class="n">strides</span><span class="o">=</span><span class="mi">2</span><span class="p">)(</span><span class="n">x</span><span class="p">)</span>
@@ -1518,7 +1518,7 @@ vtP/95G9ngsRPUpE3zFji5YAAAB1SURBVO7P4wUi+uf9v99HRN8goleI6L8RUXUP79H7iejz+zGP
 <div class="prompt input_prompt">In [17]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">build_discriminator</span><span class="p">(</span><span class="n">start_filters</span><span class="p">,</span> <span class="n">spatial_dim</span><span class="p">,</span> <span class="n">filter_size</span><span class="p">):</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">build_discriminator</span><span class="p">(</span><span class="n">start_filters</span><span class="p">,</span> <span class="n">spatial_dim</span><span class="p">,</span> <span class="n">filter_size</span><span class="p">):</span>
     <span class="n">inp</span> <span class="o">=</span> <span class="n">Input</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="p">(</span><span class="n">spatial_dim</span><span class="p">,</span> <span class="n">spatial_dim</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
     
     <span class="c1"># Encoding blocks downsample the image.</span>
@@ -1540,7 +1540,7 @@ vtP/95G9ngsRPUpE3zFji5YAAAB1SURBVO7P4wUi+uf9v99HRN8goleI6L8RUXUP79H7iejz+zGP
 <div class="prompt input_prompt">In [18]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">add_decoder_block</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">filters</span><span class="p">,</span> <span class="n">filter_size</span><span class="p">):</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">add_decoder_block</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">filters</span><span class="p">,</span> <span class="n">filter_size</span><span class="p">):</span>
     <span class="n">x</span> <span class="o">=</span> <span class="n">Deconvolution2D</span><span class="p">(</span><span class="n">filters</span><span class="p">,</span> <span class="n">filter_size</span><span class="p">,</span> <span class="n">strides</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="s1">'same'</span><span class="p">)(</span><span class="n">x</span><span class="p">)</span>
     <span class="n">x</span> <span class="o">=</span> <span class="n">BatchNormalization</span><span class="p">()(</span><span class="n">x</span><span class="p">)</span>
     <span class="n">x</span> <span class="o">=</span> <span class="n">LeakyReLU</span><span class="p">(</span><span class="mf">0.3</span><span class="p">)(</span><span class="n">x</span><span class="p">)</span>
@@ -1555,7 +1555,7 @@ vtP/95G9ngsRPUpE3zFji5YAAAB1SURBVO7P4wUi+uf9v99HRN8goleI6L8RUXUP79H7iejz+zGP
 <div class="prompt input_prompt">In [19]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">build_generator</span><span class="p">(</span><span class="n">start_filters</span><span class="p">,</span> <span class="n">filter_size</span><span class="p">,</span> <span class="n">latent_dim</span><span class="p">):</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">build_generator</span><span class="p">(</span><span class="n">start_filters</span><span class="p">,</span> <span class="n">filter_size</span><span class="p">,</span> <span class="n">latent_dim</span><span class="p">):</span>
     <span class="n">inp</span> <span class="o">=</span> <span class="n">Input</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="p">(</span><span class="n">latent_dim</span><span class="p">,))</span>
     
     <span class="c1"># Projection.</span>
@@ -1589,7 +1589,7 @@ vtP/95G9ngsRPUpE3zFji5YAAAB1SURBVO7P4wUi+uf9v99HRN8goleI6L8RUXUP79H7iejz+zGP
 <div class="prompt input_prompt">In [20]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">construct_models</span><span class="p">(</span><span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">construct_models</span><span class="p">(</span><span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
     <span class="c1"># 1. Build discriminator.</span>
     <span class="n">discriminator</span> <span class="o">=</span> <span class="n">build_discriminator</span><span class="p">(</span><span class="n">NET_CAPACITY</span><span class="p">,</span> <span class="n">SPATIAL_DIM</span><span class="p">,</span> <span class="n">FILTER_SIZE</span><span class="p">)</span>
     <span class="n">discriminator</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">loss</span><span class="o">=</span><span class="s1">'binary_crossentropy'</span><span class="p">,</span> <span class="n">optimizer</span><span class="o">=</span><span class="n">keras</span><span class="o">.</span><span class="n">optimizers</span><span class="o">.</span><span class="n">Adam</span><span class="p">(</span><span class="n">lr</span><span class="o">=</span><span class="mf">0.0002</span><span class="p">),</span> <span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="s1">'mae'</span><span class="p">])</span>
@@ -1627,7 +1627,7 @@ vtP/95G9ngsRPUpE3zFji5YAAAB1SURBVO7P4wUi+uf9v99HRN8goleI6L8RUXUP79H7iejz+zGP
 <div class="prompt input_prompt">In [22]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">run_training</span><span class="p">(</span><span class="n">start_it</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">num_epochs</span><span class="o">=</span><span class="mi">1000</span><span class="p">):</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">run_training</span><span class="p">(</span><span class="n">start_it</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">num_epochs</span><span class="o">=</span><span class="mi">1000</span><span class="p">):</span>
     <span class="n">config_name</span> <span class="o">=</span> <span class="s1">'gan_cap'</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">NET_CAPACITY</span><span class="p">)</span> <span class="o">+</span> <span class="s1">'_batch'</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">BATCH_SIZE</span><span class="p">)</span> <span class="o">+</span> <span class="s1">'_filt'</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">FILTER_SIZE</span><span class="p">)</span> <span class="o">+</span> <span class="s1">'_disc'</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">DISC_UPDATES</span><span class="p">)</span> <span class="o">+</span> <span class="s1">'_gen'</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">GEN_UPDATES</span><span class="p">)</span>
     <span class="n">folder</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">ROOT_DIR</span><span class="p">,</span> <span class="n">config_name</span><span class="p">)</span>
 
@@ -1703,7 +1703,7 @@ vtP/95G9ngsRPUpE3zFji5YAAAB1SURBVO7P4wUi+uf9v99HRN8goleI6L8RUXUP79H7iejz+zGP
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">generator</span><span class="p">,</span> <span class="n">discriminator</span><span class="p">,</span> <span class="n">gan</span> <span class="o">=</span> <span class="n">construct_models</span><span class="p">(</span><span class="n">verbose</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">generator</span><span class="p">,</span> <span class="n">discriminator</span><span class="p">,</span> <span class="n">gan</span> <span class="o">=</span> <span class="n">construct_models</span><span class="p">(</span><span class="n">verbose</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1714,7 +1714,7 @@ vtP/95G9ngsRPUpE3zFji5YAAAB1SURBVO7P4wUi+uf9v99HRN8goleI6L8RUXUP79H7iejz+zGP
 <div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">run_training</span><span class="p">()</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">run_training</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -1733,7 +1733,7 @@ vtP/95G9ngsRPUpE3zFji5YAAAB1SURBVO7P4wUi+uf9v99HRN8goleI6L8RUXUP79H7iejz+zGP
 <div class="prompt input_prompt">In [10]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">NUM_SAMPLES</span> <span class="o">=</span> <span class="mi">7</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">NUM_SAMPLES</span> <span class="o">=</span> <span class="mi">7</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="n">NUM_SAMPLES</span> <span class="o">*</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
 
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">NUM_SAMPLES</span><span class="p">):</span>
@@ -1757,7 +1757,7 @@ vtP/95G9ngsRPUpE3zFji5YAAAB1SURBVO7P4wUi+uf9v99HRN8goleI6L8RUXUP79H7iejz+zGP
 </div>
 <div class="output_area">
 <div class="prompt"></div>
-<div class="output_png output_subarea ">
+<div class="output_png output_subarea">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABBgAAACsCAYAAADR9R8ZAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAADl0RVh0U29mdHdhcmUAbWF0cGxvdGxpYiB2ZXJzaW9uIDIuMi4yLCBo
 dHRwOi8vbWF0cGxvdGxpYi5vcmcvhp/UCwAAIABJREFUeJzsvVmsLdd53/n71lpVe5/hTqQ4yqRI
@@ -5521,7 +5521,7 @@ z3mkOO8LDB4eHh4eHh4eHh4eHh4eHj/7ON9HJDw8PDw8PDw8PDw8PDw8PH4O4BcYPDw8PDw8PDw8
 PDw8PDw8zhp+gcHDw8PDw8PDw8PDw8PDw+Os4RcYPDw8PDw8PDw8PDw8PDw8zhp+gcHDw8PDw8PD
 w8PDw8PDw+Os4RcYPDw8PDw8PDw8PDw8PDw8zhp+gcHDw8PDw8PDw8PDw8PDw+Os8f8D6DhVIgrD
 5fAAAAAASUVORK5CYII=
-" />
+">
 </div>
 </div>
 </div>

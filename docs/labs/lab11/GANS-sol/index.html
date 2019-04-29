@@ -1064,11 +1064,11 @@ h6:hover .anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1><img src="https://raw.githubusercontent.com/Harvard-IACS/2018-CS109A/master/content/styles/iacs.png" style="float: left; padding-right: 10px; width: 45px" /> CS-109B Advanced Data Science</h1>
-<h2 id="Lab-11:-Generative-Adversarial-Networks">Lab 11: Generative Adversarial Networks<a class="anchor-link" href="#Lab-11:-Generative-Adversarial-Networks">¶</a></h2><p><strong>Harvard University</strong><br />
-<strong>Spring 2019</strong><br />
-<strong>Lab instructor:</strong> Srivatsan Srinivasan<br />
-<strong>Instructors:</strong> Pavlos Protopapas and Mark Glickman<br />
+<h1><img src="https://raw.githubusercontent.com/Harvard-IACS/2018-CS109A/master/content/styles/iacs.png" style="float: left; padding-right: 10px; width: 45px"> CS-109B Advanced Data Science</h1>
+<h2 id="Lab-11:-Generative-Adversarial-Networks">Lab 11: Generative Adversarial Networks<a class="anchor-link" href="#Lab-11:-Generative-Adversarial-Networks">¶</a></h2><p><strong>Harvard University</strong><br>
+<strong>Spring 2019</strong><br>
+<strong>Lab instructor:</strong> Srivatsan Srinivasan<br>
+<strong>Instructors:</strong> Pavlos Protopapas and Mark Glickman<br>
 <strong>Authors:</strong> Srivatsan Srinivasan, Pavlos Protopapas</p>
 </div>
 </div>
@@ -1086,7 +1086,7 @@ h6:hover .anchor-link {
 <div class="prompt input_prompt">In [0]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span>
 <span class="kn">from</span> <span class="nn">keras.datasets</span> <span class="k">import</span> <span class="n">imdb</span>
 <span class="kn">from</span> <span class="nn">keras.models</span> <span class="k">import</span> <span class="n">Sequential</span><span class="p">,</span> <span class="n">Model</span>
 <span class="kn">from</span> <span class="nn">keras.layers.core</span> <span class="k">import</span> <span class="n">Dense</span><span class="p">,</span> <span class="n">Dropout</span>
@@ -1131,7 +1131,7 @@ h6:hover .anchor-link {
 <div class="prompt input_prompt">In [0]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">generate_data</span><span class="p">(</span><span class="n">n_samples</span> <span class="o">=</span> <span class="mi">10000</span><span class="p">,</span><span class="n">n_dim</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">generate_data</span><span class="p">(</span><span class="n">n_samples</span> <span class="o">=</span> <span class="mi">10000</span><span class="p">,</span><span class="n">n_dim</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
   <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="n">n_samples</span><span class="p">,</span> <span class="n">n_dim</span><span class="p">)</span>  
   
 </pre></div>
@@ -1152,7 +1152,7 @@ h6:hover .anchor-link {
 <div class="prompt input_prompt">In [0]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">set_model</span><span class="p">(</span><span class="n">input_dim</span><span class="p">,</span> <span class="n">output_dim</span><span class="p">,</span> <span class="n">hidden_dim</span><span class="o">=</span><span class="mi">64</span><span class="p">,</span><span class="n">n_layers</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span><span class="n">activation</span><span class="o">=</span><span class="s1">'tanh'</span><span class="p">,</span><span class="n">optimizer</span><span class="o">=</span><span class="s1">'adam'</span><span class="p">,</span> <span class="n">loss</span> <span class="o">=</span> <span class="s1">'binary_crossentropy'</span><span class="p">):</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">set_model</span><span class="p">(</span><span class="n">input_dim</span><span class="p">,</span> <span class="n">output_dim</span><span class="p">,</span> <span class="n">hidden_dim</span><span class="o">=</span><span class="mi">64</span><span class="p">,</span><span class="n">n_layers</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span><span class="n">activation</span><span class="o">=</span><span class="s1">'tanh'</span><span class="p">,</span><span class="n">optimizer</span><span class="o">=</span><span class="s1">'adam'</span><span class="p">,</span> <span class="n">loss</span> <span class="o">=</span> <span class="s1">'binary_crossentropy'</span><span class="p">):</span>
   <span class="n">model</span> <span class="o">=</span> <span class="n">Sequential</span><span class="p">()</span>
   <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="n">hidden_dim</span><span class="p">,</span><span class="n">input_dim</span><span class="o">=</span><span class="n">input_dim</span><span class="p">,</span><span class="n">activation</span><span class="o">=</span><span class="n">activation</span><span class="p">))</span>
   
@@ -1181,7 +1181,7 @@ h6:hover .anchor-link {
 <div class="prompt input_prompt">In [0]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_gan_network</span><span class="p">(</span><span class="n">discriminator</span><span class="p">,</span> <span class="n">random_dim</span><span class="p">,</span> <span class="n">generator</span><span class="p">,</span> <span class="n">optimizer</span> <span class="o">=</span> <span class="s1">'adam'</span><span class="p">):</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_gan_network</span><span class="p">(</span><span class="n">discriminator</span><span class="p">,</span> <span class="n">random_dim</span><span class="p">,</span> <span class="n">generator</span><span class="p">,</span> <span class="n">optimizer</span> <span class="o">=</span> <span class="s1">'adam'</span><span class="p">):</span>
   <span class="n">discriminator</span><span class="o">.</span><span class="n">trainable</span> <span class="o">=</span> <span class="kc">False</span>
   <span class="n">gan_input</span> <span class="o">=</span> <span class="n">Input</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="p">(</span><span class="n">random_dim</span><span class="p">,))</span>
   <span class="n">x</span> <span class="o">=</span> <span class="n">generator</span><span class="p">(</span><span class="n">gan_input</span><span class="p">)</span>
@@ -1200,7 +1200,7 @@ h6:hover .anchor-link {
 <div class="prompt input_prompt">In [0]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">NOISE_DIM</span> <span class="o">=</span> <span class="mi">10</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">NOISE_DIM</span> <span class="o">=</span> <span class="mi">10</span>
 <span class="n">DATA_DIM</span> <span class="o">=</span> <span class="mi">1</span>
 <span class="n">G_LAYERS</span> <span class="o">=</span> <span class="mi">1</span>
 <span class="n">D_LAYERS</span> <span class="o">=</span> <span class="mi">1</span>
@@ -1214,7 +1214,7 @@ h6:hover .anchor-link {
 <div class="prompt input_prompt">In [0]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">train_gan</span><span class="p">(</span><span class="n">epochs</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">batch_size</span><span class="o">=</span><span class="mi">128</span><span class="p">):</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">train_gan</span><span class="p">(</span><span class="n">epochs</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">batch_size</span><span class="o">=</span><span class="mi">128</span><span class="p">):</span>
   <span class="n">x_train</span> <span class="o">=</span> <span class="n">generate_data</span><span class="p">(</span><span class="n">n_samples</span><span class="o">=</span><span class="mi">12800</span><span class="p">,</span><span class="n">n_dim</span><span class="o">=</span><span class="n">DATA_DIM</span><span class="p">)</span>
   <span class="n">batch_count</span> <span class="o">=</span> <span class="n">x_train</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="n">batch_size</span>
   
@@ -1262,7 +1262,7 @@ h6:hover .anchor-link {
 <div class="prompt input_prompt">In [0]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">generator</span><span class="p">,</span> <span class="n">discriminator</span> <span class="o">=</span> <span class="n">train_gan</span><span class="p">()</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">generator</span><span class="p">,</span> <span class="n">discriminator</span> <span class="o">=</span> <span class="n">train_gan</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -1313,7 +1313,7 @@ Use tf.cast instead.
 <div class="prompt input_prompt">In [0]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">noise</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">10000</span><span class="p">,</span><span class="n">NOISE_DIM</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">noise</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">10000</span><span class="p">,</span><span class="n">NOISE_DIM</span><span class="p">)</span>
 <span class="n">generated_values</span> <span class="o">=</span> <span class="n">generator</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">noise</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">generated_values</span><span class="p">,</span><span class="n">bins</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
 
@@ -1343,7 +1343,7 @@ Use tf.cast instead.
 </div>
 <div class="output_area">
 <div class="prompt"></div>
-<div class="output_png output_subarea ">
+<div class="output_png output_subarea">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeQAAAFKCAYAAADMuCxnAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAADl0RVh0U29mdHdhcmUAbWF0cGxvdGxpYiB2ZXJzaW9uIDMuMC4yLCBo
 dHRwOi8vbWF0cGxvdGxpYi5vcmcvOIA7rQAAGFhJREFUeJzt3XtsU+f9x/GPc1PIcJvL7G10dOsm
@@ -1457,7 +1457,7 @@ m5urv/3tb9qwYUP4exYtWqRZs2Ylq+SY3egSta2trfJ6vaqoqNDq1atVV1cn6dOfi1P+YEXq+4EH
 HtAf/vAHffTRRwoEApKk73//+6qpqUly1aMT7f/aiaL1vHLlStXX18uyLN19993hBV5OwKUzAQAw
 gOOnrAEASAUEMgAABiCQAQAwAIEMAIABCGQAAAxAIAMAYAACGQAAAxDIAAAY4P8AAsYl5eJEqGoA
 AAAASUVORK5CYII=
-" />
+">
 </div>
 </div>
 </div>
@@ -1489,7 +1489,7 @@ AAAASUVORK5CYII=
 <div class="prompt input_prompt">In [0]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">keras.datasets</span> <span class="k">import</span> <span class="n">mnist</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">keras.datasets</span> <span class="k">import</span> <span class="n">mnist</span>
 <span class="kn">from</span> <span class="nn">keras.utils</span> <span class="k">import</span> <span class="n">np_utils</span>
 <span class="kn">from</span> <span class="nn">keras.models</span> <span class="k">import</span> <span class="n">Sequential</span><span class="p">,</span> <span class="n">Model</span>
 <span class="kn">from</span> <span class="nn">keras.layers</span> <span class="k">import</span> <span class="n">Input</span><span class="p">,</span> <span class="n">Dense</span><span class="p">,</span> <span class="n">Dropout</span><span class="p">,</span> <span class="n">Activation</span><span class="p">,</span> <span class="n">Flatten</span>
@@ -1520,7 +1520,7 @@ AAAASUVORK5CYII=
 <div class="prompt input_prompt">In [0]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_train</span> <span class="o">=</span> <span class="n">X_train</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">60000</span><span class="p">,</span> <span class="mi">784</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">X_train</span> <span class="o">=</span> <span class="n">X_train</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">60000</span><span class="p">,</span> <span class="mi">784</span><span class="p">)</span>
 <span class="n">X_test</span> <span class="o">=</span> <span class="n">X_test</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">10000</span><span class="p">,</span> <span class="mi">784</span><span class="p">)</span>
 <span class="n">X_train</span> <span class="o">=</span> <span class="n">X_train</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">'float32'</span><span class="p">)</span><span class="o">/</span><span class="mi">255</span>
 <span class="n">X_test</span> <span class="o">=</span> <span class="n">X_test</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">'float32'</span><span class="p">)</span><span class="o">/</span><span class="mi">255</span>
@@ -1543,7 +1543,7 @@ AAAASUVORK5CYII=
 <div class="prompt input_prompt">In [0]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">z_dim</span> <span class="o">=</span> <span class="mi">100</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">z_dim</span> <span class="o">=</span> <span class="mi">100</span>
 </pre></div>
 </div>
 </div>
@@ -1567,7 +1567,7 @@ c.) GAN</p>
 <div class="prompt input_prompt">In [0]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">leakyReLU</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">neg_scale</span><span class="o">=</span><span class="mf">0.01</span><span class="p">):</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">leakyReLU</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">neg_scale</span><span class="o">=</span><span class="mf">0.01</span><span class="p">):</span>
   <span class="k">if</span> <span class="n">x</span> <span class="o">></span> <span class="mi">0</span><span class="p">:</span>
     <span class="k">return</span> <span class="n">x</span>
   <span class="k">else</span><span class="p">:</span>
@@ -1591,7 +1591,7 @@ c.) GAN</p>
 <div class="output">
 <div class="output_area">
 <div class="prompt"></div>
-<div class="output_png output_subarea ">
+<div class="output_png output_subarea">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeQAAAFKCAYAAADMuCxnAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAADl0RVh0U29mdHdhcmUAbWF0cGxvdGxpYiB2ZXJzaW9uIDMuMC4yLCBo
 dHRwOi8vbWF0cGxvdGxpYi5vcmcvOIA7rQAAIABJREFUeJzt3XlYVGXDBvB79mHfHFDc99yXNJVE
@@ -1849,7 +1849,7 @@ eLGICauuf//+mDVrFnbt2gWLxYKFCxeiXbt2mDNnDpKTkxEZGVnm6JiUXf/3lkwmc6vXx+HDh7Fk
 yRJkZWVBqVRi+/btWL58OebOnVtmP6hUKsycORMTJ06ETCbD1KlTyywsdgVefpGIiEgCpDtVJCIi
 8iIsZCIiIglgIRMREUkAC5mIiEgCWMhEREQSwEImIiKSABYyERGRBLCQiYiIJOD/AR1LdSqpwtOp
 AAAAAElFTkSuQmCC
-" />
+">
 </div>
 </div>
 </div>
@@ -1860,7 +1860,7 @@ AAAAAElFTkSuQmCC
 <div class="prompt input_prompt">In [0]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#@title</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#@title</span>
 <span class="n">adam</span> <span class="o">=</span> <span class="n">Adam</span><span class="p">(</span><span class="n">lr</span><span class="o">=</span><span class="mf">0.0002</span><span class="p">,</span> <span class="n">beta_1</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
 
 
@@ -1929,7 +1929,7 @@ Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep
 <div class="prompt input_prompt">In [0]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">plot_loss</span><span class="p">(</span><span class="n">losses</span><span class="p">):</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">plot_loss</span><span class="p">(</span><span class="n">losses</span><span class="p">):</span>
     <span class="sd">"""</span>
 <span class="sd">    @losses.keys():</span>
 <span class="sd">        0: loss</span>
@@ -1976,7 +1976,7 @@ Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep
 <div class="prompt input_prompt">In [0]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">losses</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"D"</span><span class="p">:[],</span> <span class="s2">"G"</span><span class="p">:[]}</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">losses</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"D"</span><span class="p">:[],</span> <span class="s2">"G"</span><span class="p">:[]}</span>
 
 <span class="k">def</span> <span class="nf">train</span><span class="p">(</span><span class="n">epochs</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">plt_frq</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">BATCH_SIZE</span><span class="o">=</span><span class="mi">128</span><span class="p">):</span>
     <span class="n">batchCount</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">X_train</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">/</span> <span class="n">BATCH_SIZE</span><span class="p">)</span>
@@ -2028,7 +2028,7 @@ Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep
 <div class="prompt input_prompt">In [0]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">train</span><span class="p">(</span><span class="n">epochs</span><span class="o">=</span><span class="mi">200</span><span class="p">,</span> <span class="n">plt_frq</span><span class="o">=</span><span class="mi">40</span><span class="p">,</span> <span class="n">BATCH_SIZE</span><span class="o">=</span><span class="mi">128</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">train</span><span class="p">(</span><span class="n">epochs</span><span class="o">=</span><span class="mi">200</span><span class="p">,</span> <span class="n">plt_frq</span><span class="o">=</span><span class="mi">40</span><span class="p">,</span> <span class="n">BATCH_SIZE</span><span class="o">=</span><span class="mi">128</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -2046,10 +2046,10 @@ Batches per epoch: 468
 </div>
 <div class="output_area">
 <div class="prompt"></div>
-<div id="abd9f2c9-d7aa-4e05-b7da-51b46634007a"></div>
-<div class="output_subarea output_widget_view ">
+<div id="3e07c31a-d02b-4b36-9e73-a70403d321e1"></div>
+<div class="output_subarea output_widget_view">
 <script type="text/javascript">
-var element = $('#abd9f2c9-d7aa-4e05-b7da-51b46634007a');
+var element = $('#3e07c31a-d02b-4b36-9e73-a70403d321e1');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "b2298b3b460d4442bb3ca2ed6825db6f", "version_major": 2, "version_minor": 0}
@@ -2065,7 +2065,7 @@ var element = $('#abd9f2c9-d7aa-4e05-b7da-51b46634007a');
 </div>
 <div class="output_area">
 <div class="prompt"></div>
-<div class="output_png output_subarea ">
+<div class="output_png output_subarea">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA1QAAABXCAYAAAADHQRuAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAADl0RVh0U29mdHdhcmUAbWF0cGxvdGxpYiB2ZXJzaW9uIDMuMC4yLCBo
 dHRwOi8vbWF0cGxvdGxpYi5vcmcvOIA7rQAAGf1JREFUeJzt3XmYllUZx/EvSFlmUVrkEqmhYpaR
@@ -2186,7 +2186,7 @@ qCIiIiIiIpqUBVVERERERESTsqCKiIiIiIhoUhZUERERERERTcqCKiIiIiIioklZUEVERERERDQp
 C6qIiIiIiIgmZUEVERERERHRpCyoIiIiIiIimpQFVURERERERJOyoIqIiIiIiGhSFlQRERERERFN
 yoIqIiIiIiKiSVlQRURERERENCkLqoiIiIiIiCZlQRUREREREdGkLKgiIiIiIiKalAVVRERERERE
 k7KgioiIiIiIaNL/AO/v7/UbBniOAAAAAElFTkSuQmCC
-" />
+">
 </div>
 </div>
 <div class="output_area">
@@ -2198,7 +2198,7 @@ k7KgioiIiIiIaNL/AO/v7/UbBniOAAAAAElFTkSuQmCC
 </div>
 <div class="output_area">
 <div class="prompt"></div>
-<div class="output_png output_subarea ">
+<div class="output_png output_subarea">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA1QAAABXCAYAAAADHQRuAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAADl0RVh0U29mdHdhcmUAbWF0cGxvdGxpYiB2ZXJzaW9uIDMuMC4yLCBo
 dHRwOi8vbWF0cGxvdGxpYi5vcmcvOIA7rQAAF6tJREFUeJzt3XuUVlX9x/G3CKmVmCZaKmJZlmLl
@@ -2309,7 +2309,7 @@ ckElSZIkSTW5oJIkSZKkmlxQSZIkSVJNLqgkSZIkqSYXVJIkSZJUkwsqSZIkSarJBZUkSZIk1eSC
 SpIkSZJqckElSZIkSTW5oJIkSZKkmlxQSZIkSVJNLqgkSZIkqSYXVJIkSZJUkwsqSZIkSarJBZUk
 SZIk1eSCSpIkSZJqckElSZIkSTW5oJIkSZKkmlxQSZIkSVJNLqgkSZIkqab/AyCGa6Rn6X7PAAAA
 AElFTkSuQmCC
-" />
+">
 </div>
 </div>
 <div class="output_area">
@@ -2321,7 +2321,7 @@ AElFTkSuQmCC
 </div>
 <div class="output_area">
 <div class="prompt"></div>
-<div class="output_png output_subarea ">
+<div class="output_png output_subarea">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA1QAAABXCAYAAAADHQRuAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAADl0RVh0U29mdHdhcmUAbWF0cGxvdGxpYiB2ZXJzaW9uIDMuMC4yLCBo
 dHRwOi8vbWF0cGxvdGxpYi5vcmcvOIA7rQAAGTtJREFUeJzt3XmY1WX5x/E3FGWFlqmVG5lgLqGR
@@ -2439,7 +2439,7 @@ JEmSquQDlSRJkiRVyQcqSZIkSaqSD1SSJEmSVCUfqCRJkiSpSj5QSZIkSVKVfKCSJEmSpCr5QCVJ
 kiRJVfKBSpIkSZKq5AOVJEmSJFXJBypJkiRJqpIPVJIkSZJUJR+oJEmSJKlKPlBJkiRJUpV8oJIk
 SZKkKvlAJUmSJElV8oFKkiRJkqrkA5UkSZIkVckHKkmSJEmqkg9UkiRJklSl/wOnA25zcjcREwAA
 AABJRU5ErkJggg==
-" />
+">
 </div>
 </div>
 <div class="output_area">
@@ -2451,7 +2451,7 @@ AABJRU5ErkJggg==
 </div>
 <div class="output_area">
 <div class="prompt"></div>
-<div class="output_png output_subarea ">
+<div class="output_png output_subarea">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA1QAAABXCAYAAAADHQRuAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAADl0RVh0U29mdHdhcmUAbWF0cGxvdGxpYiB2ZXJzaW9uIDMuMC4yLCBo
 dHRwOi8vbWF0cGxvdGxpYi5vcmcvOIA7rQAAG5FJREFUeJzt3Wd0VFUXxvF/iIAFX7ErFrCLDXtX
@@ -2579,7 +2579,7 @@ zMzMzMwS8oLKzMzMzMwsIS+ozMzMzMzMEvKCyszMzMzMLCEvqMzMzMzMzBLygsrMzMzMzCwhL6jM
 zMzMzMwS8oLKzMzMzMwsIS+ozMzMzMzMEvKCyszMzMzMLCEvqMzMzMzMzBLygsrMzMzMzCwhL6jM
 zMzMzMwS8oLKzMzMzMwsIS+ozMzMzMzMEvKCyszMzMzMLCEvqMzMzMzMzBLygsrMzMzMzCwhL6jM
 zMzMzMwS8oLKzMzMzMwsof8DeNnKBDnT9AIAAAAASUVORK5CYII=
-" />
+">
 </div>
 </div>
 <div class="output_area">
@@ -2591,7 +2591,7 @@ zMzMzMwS8oLKzMzMzMwsof8DeNnKBDnT9AIAAAAASUVORK5CYII=
 </div>
 <div class="output_area">
 <div class="prompt"></div>
-<div class="output_png output_subarea ">
+<div class="output_png output_subarea">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA1QAAABXCAYAAAADHQRuAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAADl0RVh0U29mdHdhcmUAbWF0cGxvdGxpYiB2ZXJzaW9uIDMuMC4yLCBo
 dHRwOi8vbWF0cGxvdGxpYi5vcmcvOIA7rQAAFw5JREFUeJzt3X3U33Mdx/HnaFMqWY3I7RbZ2Myy
@@ -2699,7 +2699,7 @@ KkmSJEmqyQmVJEmSJNXkhEqSJEmSanJCJUmSJEk1OaGSJEmSpJqcUEmSJElSTU6oJEmSJKkmJ1SS
 JEmSVJMTKkmSJEmqyQmVJEmSJNXkhEqSJEmSanJCJUmSJEk1OaGSJEmSpJqcUEmSJElSTU6oJEmS
 JKkmJ1SSJEmSVJMTKkmSJEmqyQmVJEmSJNXkhEqSJEmSanJCJUmSJEk1OaGSJEmSpJqcUEmSJElS
 Tf8H7tz2lAdegfAAAAAASUVORK5CYII=
-" />
+">
 </div>
 </div>
 <div class="output_area">
@@ -2711,7 +2711,7 @@ Tf8H7tz2lAdegfAAAAAASUVORK5CYII=
 </div>
 <div class="output_area">
 <div class="prompt"></div>
-<div class="output_png output_subarea ">
+<div class="output_png output_subarea">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA1QAAABXCAYAAAADHQRuAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAADl0RVh0U29mdHdhcmUAbWF0cGxvdGxpYiB2ZXJzaW9uIDMuMC4yLCBo
 dHRwOi8vbWF0cGxvdGxpYi5vcmcvOIA7rQAAG0ZJREFUeJzt3XuUVWX9x/E3eKWITFEs4uc1UzMv
@@ -2838,12 +2838,12 @@ EVGn3FBFRERERETUKTdUERERERERdcoNVURERERERJ1yQxUREREREVGn3FBFRERERETUKTdUERER
 ERERdcoNVURERERERJ1yQxUREREREVGn3FBFRERERETUKTdUERERERERdcoNVURERERERJ1yQxUR
 EREREVGn3FBFRERERETUKTdUERERERERdcoNVURERERERJ1yQxUREREREVGn3FBFRERERETU6f8B
 fta6/rakSgMAAAAASUVORK5CYII=
-" />
+">
 </div>
 </div>
 <div class="output_area">
 <div class="prompt"></div>
-<div class="output_png output_subarea ">
+<div class="output_png output_subarea">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlcAAAHgCAYAAACIHEjUAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAADl0RVh0U29mdHdhcmUAbWF0cGxvdGxpYiB2ZXJzaW9uIDMuMC4yLCBo
 dHRwOi8vbWF0cGxvdGxpYi5vcmcvOIA7rQAAIABJREFUeJzs3XdgW+W9PvDnaFqWbMexnb1xdiBJ
@@ -3459,7 +3459,7 @@ N0KITxLJXAkhjlljDQsWFBQAUFtby4oVK+jt7eXee+8F4N577+Wee+7BaDRiMBj48Y9/DMCdd97J
 nXfeyaOPPorJZOLuu++msbFxzM8sLi7m9ttv58EHH8RoNHLaaaeRn59/5HZSCPGJo6gH586FEOIY
 N2PGDLZu3YrJJP1DIcSxR4YFhRBCCCGmkGSuhBBCCCGmkGSuhBBCCCGmkARXQgghhBBTSIIrIYQQ
 QogpJMGVEEIIIcQUkuBKCCGEEGIKSXAlhBBCCDGF/j+G42QqhODO3AAAAABJRU5ErkJggg==
-" />
+">
 </div>
 </div>
 </div>

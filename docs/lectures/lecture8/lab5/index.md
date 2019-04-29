@@ -5,8 +5,6 @@ Author: Eleni Kaxiras
 Tags: keras, 
 
 
-# Lab 5
-
 ### Notebooks
  - [Lab5 CNNs]({filename}cs109b-lab5-cnn.ipynb)
  - [Lab5 CNNs with solutions]({filename}cs109b-lab5-cnn-solutions.ipynb)
