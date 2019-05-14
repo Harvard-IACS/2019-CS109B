@@ -35,7 +35,7 @@ and prediction. Topics include big data and database management, multiple deep l
 
 <hr> 
 ####Announcements:
-<pre>NOTE: The Modules have concluded. There is no class on Wed. HAPPY PROJECTS!</pre>
+<pre>IGNITE TALKS SCHEDULE is <a href="https://docs.google.com/spreadsheets/d/1Ei_L9e8nLdz5IbZ26Gr7YeE7wpQU27qjE99CD1DiaUM/edit#gid=1450132264">here</a></pre>
 <pre>Module 1: A Real-Bogus Classifier (1:30 - 2:45pm)&nbsp;- Mon. 4/22, and Wed. 4/24 in NW B-103?<br />Module 2 : Microbiome &nbsp;(1:30 - 2:45pm) -&nbsp;Mon. 4/22, Wed. 4/24, and Mon. 4/29 in MD-115</pre>
 <pre><span style="color: #993300;"><strong>Due Dates for the Final Project/Modules deliverables</strong></span><br /><strong>4/17</strong> - Milestone #1<br /><strong>4/27</strong> - Milestone #2<br /><strong>5/12</strong> - Peer Evaluation<br /><strong>5/12</strong> - Milestone #3 (Final)<br /><strong>5/13</strong> and <strong>5/14</strong> - Ignite Talks Presentation (each group will choose ONE date of the two)</pre>
 <pre>Instructions for using JupyterHub: <a title="Instructions for Using SEAS JupyterHub" href="https://canvas.harvard.edu/courses/48088/pages/instructions-for-using-seas-jupyterhub" data-api-endpoint="https://canvas.harvard.edu/api/v1/courses/48088/pages/instructions-for-using-seas-jupyterhub" data-api-returntype="Page">Instructions for Using SEAS JupyterHub</a></pre>
