@@ -16,7 +16,7 @@ Spring 2019 <br><br>
  
 <hr> 
 
-**Head TFs:** Eleni Kaxiras <a href="mailto:eleni@seas.harvard.edu">eleni@seas.harvard.edu</a> <br>
+**Head TF:** Eleni Kaxiras <a href="mailto:eleni@seas.harvard.edu">eleni@seas.harvard.edu</a> <br>
 **Head TF for DCE:** Sol Girouard <a href="solgirouard@g.harvard.edu">solgirouard@g.harvard.edu</a>
 
 <hr>
